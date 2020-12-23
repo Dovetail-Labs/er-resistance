@@ -1,0 +1,93 @@
+{
+  "scream": "Screaaaaam!",
+  "errors": {
+    "errorTitle": "Woops! ;(",
+    "errorMessageNoMedia": "No camera and microphone, no personal masterpiece. Please accept the media permissions and try again.",
+    "bluetoothError": "Error recording audio. Please disconnect from Bluetooth and try again.",
+    "browserSupport": "Your browser does not support WebGL. Please try in another browser.",
+    "noJS": "You do not have JavaScript enabled. Please enable Javascript",
+    "videoError": "Error recording video. Please try again."
+  },
+  "screen-reader-text": {
+    "choose-record-mode": "Choose record mode",
+    "sound-on": "Turn sound on",
+    "sound-off": "Turn sound off",
+    "submitted": "Submitted",
+    "multi-mode": "Choose multi player mode",
+    "single-mode": "Choose single player mode",
+    "home-page": "Go to home page",
+    "countdown": "seconds until recording starts"
+  },
+  "home-page": {
+    "intro-text": {
+      "title": "AAAAARGH!",
+      "p1": "2020 was a looooong year with ups and (lock)downs, right? We want you to start positive in 2021.",
+      "p2": "Free yourself from all those negative feelings and transform them into something positive: art! Ready to let it all art?"
+    }
+  },
+  "intro-page": {
+    "instructions-title": "Instructions",
+    "instructions": "Before your inner cave dweller can scream it all out, camera and microphone permissions are required on your browser. Don't worry, all face analysis happens on-device and personal data won't be stored.",
+    "cta": "I want to shout!",
+    "select-mode": "Shout by yourself / in group",
+    "need-help": "Need Help?",
+    "system-and-help": "System Requirements & Help"
+  },
+  "overlay-info": {
+    "heading": "About Let It All Art",
+    "p1": "That 2020 was difficult, is the understatement of the year. It has aroused negative feelings in many of us. These can hold you back, especially if you suppress them. BNPPF wants to ensure a positive start in 2021 and help all Belgians to grow, including you.",
+    "p2": "Shout out all your negative feelings about 2020 and transform them into something positive: an artwork. One that always reminds you of your own resilience and how you survived the year. You can even shout with multiple people, creating art as a sector, family or just as a fun duo.",
+    "sub-heading1": "About the Wall",
+    "p3": "In the end, we will combine each unique piece into the largest art collective in Belgium and paint it on a wall. A wall that reminds us of our perseverance and our ability to turn the negative into something positive. So that we can all continue to grow in a changing world."
+  },
+  "cookies": {
+    "title": "Grrrrr cookies!",
+    "p1": "In order to optimise your user experience, BNP Paribas Fortis collects information on how you use this website.",
+    "p2": "Cookie management gives you insight into the (commercial) information involved and gives you control over the way it is used. Full details can be found in the cookie policy.",
+    "subtitle": "Commercial cookies",
+    "p3": "By accepting commercial cookies, the content of BNP Paribas Fortis advertisements is personalised and attuned to your interests. On other sites as well as on your social media. These cookies, placed by BNP Paribas Fortis and third parties, serve commercial and social media purposes.",
+    "hyperlink": "Cookie policy",
+    "supplementText": "One last frustration before letting it all out",
+    "show-details": "Show Details",
+    "hide-details": "Hide Details"
+  },
+  "global-cta": {
+    "accept": "Accept",
+    "do-not-accept": "Don't accept",
+    "back": "Back",
+    "create": "Create",
+    "view": "View",
+    "try-again": "Try Again"
+  },
+  "global-links": {
+    "disclaimer": "Disclaimer",
+    "terms-and-conditions": "Terms and Conditions"
+  },
+  "free-play": {
+    "text": "Your artwork will be purely based on your voice and is therefore unique. Experiment with sound, pitch, rhythm or whatever comes to mind. But above all: don't hold back! You will be heard but not judged.",
+    "cta": "Record",
+    "title": "Practice makes perfect",
+    "record": "Record",
+    "play": "Play"
+  },
+  "preview-page": {
+    "text": "What a relief!",
+    "cta1": "Review",
+    "cta2": "Redo",
+    "cta3": "Submit"
+  },
+  "submission-form": {
+    "field-1": "Initials",
+    "field-2": "City",
+    "submit": "Share my artwork",
+    "checkbox": "I agree to the"
+  },
+  "thank-you": {
+    "heading": "Thanks for your outrageous participation!",
+    "p1": "If you enjoyed this catharsis, don't hesitate to spread the positivity with friends and family.",
+    "view-gallery": "View Gallery",
+    "view-video": "View Video"
+  },
+  "share": "Share",
+  "download": "Download"
+}

@@ -1,0 +1,93 @@
+{
+  "scream": "Schreeeeeuw!",
+  "errors": {
+    "errorTitle": "Oeps! ;(",
+    "errorMessageNoMedia": "Geen camera en microfoon, geen persoonlijk meesterwerk.",
+    "bluetoothError": "Fout bij het opnemen van audio. Verbreek je Bluetooth verbinding en probeer het opnieuw.",
+    "browserSupport": "Uw browser ondersteunt WebGL niet. Probeer het in een andere browser.",
+    "noJS": "U hebt JavaScript niet ingeschakeld.",
+    "videoError": "Fout opname video. Probeer het nog eens."
+  },
+  "screen-reader-text": {
+    "choose-record-mode": "Kies opname modus",
+    "sound-on": "Zet geluid aan",
+    "sound-off": "Zet geluid af",
+    "submitted": "Ingediend",
+    "multi-mode": "Kies de modus voor meerdere personen",
+    "single-mode": "Kies de modus voor één persoon",
+    "home-page": "Ga naar startpagina",
+    "countdown": "seconden tot opname start"
+  },
+  "home-page": {
+    "intro-text": {
+      "title": "AAAAAARGH!",
+      "p1": "2020 was verre van makkelijk. Maar waar negativiteit ons klein houdt, helpt een positieve ingesteldheid ons groeien. En dat is exact wat wij je toewensen voor 2021.",
+      "p2": "Schreeuw alle negatieve gevoelens van je af en zet ze om in iets positief: kunst! Ready to let it all art?"
+    }
+  },
+  "intro-page": {
+    "instructions-title": "Instructies",
+    "instructions": "Schreeuw, brul of gil gedurende 6 seconden zonder woorden en verbaas jezelf met je diepste oerkreet. Experimenteer erop los en ontdek hoe het je kunstwerk beïnvloedt. En geen zorgen, persoonlijke gegevens worden niet opgeslagen.",
+    "cta": "Ik wil schreeuwen!",
+    "select-mode": "Ik schreeuw alleen / in groep",
+    "need-help": "Hulp nodig?",
+    "system-and-help": "Systeemvereisten en hulp"
+  },
+  "overlay-info": {
+    "heading": "Over de campagne",
+    "p1": "Dat 2020 moeilijk was, is het understatement van het jaar. Het heeft terecht bij velen van ons negatieve gevoelens opgewekt. En die kunnen je tegenhouden, zeker als je ze opkropt. BNPPF wil zorgen voor een positieve start in 2021 en alle Belgen helpen groeien, inclusief jij.",
+    "p2": "Schreeuw al je negatieve gevoelens omtrent 2020 uit en zet ze om in iets positief: een kunstwerk. Eén dat je altijd doet herinneren aan je eigen veerkracht en hoe je het jaar hebt doorstaan. Je kan zelfs met meerdere personen schreeuwen, en zo kunst creëren als sector, familie of leuk duo.",
+    "sub-heading1": "",
+    "p3": "Uiteindelijk zullen we elk uniek werk combineren tot het grootste kunstcollectief van België en die op een muur schilderen. Een muur die ons herinnert aan ons doorzettingsvermogen en onze capaciteit om het negatieve in iets positief te veranderen. Zodat we kunnen blijven groeien, in een wereld in verandering."
+  },
+  "cookies": {
+    "title": "Grrrrrrr cookies!",
+    "p1": "Om uw gebruikservaring te optimaliseren, gebruikt BNP Parisbas Fortis informatie over de manier waarop u deze website gerbuikt.",
+    "p2": "Het cookiebeheer geeft u inzicht over welke (commerciële) informatie het gaat en geeft u controle over de manier waarop ze wordt gebruikt. Alle details vindt u in het cookiebeleid.",
+    "subtitle": "Commerciële cookies (aanpasbaar)",
+    "p3": "Door de commerciële cookies te aanvaarden wordt de inhoud van BNP Parisbas Fortis advertenties gepersonaliseerd en afgestemd op uw interesses. Dit zowel op andere sites als op uw sociale media. Deze cookies, geplaats door BNP Parisbas Fortis en derde partijen, hebben commerciële en sociale media doeleinden.",
+    "hyperlink": "Cookiebeleid",
+    "supplementText": "Nog een laatste frustratie voor de grote ontlading",
+    "show-details": "Toon details",
+    "hide-details": "Verberg details"
+  },
+  "global-cta": {
+    "accept": "Accepteer",
+    "do-not-accept": "Weiger",
+    "back": "Terug",
+    "create": "Creëer",
+    "view": "Bekijk",
+    "try-again": "Opnieuw proberen"
+  },
+  "global-links": {
+    "disclaimer": "Disclaimer",
+    "terms-and-conditions": "Algemene voorwaarden"
+  },
+  "free-play": {
+    "text": "Je kunstwerk wordt gebaseerd op jouw stem en is daarom uniek. Experimenteer met klank, toonhoogte, ritme enz. Maar laat je vooral volledig gaan! Hier word je niet beoordeeld.",
+    "cta": "Nu opnemen",
+    "title": "Oefening baart kunst",
+    "record": "Opnemen",
+    "play": ""
+  },
+  "preview-page": {
+    "text": "Wat een opluchting!",
+    "cta1": "Bekijk",
+    "cta2": "Opnieuw",
+    "cta3": "Bevestig"
+  },
+  "submission-form": {
+    "field-1": "Initialen",
+    "field-2": "Stad",
+    "submit": "Deel mijn kunstwerk",
+    "checkbox": "Ik ga akkoord met de"
+  },
+  "thank-you": {
+    "heading": "Bedankt voor je uitbundige deelname!",
+    "p1": "Genoten van deze catharsis? Deel hem gerust met je vrienden en familie.",
+    "view-gallery": "Bekijk galerij",
+    "view-video": "Download"
+  },
+  "share": "Deel",
+  "download": "Download"
+}
