@@ -9,6 +9,26 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/menu',
+    name: 'Menu',
+    component: Menu
+  },
+  {
+    path: '/activity-1',
+    name: 'Activity 1',
+    component: Activity1
+  },
+  {
+    path: '/activity-2',
+    name: 'Activity 2',
+    component: Activity2
+  },
+  {
+    path: '/research',
+    name: 'Research',
+    component: Research
   }
 ]
 
