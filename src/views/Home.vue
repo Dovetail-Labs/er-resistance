@@ -3,9 +3,9 @@
     <h1>Is emotion recognition technology "emojifying" you?</h1>
     <img src="../assets/images/emoji.gif">
     <p>You may not know it, but ER software is embedded in many of apps and websites. Will it flatten you?</p>
-    <button>
+    <router-link to="menu">
       Enter
-    </button>
+    </router-link>
     <Footer />
   </div>
 </template>

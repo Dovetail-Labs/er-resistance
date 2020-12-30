@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Menu from '../views/Menu.vue'
+import Activity1 from '../views/Activity1.vue'
+import Activity2 from '../views/Activity2.vue'
+import Research from '../views/Research.vue'
+
 
 Vue.use(VueRouter)
 

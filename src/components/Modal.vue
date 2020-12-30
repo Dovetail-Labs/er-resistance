@@ -8,7 +8,7 @@
     aria-modal="true"
     v-on:keydown="handleKeydown"
   >
-    <h3 id="modal-label">{{ title }}</h3>
+    <h3 id="modal-label">title </h3>
     <button
       v-if="!hideClose"
       aria-label="Close modal"
@@ -97,7 +97,6 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  border-radius: $border-l;
   box-shadow: 0 0 18px 6px rgba(0,0,0,0.1);
   box-sizing: border-box;
   padding: 1.5rem;

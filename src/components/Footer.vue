@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <span class="about">
+    <button class="about" aria-label="Read about the project" v-on:click="showAbout">
       About this Project
-    </span>
+    </button>
     <span class="share">
       Share
     </span>
@@ -19,7 +19,7 @@ export default {
     };
   },
   methods: {
-    showInfo() {
+    showAbout() {
       this.$emit("clicked", true);
     },
     isMobile() {
@@ -53,7 +53,14 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  .about {
+  button.about {
+    border: none;
+    text-transform: uppercase;
+    padding: 0;
+
+    &:hover {
+      background: inherit;
+    }
   }
 
   .share {

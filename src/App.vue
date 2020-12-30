@@ -38,6 +38,15 @@ body {
     line-height: 2em;
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+    
+    &:visited {
+      color: black;
+    }
+  }
+
   button {
     border: 3px solid black;
     padding: 9px 15px; 
@@ -46,7 +55,7 @@ body {
     background: $yellow;
   }
 
-  button:hover {
+  button:hover, .btn:hover {
     cursor: pointer;
     background: rgb(151, 163, 151);
   }
