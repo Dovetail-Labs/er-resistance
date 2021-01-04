@@ -47,7 +47,7 @@ body {
     }
   }
 
-  button {
+  button, .button {
     border: 3px solid black;
     padding: 9px 15px; 
     font-size: 1em;
