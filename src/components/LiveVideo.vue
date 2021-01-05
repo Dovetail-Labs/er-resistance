@@ -76,11 +76,11 @@ let detectExpressions = async () => {
     }
     if(happiness > 0.65) {
       if (document.getElementById("happiness")) {
-        document.getElementById("happiness").style.backgroundColor = "gray";
+        document.getElementById("happiness").style.backgroundColor = "#DCDCDC";
       }
     } else if(anger > 0.65) {
       if (document.getElementById("anger")) {
-        document.getElementById("anger").style.backgroundColor = "gray";
+        document.getElementById("anger").style.backgroundColor = "#DCDCDC";
       }
     }
   }

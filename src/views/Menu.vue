@@ -62,7 +62,7 @@ export default {
             margin-top: 4rem;
             display: grid;
             gap: 5%;
-            grid-template-columns: 4fr 1fr;
+            grid-template-columns: 5fr 1fr;
 
             nav {
                 ul {
@@ -87,7 +87,6 @@ export default {
                 justify-content: space-evenly;
 
                 .video-container, .er-container {
-                    border: 1px solid red;
                     height: 100%;
                     width: 50%;
 
