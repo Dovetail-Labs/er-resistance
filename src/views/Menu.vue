@@ -16,6 +16,7 @@
             </div>
             
             <div class="er-container">
+                <LiveVideo />
                 <button>
                     Turn on ER camera
                 </button>    
@@ -36,6 +37,7 @@
 <script>
 import Footer from "../components/Footer.vue";
 import Modal from "../components/Modal.vue";
+import LiveVideo from "../components/LiveVideo.vue";
 
 export default {
   name: "Menu",
@@ -43,7 +45,9 @@ export default {
     title: 'Menu'
   },
   components: {
-    Footer
+    Footer,
+    Modal,
+    LiveVideo
   }
 
 };
