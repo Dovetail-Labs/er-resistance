@@ -75,9 +75,13 @@ let detectExpressions = async () => {
       anger = result.expressions.angry;
     }
     if(happiness > 0.65) {
-      console.log('happy');
+      if (document.getElementById("happiness")) {
+        document.getElementById("happiness").style.backgroundColor = "gray";
+      }
     } else if(anger > 0.65) {
-      console.log('angry');
+      if (document.getElementById("anger")) {
+        document.getElementById("anger").style.backgroundColor = "gray";
+      }
     }
   }
   if(isRunning) {
