@@ -47,6 +47,7 @@ footer {
   left: 0;
   right: 0;
   padding: 1rem;
+  background: $yellow;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   text-transform: uppercase;

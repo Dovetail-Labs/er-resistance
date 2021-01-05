@@ -26,7 +26,7 @@
 body {
   font-family: 'Press Start 2P', Courier, monospace;
   color: black;
-  background: $yellow;
+  background: $yellow-lite;
 
   h1 {
     font-size: 20px;

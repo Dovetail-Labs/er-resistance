@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <Header />
+    <Header title="Activity 1"
+            description="Guess if the shown image is a wink or a blink"/>
     <Footer />
   </div>
 </template>

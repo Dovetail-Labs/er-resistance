@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div >
     <video id="webcam" autoplay muted playsinline/>
     <canvas id="overlay"></canvas>
   </div>
@@ -75,10 +75,8 @@ let detectExpressions = async () => {
       anger = result.expressions.angry;
     }
     if(happiness > 0.65) {
-      // onExpression('happy');
       console.log('happy');
     } else if(anger > 0.65) {
-      // onExpression('angry');
       console.log('angry');
     }
   }
@@ -92,15 +90,12 @@ loadNet()
 .then(video => { 
   cam = video;
   detectExpressions(); });
- 
 </script>
 
 <style scoped lang="scss">
-.container {
+div {
   position: relative;
   box-sizing: border-box;
-  border: 1px solid black;
-  height: 100%;
 
   video {
     width: 100%;

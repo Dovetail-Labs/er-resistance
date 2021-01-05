@@ -2,8 +2,8 @@
   <header>
     <!-- generalized Title and Description? -->
     <div>
-      <h1>Activity #1</h1>
-      <span>Guess if the shown image is a wink or a blink.</span>
+      <h1>{{ title }}</h1>
+      <span>{{ description }}</span>
     </div>
     <button>
       Finish Game
@@ -15,11 +15,7 @@
 export default {
   name: "Header",
   components: {},
-  data() {
-    return {
-      title: "ER Resistance"
-    };
-  },
+  props: ['title', 'description'], 
   methods: {
     showAbout() {
       this.$emit("clicked", true);
@@ -48,6 +44,7 @@ header {
   right: 0;
   padding: 1rem;
   max-width: 100vw;
+  background: $yellow;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   display: flex;
@@ -57,6 +54,7 @@ header {
     text-transform: uppercase;
     align-self: center;
     padding: 1em;
+    background-color: $yellow-lite;
   }
 }
 
