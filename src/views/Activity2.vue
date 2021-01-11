@@ -44,7 +44,7 @@ export default {
 <style scoped lang="scss">
 
 .container {
-  padding-top: 10rem;
+  padding-top: 8rem;
 
   main {
     max-width: 90%;
@@ -81,8 +81,8 @@ export default {
         &::after {
           content: '';
           position: absolute;
-          top: 1rem;
-          left: 1rem;
+          top: 0.75rem;
+          left: 0.75rem;
           width: calc(100%);
           height: calc(100%);
           background: $yellow;

@@ -67,13 +67,27 @@ let detectExpressions = async () => {
     .withFaceExpressions();
 
   if(typeof result !== 'undefined') {
-    let happiness = 0, anger = 0;
+    let happiness = 0, anger = 0, sadness = 0, surprise = 0, fear = 0, disgust = 0;
     if(result.expressions.hasOwnProperty('happy')) {
       happiness = result.expressions.happy;
     }
     if(result.expressions.hasOwnProperty('angry')) {
       anger = result.expressions.angry;
     }
+    if(result.expressions.hasOwnProperty('sad')) {
+      sadness = result.expressions.sad;
+    }
+    if(result.expressions.hasOwnProperty('fear')) {
+      fearful = result.expressions.fear;
+    }
+    if(result.expressions.hasOwnProperty('disgusted')) {
+      disgust = result.expressions.disgusted;
+    }
+    if(result.expressions.hasOwnProperty('surprised')) {
+      surprise = result.expressions.surprised;
+    }
+
+    // interface responds
     if(happiness > 0.65) {
       if (document.getElementById("happiness")) {
         document.getElementById("happiness").style.backgroundColor = "#DCDCDC";
@@ -81,6 +95,22 @@ let detectExpressions = async () => {
     } else if(anger > 0.65) {
       if (document.getElementById("anger")) {
         document.getElementById("anger").style.backgroundColor = "#DCDCDC";
+      }
+    } else if(sadness > 0.65) {
+      if (document.getElementById("sadness")) {
+        document.getElementById("sadness").style.backgroundColor = "#DCDCDC";
+      }
+    } else if(surprise > 0.65) {
+      if (document.getElementById("surprise")) {
+        document.getElementById("surprise").style.backgroundColor = "#DCDCDC";
+      }
+    } else if(disgust > 0.65) {
+      if (document.getElementById("disgust")) {
+        document.getElementById("disgust").style.backgroundColor = "#DCDCDC";
+      }
+    } else if(fear > 0.65) {
+      if (document.getElementById("fear")) {
+        document.getElementById("fear").style.backgroundColor = "#DCDCDC";
       }
     }
   }
