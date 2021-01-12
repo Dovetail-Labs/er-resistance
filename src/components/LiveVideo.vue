@@ -39,7 +39,7 @@ let loadNet = async () => {
 };
 
 const initCamera = async (width, height) => {
-
+  
   const video = document.getElementById("webcam");
   video.width = width;
   video.height = height;

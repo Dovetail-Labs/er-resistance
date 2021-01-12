@@ -53,6 +53,7 @@ footer {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  z-index: -2;
 
   button.about {
     border: none;

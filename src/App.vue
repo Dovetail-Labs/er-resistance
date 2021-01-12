@@ -53,6 +53,10 @@ body {
     font-size: 1em;
     font-family: 'Press Start 2P';
     background: $yellow;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   button:hover, .btn:hover {

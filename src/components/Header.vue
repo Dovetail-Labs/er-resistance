@@ -49,6 +49,7 @@ header {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
+  z-index: -2;
 
   button {
     text-transform: uppercase;
