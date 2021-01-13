@@ -1,11 +1,19 @@
 <template>
   <footer>
-    <button class="about" aria-label="Read about the project" v-on:click="showAbout">
+    <button class="about" aria-label="Read about the project" v-on:click="toggleAbout">
       About this Project
     </button>
     <span class="share">
       Share
     </span>
+    <!-- <div v-if="showAbout" class="aboutModal">
+      <h3>About this project</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u</p>
+      <div class="button-group">
+        <button>Read More</button>
+        <button>Close</button>
+      </div>
+    </div> -->
   </footer>
 </template>
 
@@ -15,22 +23,16 @@ export default {
   components: {},
   data() {
     return {
-      title: "ER Resistance"
+      title: "ER Resistance",
+      showAbout: false
     };
   },
   methods: {
-    showAbout() {
-      this.$emit("clicked", true);
-    },
-    isMobile() {
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
-        return true;
+    toggleAbout: function() {
+      if(this.showAbout === false) {
+        this.showAbout = true;
       } else {
-        return false;
+        this.showAbout = false;
       }
     }
   }
@@ -63,6 +65,12 @@ footer {
     &:hover {
       background: inherit;
     }
+  }
+
+  .about-modal {
+    position: static;
+    top:50%;
+    left:50%;
   }
 
   .share {

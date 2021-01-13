@@ -1,22 +1,37 @@
 <template>
   <div class="container">
     <Header title="Activity 2"
-            description="Display each of the six basic emotions shown below"/>
+            description="Display each of the six basic emotions shown below."
+            v-if="step !== 0"/>
     <main>
-      <section class="text-content">
-        <p>Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion</p>
-        <ul class="emotions">
-          <li class="emo-box" id="happiness">Happiness</li>
-          <li class="emo-box" id="sadness">Sadness</li>
-          <li class="emo-box" id="fear">Fear</li>
-          <li class="emo-box" id="surprise">Surprise</li>
-          <li class="emo-box" id="disgust">Disgust</li>
-          <li class="emo-box" id="anger">Anger</li>
-        </ul>
+      <section class="step0" v-if="step === 0">
+        <h1> {{ er.title }} </h1>
+        <div class="intro">
+          <div class="description">
+            <p> {{ er.intro }} </p>
+          </div>
+        </div>
+        <div>
+          <button v-on:click="moveToStep(1)">Play game</button>
+        </div>
       </section>
-      <section class="video">
-        <LiveVideo class="live-video"/>    
-      </section>      
+      <section class="step1" v-if="step === 1">
+        <div class="text-content">
+          <p>Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion</p>
+          <ul class="emotions">
+            <li class="emo-box" id="happiness">Happiness</li>
+            <li class="emo-box" id="sadness">Sadness</li>
+            <li class="emo-box" id="fear">Fear</li>
+            <li class="emo-box" id="surprise">Surprise</li>
+            <li class="emo-box" id="disgust">Disgust</li>
+            <li class="emo-box" id="anger">Anger</li>
+          </ul>
+        </div>
+        <div class="video">
+          <LiveVideo class="live-video"/>    
+        </div> 
+      </section>
+      <section class="step2" v-if="step === 2"></section>           
     </main>
     <Footer />
   </div>
@@ -26,16 +41,31 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import LiveVideo from "../components/LiveVideo.vue";
+import json from "../copy/er.json";
+import copy from "../copy/global.json";
 
 export default {
   name: "Activity2",
   metaInfo: {
     title: 'Activity 2'
   },
+  data() {
+    return {
+      er: json,
+      copy: copy,
+      step: 1,
+      finished: false
+    }
+  },
   components: {
     Header,
     Footer,
     LiveVideo
+  },
+  methods: {
+    moveToStep(step) {
+      this.step = step;
+    }
   }
 
 };
@@ -46,10 +76,13 @@ export default {
 .container {
   padding-top: 8rem;
 
-  main {
+  section {
     max-width: 90%;
     margin: 0 auto;
     padding: 1rem;
+  }
+
+  .step1 {
     display: grid;
     grid-template-columns: 30% 60%;
     gap: 10%;

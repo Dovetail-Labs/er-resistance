@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <Header title="Activity 1"
-            description="Guess if the shown image is a wink or a blink"/>
+            description="Guess if the shown image is a wink or a blink."
+            v-if="step !== 0"/>
     <main>
 
       <!-- INTRODUCTION -->
@@ -24,6 +25,8 @@
       <!-- QUIZ -->
       <section class="step1" v-if="step === 1">
         <div v-for="(question, index) in quiz.questions" v-bind:key="index" class="question">
+          <div v-show="index === questionIndex" class="questionImage" v-bind:style="{ backgroundImage: 'url(img/' + question.image + ')' }"></div>
+          <!-- <img v-show="index === questionIndex" v-bind:src="'img/' + question.image"> -->
           <p v-show="index === questionIndex">
             <span>{{ question.p1 }}</span>
             <span class="blank"></span>
@@ -119,7 +122,7 @@ export default {
 
 <style scoped lang="scss">
   main {
-    margin-top: 15rem;
+    margin-top: 10rem;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -142,8 +145,39 @@ export default {
 
     section.step1 {
       .question {
+        text-align: center;
+
+        img {
+          height: 15em;
+          width: auto;
+          border: 2px solid black;
+        }
+
+        .questionImage {
+          height: 15em;
+          width: 20em;
+          position: relative;
+          border: 2px solid black;
+          margin: 0 auto;
+          margin-bottom: 2em;
+          background-size: cover;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            width: calc(100%);
+            height: calc(100%);
+            background: $yellow;
+            border: 2px solid black;
+            z-index: -1;
+          }
+        }
+
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
+
           span.blank {
             border: 2px solid black;
             box-sizing: border-box;
@@ -206,7 +240,7 @@ export default {
 
   .button-group {
     text-align: center;
-    // margin-top: 5em;
+    margin-top: 2em;
 
     button {
       margin-left: 2em;
