@@ -57,11 +57,11 @@ body {
     &:focus {
       outline: none;
     }
-  }
 
-  button:hover, .btn:hover {
-    cursor: pointer;
-    background: rgb(151, 163, 151);
+    &:hover {
+      cursor: pointer;
+      background: rgb(151, 163, 151);
+    }
   }
 }
 </style>

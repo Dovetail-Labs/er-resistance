@@ -26,7 +26,6 @@
       <section class="step1" v-if="step === 1">
         <div v-for="(question, index) in quiz.questions" v-bind:key="index" class="question">
           <div v-show="index === questionIndex" class="questionImage" v-bind:style="{ backgroundImage: 'url(img/' + question.image + ')' }"></div>
-          <!-- <img v-show="index === questionIndex" v-bind:src="'img/' + question.image"> -->
           <p v-show="index === questionIndex">
             <span>{{ question.p1 }}</span>
             <span class="blank"></span>
@@ -37,7 +36,7 @@
           <button @click="next('wink')">Wink</button>
           <button @click="next('blink')">Blink</button>
         </div>   
-        <div v-else class="button-group">
+        <div v-else class="button-group" id="finish-game">
           <button @click="moveToStep(2)">Finish game</button>
         </div>
         <div v-if="showAnswer" class="answerNotification">
@@ -51,6 +50,7 @@
         <div class="overlay"></div>
         <div class="finished-game">
           <h3>{{ copy.finishedGameTitle }}</h3>
+          <img src="../assets/images/thumbs-up.gif">
           <p>SHARE!</p>
           <ul>
             <li>Twitter</li>
@@ -104,6 +104,7 @@ export default {
         this.correct = true;
         this.showAnswer = true;
       } else {
+        this.correct = false;
         this.showAnswer = true;
       }
       setTimeout(function () {
@@ -192,6 +193,13 @@ export default {
         text-align: center;
         margin-top: 2em;
       }
+
+      #finish-game {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     section.step2 {
@@ -201,13 +209,19 @@ export default {
         text-align: center;
         padding: 1em 3em 3em;
         border-radius: $br-m;
-        border: 1px solid black;
+        border: 2px solid black;
         z-index: 1;
 
         h3 {
           text-align: left;
           font-size: 12px;
           line-height: 1.7em;
+        }
+
+        img {
+          max-height: 20vh;
+          padding: 2em;
+          border-bottom: 3px solid black;
         }
 
         ul {
