@@ -14,7 +14,6 @@
                     Watch the video
                 </button>
             </div>
-            
             <div class="er-container">
                 <LiveVideo />
                 <button>
