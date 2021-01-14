@@ -44,6 +44,10 @@ const initCamera = async (width, height) => {
   video.width = width;
   video.height = height;
 
+  const displaySize = { width: video.width, height: video.height }
+  const canvas = document.getElementById('overlay')
+  faceapi.matchDimensions(canvas, displaySize)
+
   const stream = await navigator.mediaDevices.getUserMedia({
     audio: false,
     video: {
@@ -63,8 +67,12 @@ const initCamera = async (width, height) => {
 
 let detectExpressions = async () => {
   // detect expression
-  let result = await faceapi.detectSingleFace(cam, faceapiOptions)
-    .withFaceExpressions();
+  const result = await faceapi.detectSingleFace(cam, faceapiOptions).withFaceExpressions();
+  const resizedResult = faceapi.resizeResults(result, {width: cam.width, height: cam.height})
+
+  document.getElementById("overlay").getContext('2d').clearRect(0, 0, document.getElementById("overlay").width, document.getElementById("overlay").height);
+  faceapi.draw.drawDetections(document.getElementById("overlay"), resizedResult);
+  faceapi.draw.drawFaceExpressions(document.getElementById("overlay"), resizedResult, faceapiOptions.minConfidenceFace)
 
   if(typeof result !== 'undefined') {
     let happiness = 0, anger = 0, sadness = 0, surprise = 0, fear = 0, disgust = 0;
@@ -119,11 +127,14 @@ let detectExpressions = async () => {
   }
 };
 
+
+
 loadNet()
 .then(net   => { return initCamera(640, 480); })
 .then(video => { 
   cam = video;
-  detectExpressions(); });
+  detectExpressions(); 
+  });
 </script>
 
 <style scoped lang="scss">
