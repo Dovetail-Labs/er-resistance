@@ -1,0 +1,40 @@
+{
+  "title": "Wink or Blink?",
+	"intro": "Machines can’t tell the difference between a wink and a blink, because they can only track an eye opening and closing, not the context or what it means. Can you tell if someone is winking or blinking from what is going on around them?",
+	"defWink": "to open and close the eye quickly as a hint or signal",
+  "defBlink": "to open and close the eye involuntarily",
+  "correct": "Congrats, you got it correct!",
+  "incorrect": "Sorry, you got that incorrect!",
+  "questions": [
+    {
+      "image": "wb1.png",
+      "p1": "“I have an idea” Bee said with a",
+      "p2": "unable to resist the urge to tease them.",
+      "answer": "wink"
+    },
+		{
+      "image": "wb2.png",
+      "p1": "She gave me a conspiratorial",
+      "p2": "and pulled the bag closer",
+      "answer": "wink"
+    },
+		{
+      "image": "wb3.png",
+      "p1": "Everyone else was having a great time in the rose garden, but the pollen made them sneeze and",
+      "p2": "their itchy eyes. They wished they were home in bed.",
+      "answer": "blink"
+    },
+		{
+      "image": "wb4.png",
+      "p1": "“Yeah right,” she said, with a",
+      "p2": ". “I know what you are up to”",
+      "answer": "wink"
+    },
+		{
+      "image": "wb5.png",
+      "p1": "In the morning, he crawled out of the tent and",
+      "p2": "in the bright sunlight.",
+      "answer": "blink"
+    }
+  ]
+}

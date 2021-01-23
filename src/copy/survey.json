@@ -1,0 +1,24 @@
+{
+  "intro": "Share your perspectives on emotion recognition systems.",
+  "thankYou": "Thank you so much for partaking in our experiment. Feel free to share with others you might find this insightful.",
+  "questions": [
+    {
+      "text": "Now that you have explored our site, has your perspective on emotion recognition systems changed? Do you feel differently about the technology in particular, or their practical applications, or all of it? Please explain."
+    },
+    {
+      "text": "What examples of emotion recognition systems from the activities on this site do you find most interesting? Why?"
+    },
+    {
+      "text": "What examples of emotion recognition systems from the activities on this site do you find most concerning? Why?"
+    },
+    {
+      "text": "Have you ever experienced the practical application of emotion recognition systems in any form/capacity?"
+    },
+    {
+      "text": "What examples of emotion recognition technology do you think should be explored in more detail?"
+    },
+    {
+      "text": "In what ways can you imagine emotion recognition technology being used and what might be the impacts of these uses?"
+    }
+  ]
+}
