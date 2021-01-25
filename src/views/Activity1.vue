@@ -58,10 +58,10 @@
           <img src="../assets/images/thumbs-up.gif">
           <p>SHARE!</p>
           <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>WhatsApp</li>
-            <li>Email</li>
+            <li><a href="#"> <IconFB /> </a></li>
+            <li><a href="#"> <IconTW /> </a></li>
+            <li><a href="#"> <IconEM /> </a></li>
+            <li><a href="#"> <IconIG /> </a></li>
           </ul>
           <router-link to="menu" class="button">
             Back to main screen
@@ -80,6 +80,12 @@ import Modal from "../components/Modal.vue";
 import json from "../copy/quiz.json";
 import copy from "../copy/global.json";
 import RightArrow from "@/assets/images/right-arrow.svg";
+
+import IconFB from "@/assets/images/icon-fb.svg";
+import IconTW from "@/assets/images/icon-tw.svg";
+import IconIG from "@/assets/images/icon-ig.svg";
+import IconEM from "@/assets/images/icon-em.svg";
+
 
 export default {
   name: "Activity1",
@@ -101,7 +107,11 @@ export default {
     Header,
     Footer,
     Modal,
-    RightArrow
+    RightArrow,
+    IconFB,
+    IconTW,
+    IconIG,
+    IconEM
   },
   methods: {
     next: function(answer) {
@@ -245,8 +255,14 @@ export default {
 
           li {
             display: inline-block;
-            font-size: 0.25em;
             padding: 1rem;
+
+            a {
+              svg {
+                height: 2rem;
+              }
+            }
+
           }
         }
 

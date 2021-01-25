@@ -92,6 +92,7 @@ export default {
             display: block;
             padding: 1rem;
             svg {
+              float: right;
               height: 1.25em;
             }
           }
