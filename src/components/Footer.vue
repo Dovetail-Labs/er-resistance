@@ -3,24 +3,34 @@
     <button class="about" aria-label="Read about the project" v-on:click="toggleAbout">
       About this Project
     </button>
-    <span class="share">
+    <div class="share">
+    <span>
       Share
     </span>
-    <!-- <div v-if="showAbout" class="aboutModal">
-      <h3>About this project</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u</p>
-      <div class="button-group">
-        <button>Read More</button>
-        <button>Close</button>
-      </div>
-    </div> -->
+    <ul class="social">
+      <li><a href="#"><IconFB /></a></li>
+      <li><a href="#"><IconTW /></a></li>
+      <li><a href="#"><IconIG /></a></li>
+      <li><a href="#"><IconEM /></a></li>
+    </ul>
+    </div>
   </footer>
 </template>
 
 <script>
+import IconFB from "@/assets/images/icon-fb.svg";
+import IconTW from "@/assets/images/icon-tw.svg";
+import IconIG from "@/assets/images/icon-ig.svg";
+import IconEM from "@/assets/images/icon-em.svg";
+
 export default {
   name: "Footer",
-  components: {},
+  components: {
+    IconFB,
+    IconTW,
+    IconIG,
+    IconEM
+  },
   data() {
     return {
       title: "ER Resistance",
@@ -74,8 +84,24 @@ footer {
   }
 
   .share {
-
     right: 0;
+
+    ul.social { 
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        padding-left: 0.5em;
+
+        a {
+          svg {
+            height: 2em;
+          }
+        }
+      }
+    }
   }
 }
 </style>

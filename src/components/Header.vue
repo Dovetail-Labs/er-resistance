@@ -7,14 +7,19 @@
     </div>
     <button>
       Finish Game
+      <Checkmark class="checkmark"/>
     </button>
   </header>
 </template>
 
 <script>
+import Checkmark from "@/assets/images/checkmark.svg";
+
 export default {
   name: "Header",
-  components: {},
+  components: {
+    Checkmark
+  },
   props: ['title', 'description'], 
   methods: {
     showAbout() {
@@ -56,6 +61,10 @@ header {
     align-self: center;
     padding: 1em;
     background-color: $yellow-lite;
+
+    svg {
+      height: 1.25em;
+    }
   }
 }
 

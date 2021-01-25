@@ -18,7 +18,12 @@
           </div>
         </div>
         <div>
-          <button v-on:click="moveToStep(1)">Play game</button>
+          <button class="play-game" v-on:click="moveToStep(1)">
+            <span>
+              Play game
+            </span>
+            <RightArrow />
+          </button>
         </div>
       </section>
 
@@ -74,6 +79,7 @@ import Footer from "../components/Footer.vue";
 import Modal from "../components/Modal.vue";
 import json from "../copy/quiz.json";
 import copy from "../copy/global.json";
+import RightArrow from "@/assets/images/right-arrow.svg";
 
 export default {
   name: "Activity1",
@@ -94,7 +100,8 @@ export default {
   components: {
     Header,
     Footer,
-    Modal
+    Modal,
+    RightArrow
   },
   methods: {
     next: function(answer) {
@@ -142,6 +149,14 @@ export default {
         }
       }
 
+      div {
+        button.play-game {
+          svg {
+            height: 1.25em;
+            display: inline;
+          }
+        }
+      }
     }
 
     section.step1 {

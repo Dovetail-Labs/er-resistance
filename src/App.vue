@@ -25,6 +25,7 @@
 
 body {
   font-family: 'Press Start 2P', Courier, monospace;
+  padding: 2em;
   color: black;
   background: $yellow-lite;
 
