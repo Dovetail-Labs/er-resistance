@@ -5,7 +5,7 @@
       <h1>{{ title }}</h1>
       <span>{{ description }}</span>
     </div>
-    <button>
+    <button @click="endGame()">
       Finish Game
       <Checkmark class="checkmark"/>
     </button>
@@ -22,8 +22,8 @@ export default {
   },
   props: ['title', 'description'], 
   methods: {
-    showAbout() {
-      this.$emit("clicked", true);
+    endGame() {
+      this.$emit("end-game", true);
     },
     isMobile() {
       if (
@@ -54,13 +54,17 @@ header {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
-  z-index: -2;
+  z-index: 3;
 
   button {
     text-transform: uppercase;
     align-self: center;
     padding: 1em;
     background-color: $yellow-lite;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     svg {
       height: 1.25em;

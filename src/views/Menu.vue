@@ -11,13 +11,6 @@
           <iframe
             src="https://www.youtube-nocookie.com/embed/lDC90ObdMEs?rel=1&amp;controls=0&amp;autoplay=0&amp;mute=1&amp;start=0"
             frameborder="0"
-            style="
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              pointer-events: auto;
-            "
           ></iframe>
           <button>Watch the video</button>
         </div>
@@ -106,7 +99,7 @@ export default {
 
       .video-container,
       .er-container {
-        height: 100%;
+        max-height: 50vh;
         width: 50%;
 
         button {
@@ -114,6 +107,21 @@ export default {
           left: 50%;
           transform: translateX(-50%) translateY(-50%);
           border-radius: $br-m;
+        }
+      }
+
+      .er-container {
+        div {
+          video {
+            height: 10vh !important;
+          }
+        }
+      }
+
+      .video-container {
+        iframe {
+          width: 100%;
+          height: 100%;
         }
       }
     }

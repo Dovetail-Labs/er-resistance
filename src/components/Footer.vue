@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <button class="about" aria-label="Read about the project" v-on:click="toggleAbout">
+    <button class="about" 
+            aria-label="Read about the project" 
+            @click="toggleAbout">
       About this Project
     </button>
     <div class="share">
@@ -40,16 +42,13 @@ export default {
   methods: {
     toggleAbout: function() {
       if(this.showAbout === false) {
-        this.showAbout = true;
-      } else {
-        this.showAbout = false;
+        this.$emit("showAbout", true);
       }
     }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
 footer {

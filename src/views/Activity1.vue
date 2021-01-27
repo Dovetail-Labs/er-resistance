@@ -2,7 +2,9 @@
   <div class="container">
     <Header title="Activity 1"
             description="Guess if the shown image is a wink or a blink."
-            v-if="step !== 0"/>
+            v-if="step !== 0"
+            @end-game="moveToStep(2)"
+            />
     <main>
 
       <!-- INTRODUCTION -->
@@ -52,7 +54,6 @@
 
       <!-- FINISHED GAME MODAL -->
       <section class="step2" v-if="step === 2">
-        <div class="overlay"></div>
         <div class="finished-game">
           <h3>{{ copy.finishedGameTitle }}</h3>
           <img src="../assets/images/thumbs-up.gif">

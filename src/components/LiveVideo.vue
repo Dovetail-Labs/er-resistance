@@ -63,7 +63,7 @@ export default {
 
     loadNet()
       .then(net => {
-        return initCamera(640, 480);
+        return initCamera(600, 650);
       })
       .then(video => {
         this.cam = video;
@@ -119,8 +119,8 @@ export default {
           if (result.expressions.hasOwnProperty("sad")) {
             sadness = result.expressions.sad;
           }
-          if (result.expressions.hasOwnProperty("fear")) {
-            fearful = result.expressions.fear;
+          if (result.expressions.hasOwnProperty("fearful")) {
+            fear = result.expressions.fearful;
           }
           if (result.expressions.hasOwnProperty("disgusted")) {
             disgust = result.expressions.disgusted;

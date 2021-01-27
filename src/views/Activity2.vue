@@ -2,7 +2,9 @@
   <div class="container">
     <Header title="Activity 2"
             description="Display each of the six basic emotions shown below."
-            v-if="step !== 0"/>
+            v-if="step !== 0"
+            @end-game="moveToStep(2)"
+            />
     <main>
       <section class="step0" v-if="step === 0">
         <h1> {{ er.title }} </h1>
@@ -31,7 +33,22 @@
           <LiveVideo class="live-video"/>    
         </div> 
       </section>
-      <section class="step2" v-if="step === 2"></section>           
+      <section class="step2" v-if="step === 2">
+        <div class="finished-game">
+          <h3>{{ copy.finishedGameTitle }}</h3>
+          <img src="../assets/images/thumbs-up.gif">
+          <p>SHARE!</p>
+          <ul>
+            <li><a href="#"> <IconFB /> </a></li>
+            <li><a href="#"> <IconTW /> </a></li>
+            <li><a href="#"> <IconEM /> </a></li>
+            <li><a href="#"> <IconIG /> </a></li>
+          </ul>
+          <router-link to="menu" class="button">
+            Back to main screen
+          </router-link>
+        </div>  
+      </section>           
     </main>
     <Footer />
   </div>
@@ -44,6 +61,11 @@ import LiveVideo from "../components/LiveVideo.vue";
 import json from "../copy/er.json";
 import copy from "../copy/global.json";
 
+import IconFB from "@/assets/images/icon-fb.svg";
+import IconTW from "@/assets/images/icon-tw.svg";
+import IconIG from "@/assets/images/icon-ig.svg";
+import IconEM from "@/assets/images/icon-em.svg";
+
 export default {
   name: "Activity2",
   metaInfo: {
@@ -53,18 +75,25 @@ export default {
     return {
       er: json,
       copy: copy,
-      step: 1,
+      step: 0,
       finished: false
     }
   },
   components: {
     Header,
     Footer,
-    LiveVideo
+    LiveVideo,
+    IconEM,
+    IconFB,
+    IconTW,
+    IconIG
   },
   methods: {
     moveToStep(step) {
       this.step = step;
+    },
+    headerListener() {
+
     }
   }
 
@@ -125,6 +154,61 @@ export default {
       }
     }
   }
+
+  section.step2 {
+
+      .finished-game {
+        background: $yellow;
+        text-align: center;
+        padding: 1em 3em 3em;
+        border-radius: $br-m;
+        border: 2px solid black;
+        z-index: 1;
+
+        h3 {
+          text-align: left;
+          font-size: 12px;
+          line-height: 1.7em;
+        }
+
+        img {
+          max-height: 20vh;
+          padding: 2em;
+          border-bottom: 3px solid black;
+        }
+
+        ul {
+          margin-top: 0;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            padding: 1rem;
+
+            a {
+              svg {
+                height: 2rem;
+              }
+            }
+
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100vw;
+          height: 100vh;
+          background: #171717;
+          opacity: 0.75;
+          z-index: -1;
+        }
+      }
+
+    }
 }
 
 </style>
