@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Modal v-if="showModal" @close="closeModal" />
     <h2>Welcome to the ER Sandbox.</h2>
     <p>
       Watch the video to learn about emotional recognition technology, or turn
@@ -45,6 +46,11 @@ export default {
   metaInfo: {
     title: "Menu",
   },
+  data() {
+    return {
+      showModal: true
+    }
+  },
   components: {
     Footer,
     Modal,
@@ -54,6 +60,9 @@ export default {
   methods: {
     startER: function() {
       this.$emit("start-er", true);
+    },
+    closeModal: function() {
+      this.showModal = false;
     }
   }
 };
@@ -96,6 +105,8 @@ export default {
     section {
       display: flex;
       justify-content: space-evenly;
+      height: 40vw;
+      max-height: 50vh;
 
       .video-container,
       .er-container {

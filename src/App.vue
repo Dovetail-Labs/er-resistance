@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <div v-if="showAbout" class="overlay"></div>
     <About v-if="showAbout" @close="toggleAbout" />
     <Footer @aboutVisible="toggleAbout"/>
   </div>
@@ -13,7 +14,7 @@ import About from './components/About.vue';
 export default {
   data() {
     return {
-      showAbout: false
+      showAbout: false,
     }
   },
   components: {
@@ -88,5 +89,18 @@ body {
       background: rgb(151, 163, 151);
     }
   }
+
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #171717;
+    opacity: 0.75;
+  }
+
 }
 </style>

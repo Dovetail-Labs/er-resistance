@@ -1,121 +1,97 @@
-
 <template>
-  <div
-    role="dialog"
-    class="modal"
-    ref="modal"
-    aria-labelledby="modal-label"
-    aria-modal="true"
-    v-on:keydown="handleKeydown"
-  >
-    <h3 id="modal-label">title </h3>
-    <slot />
+<div class="container">
+  <div class="overlay"></div>
+  <div class="modal">
+    <h3>How do you feel about emotional recognition technology?</h3>
+    <form>
+      <div>
+        <input type="radio" value="Positive">
+        <label>Positive</label>
+      </div>
+      <div>
+        <input type="radio" value="Neutral">
+        <label>Neutral</label>
+      </div>
+      <div>
+        <input type="radio" value="Negative">
+        <label>Negative</label>
+      </div>
+      <div>
+        <input type="radio" value="I don't know">
+        <label>I don't know</label>
+      </div>
+    </form>
+    <div class="button-group">
+      <button>Skip</button>
+      <button @click="close">Go</button>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: "Modal",
-  data() {
-    return {
-      focusedElBeforeOpen: null
-    };
-  },
-  props: ["title", "hideClose"],
-  // mounted() {
-  //   this.focusedElBeforeOpen = document.activeElement;
-  //   const modal = this.$refs.modal;
-  //   const focusableEls = modal.querySelectorAll(
-  //     'a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]'
-  //   );
-  //   this.focusableEls = Array.prototype.slice.call(focusableEls);
-  //   this.firstFocusableEl = this.focusableEls && this.focusableEls[0];
-  //   this.lastFocusableEl =
-  //     this.focusableEls.length &&
-  //     this.focusableEls[this.focusableEls.length - 1];
-  //   this.firstFocusableEl.focus();
-  // },
   methods: {
-    handleBackwardTab(e) {
-      if (document.activeElement === this.firstFocusableEl) {
-        e.preventDefault();
-        this.lastFocusableEl.focus();
-      }
-    },
-    handleForwardTab(e) {
-      if (document.activeElement === this.lastFocusableEl) {
-        e.preventDefault();
-        this.firstFocusableEl.focus();
-      }
-    },
-    handleKeydown(e) {
-      const KEY_TAB = 9;
-      const KEY_ESC = 27;
-      switch (e.keyCode) {
-        case KEY_TAB:
-          if (this.focusableEls.length === 1) {
-            e.preventDefault();
-            break;
-          }
-          if (e.shiftKey) {
-            this.handleBackwardTab(e);
-          } else {
-            this.handleForwardTab(e);
-          }
-          break;
-        case KEY_ESC:
-          this.closeModal();
-          break;
-      }
+    close() {
+      this.$emit("close", true);
     }
   }
-};
+}
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .modal {
   position: fixed;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  box-shadow: 0 0 18px 6px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  padding: 1.5rem;
-  z-index: 997;
-  color: black;
-}
+  background: $yellow;
+  padding: 1em 2em 2em;
+  border-radius: $br-m;
+  border: 2px solid black;
+  z-index: 1;
 
-.close-button {
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0.75rem;
+  h3 {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.7em;
+  }
 
-  .close-icon {
-    width: 1rem;
+  form {
+    text-align: left;
+
+    div {
+      margin: 2rem auto;
+      max-width: 55%;
+
+      input {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  div.button-group {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+    button {
+      margin-left: 1em;
+    }
   }
 }
 
-.close-button:hover {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 640px) {
-  .modal {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .modal {
-    padding: 1rem;
-    width: 90%;
-    max-height: 70vh;
-    overflow-y: scroll;
-  }
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #171717;
+    opacity: 0.75;
+    z-index: 1;
 }
 </style>
