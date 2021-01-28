@@ -1,40 +1,51 @@
 <template>
-  <div>
-    <p>
-      {{ $t("overlay-info.p1") }}
-    </p>
-    <p>
-      {{ $t("overlay-info.p2") }}
-    </p>
-    <h4>
-      {{ $t("overlay-info.sub-heading1") }}
-    </h4>
-    <p>
-      {{ $t("overlay-info.p3") }}
-    </p>
-    <a class="terms" target="_blank" rel="noopener noreferrer" href="/">{{ $t("global-links.terms-and-conditions") }}</a>
-    <router-link to="help" target="_blank" rel="noopener noreferrer">{{ $t("intro-page.need-help")}}</router-link>
+  <div class="about">
+    <h3>About this project</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u!</p>
+    <div>
+      <button>Read more</button>
+      <button @click="close">Close</button>
+    </div>
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    close() {
+      this.$emit("close", true);
+    }
+  }
+}
+</script>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.about {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: $yellow;
+  padding: 1em 2em 2em;
+  border-radius: $br-m;
+  border: 2px solid black;
+  z-index: 1;
 
-h4 {
-  font-variation-settings: "wght" 500, "wdth" 125, "ital" 0;
-  font-size: 1.25rem;
-}
+  h3 {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.7em;
+  }
 
-a {
-  font-family: 'Flexa';
-  display: block;
-  text-align: left;
-  margin: 0.75em 0;
-  font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
-  transition: 0.2s ease all;
-}
-
-a:hover {
-  font-variation-settings: "wght" 600, "wdth" 110, "ital" 0;
+  div {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+    button {
+      margin-left: 1em;
+    }
+  }
 }
 </style>

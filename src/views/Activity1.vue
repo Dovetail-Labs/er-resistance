@@ -70,13 +70,12 @@
         </div>
       </section>
     </main> 
-    <Footer />
   </div>
+
 </template>
 
 <script>
 import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
 import Modal from "../components/Modal.vue";
 import json from "../copy/quiz.json";
 import copy from "../copy/global.json";
@@ -106,7 +105,6 @@ export default {
   },
   components: {
     Header,
-    Footer,
     Modal,
     RightArrow,
     IconFB,
@@ -141,7 +139,7 @@ export default {
 
 <style scoped lang="scss">
   main {
-    margin-top: 10rem;
+    margin-top: 8rem;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;

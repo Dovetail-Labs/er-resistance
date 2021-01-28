@@ -14,12 +14,7 @@
           ></iframe>
           <button>Watch the video</button>
         </div>
-        <div class="er-container">
-          <LiveVideo />
-          <!-- <button>
-                    Turn on ER camera
-                </button>     -->
-        </div>
+        <LiveVideo class="er-container" :buttonVisible="true" /> 
       </section>
       <nav>
         <ul>
@@ -56,6 +51,11 @@ export default {
     LiveVideo,
     RightArrow
   },
+  methods: {
+    startER: function() {
+      this.$emit("start-er", true);
+    }
+  }
 };
 </script>
 
@@ -107,14 +107,6 @@ export default {
           left: 50%;
           transform: translateX(-50%) translateY(-50%);
           border-radius: $br-m;
-        }
-      }
-
-      .er-container {
-        div {
-          video {
-            height: 10vh !important;
-          }
         }
       }
 

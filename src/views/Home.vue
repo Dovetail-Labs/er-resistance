@@ -28,13 +28,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
   .container {
     text-align: center;
     max-width: 50%;
     margin: 3rem auto;
 
     img {
-      width: 30vw;
+      width: 20vw;
       height: auto;
     }
   }

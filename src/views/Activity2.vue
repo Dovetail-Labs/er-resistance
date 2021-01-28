@@ -30,7 +30,7 @@
           </ul>
         </div>
         <div class="video">
-          <LiveVideo class="live-video"/>    
+          <LiveVideo class="live-video" :detectOnLoad="true"/>    
         </div> 
       </section>
       <section class="step2" v-if="step === 2">

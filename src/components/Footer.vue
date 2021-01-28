@@ -35,15 +35,12 @@ export default {
   },
   data() {
     return {
-      title: "ER Resistance",
-      showAbout: false
+      title: "ER Resistance"
     };
   },
   methods: {
-    toggleAbout: function() {
-      if(this.showAbout === false) {
-        this.$emit("showAbout", true);
-      }
+    toggleAbout() {
+      this.$emit("aboutVisible", "true")
     }
   }
 };

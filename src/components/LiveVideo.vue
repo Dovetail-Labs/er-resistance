@@ -1,8 +1,10 @@
 <template>
  <div>
-    <video id="webcam" autoplay muted playsinline />
-    <canvas id="overlay"></canvas>
-    <button v-on:click="detectExpressions">Turn on ER camera</button>
+   <div class="cam">
+      <video id="webcam" autoplay muted playsinline />
+      <canvas id="overlay"></canvas>
+   </div>
+    <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
   </div>
 </template>
 
@@ -18,6 +20,7 @@ let withBoxes = true;
 
 export default {
   name: "LiveVideo",
+  props: ["buttonVisible", "detectOnLoad"],
   metaInfo: {
     title: "Live Video"
   },
@@ -63,10 +66,13 @@ export default {
 
     loadNet()
       .then(net => {
-        return initCamera(600, 650);
+        return initCamera(600, 500);
       })
       .then(video => {
         this.cam = video;
+        if (this.detectOnLoad) {
+          this.detectExpressions();
+        }
       });
   },
   methods: {
@@ -172,9 +178,20 @@ div {
   position: relative;
   box-sizing: border-box;
 
+  .cam {
+    overflow: hidden;
+  }
+
   video {
-    width: 100%;
-    height: auto;
+    // position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
   }
 
   #overlay,
@@ -182,7 +199,6 @@ div {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
   }
 
   button {
