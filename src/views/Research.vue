@@ -14,15 +14,17 @@
 
       <div v-if="submitted" class="finished-game">
         <h3>{{ survey.thankYou }}</h3>
-        <img src="../assets/images/thumbs-up.gif">
-        <p>SHARE!</p>
+        <p>{{ survey.p }}</p>
+        <h4>Together we can</h4>
         <ul>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>Email</li>
+          <li> {{survey.hashtag1}} </li>
+          <li> {{survey.hashtag2}} </li>
         </ul>
+        <!-- <img src="../assets/images/thumbs-up.gif"> -->
+        <p>If you want to continue the conversation with us, please get in touch <a target="_blank" href="#">here</a>. You can also join our mailing list <a target="_blank" href="#">here</a>.</p>
+        <p>To learn more about the project and to discover more resources on emotion recognition technologies, their social impacts, and the social science behind them, click <a target="_blank" href="#">here</a>.</p>
         <router-link to="menu" class="button">
-          Back to main screen
+          Back to main menu
         </router-link>
       </div>
     </main> 
@@ -125,11 +127,8 @@ export default {
     }
 
     .finished-game {
-      // background: $yellow;
-      text-align: center;
       padding: 1em 3em 3em;
       border-radius: $br-m;
-      // border: 2px solid black;
       z-index: 1;
 
       h3 {
@@ -144,14 +143,17 @@ export default {
         border-bottom: 3px solid black;
       }
 
+      .button {
+        display: inline-block;
+      }
+
       ul {
         margin-top: 0;
         padding: 0;
 
         li {
+          margin-right: 2em;
           display: inline-block;
-          font-size: 0.25em;
-          padding: 2rem;
         }
       }
     }
