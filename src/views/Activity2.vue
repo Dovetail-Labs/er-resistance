@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header title="Activity 2"
+    <Header title="Fake Smile"
             description="Display each of the six basic emotions shown below."
             v-if="step !== 0"
             @end-game="moveToStep(2)"
@@ -10,8 +10,11 @@
         <h1> {{ er.title }} </h1>
         <div class="intro">
           <div class="description">
-            <p> {{ er.intro }} </p>
+            <p v-for="(p, index) in er.intro[0]" v-bind:key="index"> 
+              {{ p }} 
+            </p>
           </div>
+          <div></div>
         </div>
         <div>
           <button v-on:click="moveToStep(1)">Play game</button>
@@ -35,18 +38,27 @@
       </section>
       <section class="step2" v-if="step === 2">
         <div class="finished-game">
-          <h3>{{ copy.finishedGameTitle }}</h3>
+          <h3>{{ er.prizePage[0].title }}</h3>
+          <p>{{ er.prizePage[0].p }}</p>
           <img src="../assets/images/thumbs-up.gif">
-          <p>SHARE!</p>
+          <h4>SHARE!</h4>
           <ul>
             <li><a href="#"> <IconFB /> </a></li>
             <li><a href="#"> <IconTW /> </a></li>
             <li><a href="#"> <IconEM /> </a></li>
-            <li><a href="#"> <IconIG /> </a></li>
           </ul>
-          <router-link to="menu" class="button">
-            Back to main screen
-          </router-link>
+          <ul>
+            <li>{{ er.prizePage[0].hashtag1 }}</li>
+            <li>{{ er.prizePage[0].hashtag2 }}</li>
+          </ul>
+          <div class="button-group">
+            <router-link to="menu" class="button">
+              Back to main screen
+            </router-link>
+            <router-link to="research" class="button">
+              Post-game survey
+            </router-link>
+          </div>
         </div>  
       </section>           
     </main>
@@ -111,6 +123,24 @@ export default {
     padding: 1rem;
   }
 
+  section.step0 {
+
+    .intro {
+      display: grid;
+      grid-template-columns: 75% 25%;
+      gap: 3em;
+    }
+
+    div {
+      button.play-game {
+        svg {
+          height: 1.25em;
+          display: inline;
+        }
+      }
+    }
+  }
+
   .step1 {
     display: grid;
     grid-template-columns: 30% 60%;
@@ -156,8 +186,7 @@ export default {
   }
 
   section.step2 {
-
-      .finished-game {
+    .finished-game {
         background: $yellow;
         text-align: center;
         padding: 1em 3em 3em;
@@ -171,8 +200,12 @@ export default {
           line-height: 1.7em;
         }
 
+        p {
+          text-align: left;
+        }
+
         img {
-          max-height: 20vh;
+          max-height: 10vh;
           padding: 2em;
           border-bottom: 3px solid black;
         }
@@ -180,6 +213,7 @@ export default {
         ul {
           margin-top: 0;
           padding: 0;
+          font-size: 0.8em;
 
           li {
             display: inline-block;
@@ -190,7 +224,13 @@ export default {
                 height: 2rem;
               }
             }
+          }
+        }
 
+        .button-group {
+          a {
+            margin-left: 1em;
+            margin-right: 1em;
           }
         }
 
@@ -207,8 +247,7 @@ export default {
           z-index: -1;
         }
       }
-
-    }
+  }
 }
 
 </style>

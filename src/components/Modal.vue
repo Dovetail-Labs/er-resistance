@@ -5,24 +5,24 @@
     <h3>How do you feel about emotional recognition technology?</h3>
     <form>
       <div>
-        <input type="radio" value="Positive">
+        <input type="radio" name="initialOpinion" value="Positive">
         <label>Positive</label>
       </div>
       <div>
-        <input type="radio" value="Neutral">
+        <input type="radio" name="initialOpinion" value="Neutral">
         <label>Neutral</label>
       </div>
       <div>
-        <input type="radio" value="Negative">
+        <input type="radio" name="initialOpinion" value="Negative">
         <label>Negative</label>
       </div>
       <div>
-        <input type="radio" value="I don't know">
+        <input type="radio" name="initialOpinion" value="I don't know">
         <label>I don't know</label>
       </div>
     </form>
     <div class="button-group">
-      <button>Skip</button>
+      <button @click="close">Skip</button>
       <button @click="close">Go</button>
     </div>
   </div>
@@ -67,6 +67,10 @@ export default {
 
       input {
         margin-right: 1em;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

@@ -1,15 +1,17 @@
 <template>
   <div class="container">
+    <Modal v-if="showModal" @close="closeModal" />
     <main>
-      <form v-if="!submitted">
+      <form action="" v-if="!submitted" id="survey">
         <p class="intro"> {{ survey.intro }} </p>
         <hr>
         <p v-for="(question, index) in survey.questions" v-bind:key="index">
           <label> {{ question.text }}</label>
-          <textarea rows="10" placeholder="Write your answer here..."></textarea>
+          <textarea :data-index=index form="survey" rows="10" placeholder="Add my perspective..."></textarea>
         </p>
-        <input type="submit" class="button" @click="submitted = true;">
+        <input type="submit" value="Submit" class="button" @click="submitSurvey">
       </form>
+
       <div v-if="submitted" class="finished-game">
         <h3>{{ survey.thankYou }}</h3>
         <img src="../assets/images/thumbs-up.gif">
@@ -17,7 +19,6 @@
         <ul>
           <li>Twitter</li>
           <li>Facebook</li>
-          <li>WhatsApp</li>
           <li>Email</li>
         </ul>
         <router-link to="menu" class="button">
@@ -25,13 +26,20 @@
         </router-link>
       </div>
     </main> 
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "../components/Footer.vue";
+import Modal from "@/components/Modal.vue";
 import CS from "../copy/survey.json";
+import Airtable from "airtable";
+
+
+const base = new Airtable(
+  {
+    apiKey: process.env.VUE_APP_AIRTABLE_API_KEY
+  }
+ ).base('apptKTJoVmiX71eT5');
 
 export default {
   name: "Research",
@@ -41,20 +49,46 @@ export default {
   data() {
     return {
       survey: CS,
-      submitted: false
+      submitted: false,
+      showModal: true,
     }
   },
   components: {
-    Footer
+    Modal
   },
-  methods: {}
+  methods: {
+    closeModal() {
+      this.showModal = false;
+    },
+    submitSurvey() {
+      this.submitted = true;
+      base('Survey Results').create([
+        {
+          "fields": {
+            "Submission ID": Date.now(),
+            "Question1": document.querySelector('textarea[data-index="0"]').value,
+            "Question2": document.querySelector('textarea[data-index="1"]').value,
+            "Question3": document.querySelector('textarea[data-index="2"]').value,
+            "Question4": document.querySelector('textarea[data-index="3"]').value,
+            "Question5": document.querySelector('textarea[data-index="4"]').value,
+            "Question6": document.querySelector('textarea[data-index="5"]').value
+          }
+        }
+      ], function(err, records) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        records.forEach(function (record) {
+          console.log(record.getId());
+        });
+      });
+    }
+  }
 };
 </script>
 
 <style scoped lang="scss">
-  footer {
-    z-index: 3;
-  }
   main {
     margin-top: 5rem;
     max-width: 70%;
@@ -63,6 +97,7 @@ export default {
 
     form {
       padding-bottom: 5rem;
+      position: relative;
 
       hr {
         border: 1px solid black;
@@ -81,6 +116,11 @@ export default {
         padding: 0.75em 1em;
         font-family: inherit;
         color: $gray-1;
+      }
+      button {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 

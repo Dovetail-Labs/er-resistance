@@ -1,5 +1,19 @@
 {
-  "title": "Wink or Blink?",
-  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  "instructions": "Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion."
+  "title": "Fake Smile",
+  "intro": [ 
+    {
+      "p1": "In this game you will move your face to simulate emotions. When the emotion recognition system reads your face as reflecting an inner feeling, the box will clear. ",
+      "p2": "Win the game by making facial expressions for all six emotions.",
+      "p3": "Can you beat the machine?"
+    }
+  ],
+  "instructions": "Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion.",
+  "prizePage": [
+    {
+      "title": "Congratulations! You have a great fake smile!",
+      "p": "By moving your face in many ways, you fooled an emotion recognition system into registering you as feeling many things. You beat the machine!",
+      "hashtag1": "#ResistEmojification",
+      "hashtag2": "#BeatTheMachine"
+    }
+  ]
 }

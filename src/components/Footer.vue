@@ -12,7 +12,6 @@
     <ul class="social">
       <li><a href="#"><IconFB /></a></li>
       <li><a href="#"><IconTW /></a></li>
-      <li><a href="#"><IconIG /></a></li>
       <li><a href="#"><IconEM /></a></li>
     </ul>
     </div>
@@ -22,7 +21,6 @@
 <script>
 import IconFB from "@/assets/images/icon-fb.svg";
 import IconTW from "@/assets/images/icon-tw.svg";
-import IconIG from "@/assets/images/icon-ig.svg";
 import IconEM from "@/assets/images/icon-em.svg";
 
 export default {
@@ -30,7 +28,6 @@ export default {
   components: {
     IconFB,
     IconTW,
-    IconIG,
     IconEM
   },
   data() {
@@ -61,7 +58,7 @@ footer {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  z-index: -2;
+  z-index: 9999;
 
   button.about {
     border: none;

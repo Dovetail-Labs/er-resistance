@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header title="Activity 1"
+    <Header title="Wink or Blink?"
             description="Guess if the shown image is a wink or a blink."
             v-if="step !== 0"
             @end-game="moveToStep(2)"
@@ -12,7 +12,12 @@
         <h1> {{ quiz.title }} </h1>
         <div class="intro">
           <div class="description">
-            <p> {{ quiz.intro }} </p>
+            <!-- <p v-for="(p, index) in quiz.intro[0]" v-bind:key="index"> 
+              {{ p }} 
+            </p> -->
+            <p> {{ quiz.intro[0].p1 }} </p>
+            <p> {{ quiz.intro[0].p2 }} </p>
+            <p> {{ quiz.intro[0].p3 }} <a href="#">here</a>.</p>
           </div>
           <div class="definitions">
             <p> Wink <br> {{ quiz.defWink }} </p>
@@ -55,18 +60,27 @@
       <!-- FINISHED GAME MODAL -->
       <section class="step2" v-if="step === 2">
         <div class="finished-game">
-          <h3>{{ copy.finishedGameTitle }}</h3>
+          <h3>{{ quiz.prizePage[0].title }}</h3>
+          <p>{{ quiz.prizePage[0].p }}</p>
           <img src="../assets/images/thumbs-up.gif">
-          <p>SHARE!</p>
+          <h4>SHARE!</h4>
           <ul>
             <li><a href="#"> <IconFB /> </a></li>
             <li><a href="#"> <IconTW /> </a></li>
             <li><a href="#"> <IconEM /> </a></li>
-            <li><a href="#"> <IconIG /> </a></li>
           </ul>
-          <router-link to="menu" class="button">
-            Back to main screen
-          </router-link>
+          <ul>
+            <li>{{ quiz.prizePage[0].hashtag1 }}</li>
+            <li>{{ quiz.prizePage[0].hashtag2 }}</li>
+          </ul>
+          <div class="button-group">
+            <router-link to="menu" class="button">
+              Back to main screen
+            </router-link>
+            <router-link to="activity-2" class="button">
+              Fake Smile Game
+            </router-link>
+          </div>
         </div>
       </section>
     </main> 
@@ -242,8 +256,12 @@ export default {
           line-height: 1.7em;
         }
 
+        p {
+          text-align: left;
+        }
+
         img {
-          max-height: 20vh;
+          max-height: 10vh;
           padding: 2em;
           border-bottom: 3px solid black;
         }
@@ -251,6 +269,7 @@ export default {
         ul {
           margin-top: 0;
           padding: 0;
+          font-size: 0.8em;
 
           li {
             display: inline-block;
@@ -261,7 +280,13 @@ export default {
                 height: 2rem;
               }
             }
+          }
+        }
 
+        .button-group {
+          a {
+            margin-left: 1em;
+            margin-right: 1em;
           }
         }
 

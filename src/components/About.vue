@@ -1,7 +1,9 @@
 <template>
   <div class="about">
-    <h3>About this project</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u!</p>
+    <h3>{{ copy.title }}</h3>
+    <p> {{ copy.p1 }} </p>
+    <p> {{ copy.p2 }} <a href="#">here</a>. </p>
+    <p> {{ copy.p3 }} <a href="#">here</a>. </p>
     <div>
       <button>Read more</button>
       <button @click="close">Close</button>
@@ -10,18 +12,30 @@
 </template>
 
 <script>
+import Copy from "../copy/about.json";
+
 export default {
   methods: {
     close() {
       this.$emit("close", true);
     }
-  }
+  },
+  data() {
+    return{
+      copy: Copy
+    }
+  },
+  components: {
+   Copy 
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .about {
+  width: 80%;
+  max-width: 800px;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -31,6 +45,10 @@ export default {
   border-radius: $br-m;
   border: 2px solid black;
   z-index: 1;
+
+  a {
+    text-decoration: underline;
+  }
 
   h3 {
     text-align: left;

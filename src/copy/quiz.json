@@ -1,6 +1,12 @@
 {
   "title": "Wink or Blink?",
-	"intro": "Machines can’t tell the difference between a wink and a blink, because they can only track an eye opening and closing, not the context or what it means. Can you tell if someone is winking or blinking from what is going on around them?",
+  "intro": [
+    {
+      "p1": "Machines can’t tell the difference between a wink and a blink. AI systems can track an eye opening and closing, but they cannot understand the action in context or know what it means.",
+      "p2": "Can you tell if someone is winking or blinking from what is going on around them?",
+      "p3": "This game draws on the work of anthropologist Clifford Geertz and his theory of “thick description.” To discover more resources on the social science of emotion click"
+    }
+  ],
 	"defWink": "to open and close the eye quickly as a hint or signal",
   "defBlink": "to open and close the eye involuntarily",
   "correct": "Congrats, you got it correct!",
@@ -35,6 +41,14 @@
       "p1": "In the morning, he crawled out of the tent and",
       "p2": "in the bright sunlight.",
       "answer": "blink"
+    }
+  ],
+  "prizePage": [
+    {
+      "title": "Congratulations!",
+      "p": "You can read facial expressions in context, something that emotion recognition systems cannot do. You are part of the emojification resistance!  ",
+      "hashtag1": "#ResistEmojification",
+      "hashtag2": "#BeatTheMachine"
     }
   ]
 }

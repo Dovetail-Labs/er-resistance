@@ -20,13 +20,13 @@
       <nav>
         <ul>
           <li class="btn">
-            <router-link to="activity-1">Activity 1 <RightArrow class="arrow" /></router-link>
+            <router-link to="activity-1">Wink or Blink Game <RightArrow class="arrow" /></router-link>
           </li>
           <li class="btn">
-            <router-link to="activity-2">Activity 2 <RightArrow class="arrow" /></router-link>
+            <router-link to="activity-2">Fake Smile Game <RightArrow class="arrow" /></router-link>
           </li>
           <li class="btn">
-            <router-link to="research">Help us <RightArrow class="arrow" /></router-link>
+            <router-link to="research">Share you perspectives on emotion recognition systems <RightArrow class="arrow" /></router-link>
           </li>
         </ul>
       </nav>
