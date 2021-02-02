@@ -167,6 +167,7 @@ export default {
     .video {
 
       .live-video {
+        max-height: 50vh;
         width: 90%;
         border: 2px solid black;
 

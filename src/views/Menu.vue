@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Modal title="Share your perspectives on emotion recognition systems" v-if="showModal" @close="closeModal" />
-    <h2>Welcome to the ER Sandbox.</h2>
+    <h2>Welcome to the Emotional Recognition Sandbox.</h2>
     <p>
       Watch the video to learn about emotional recognition technology, or turn
       on your camera to activate our very own ER machine...will it flatten you?
