@@ -2,7 +2,7 @@
 <div class="container">
   <div class="overlay"></div>
   <div class="modal">
-    <h3>How do you feel about emotional recognition technology?</h3>
+    <h3> {{ title }}</h3>
     <form>
       <div>
         <input type="radio" name="initialOpinion" value="Positive">
@@ -35,7 +35,8 @@ export default {
     close() {
       this.$emit("close", true);
     }
-  }
+  },
+  props: ['title']
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Modal v-if="showModal" @close="closeModal" />
+    <Modal title="Share your perspectives on emotion recognition systems" v-if="showModal" @close="closeModal" />
     <h2>Welcome to the ER Sandbox.</h2>
     <p>
       Watch the video to learn about emotional recognition technology, or turn

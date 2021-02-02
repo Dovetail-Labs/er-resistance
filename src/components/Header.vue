@@ -1,6 +1,5 @@
  <template>
   <header>
-    <!-- generalized Title and Description? -->
     <div>
       <h1>{{ title }}</h1>
       <span>{{ description }}</span>

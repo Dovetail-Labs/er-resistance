@@ -11,7 +11,7 @@
     </span>
     <ul class="social">
       <li><a href="#"><IconFB /></a></li>
-      <li><a href="#"><IconTW /></a></li>
+      <li><a target="_blank" href="https://twitter.com/intent/tweet?text=I%20know%20more%20about%20emotions%20than%20emotion%20recognition%20technology.%20I%20%23BeatTheMachine%20and%20you%20can%20too.%20Learn%20how%20to%20%23ResistEmojification%20at%20Emojify.info"><IconTW /></a></li>
       <li><a href="#"><IconEM /></a></li>
     </ul>
     </div>
