@@ -1,8 +1,8 @@
 <template>
   <footer>
     <button class="about" 
-            aria-label="Read about the project" 
-            @click="toggleAbout">
+      aria-label="Read about the project" 
+      @click="toggleAbout">
       About this Project
     </button>
     <div class="share">
@@ -10,8 +10,8 @@
       Share
     </span>
     <ul class="social">
-      <li><a href="#"><IconFB /></a></li>
-      <li><a target="_blank" href="https://twitter.com/intent/tweet?text=I%20know%20more%20about%20emotions%20than%20emotion%20recognition%20technology.%20I%20%23BeatTheMachine%20and%20you%20can%20too.%20Learn%20how%20to%20%23ResistEmojification%20at%20Emojify.info"><IconTW /></a></li>
+      <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info"><IconFB /></a></li>
+      <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}?url=https://emojify.info`"><IconTW /></a></li>
       <li><a href="#"><IconEM /></a></li>
     </ul>
     </div>
@@ -32,7 +32,8 @@ export default {
   },
   data() {
     return {
-      title: "ER Resistance"
+      title: "ER Resistance",
+      message: "I know more about emotions than emotion recognition technology. I #BeatTheMachine and you can too. Learn how to #ResistEmojification at Emojify.info"
     };
   },
   methods: {
