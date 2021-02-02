@@ -2,24 +2,21 @@
 <div class="container">
   <div class="overlay"></div>
   <div class="modal">
-    <h3> {{ title }}</h3>
+    <h2> {{ title }}</h2>
     <form>
-      <div>
+      <p>Have you heard of ‘emotion recognition systems’?</p>
+      <div class="yn">
         <input type="radio" name="initialOpinion" value="Positive">
-        <label>Positive</label>
+        <label>Yes</label>
       </div>
-      <div>
+      <div class="yn">
         <input type="radio" name="initialOpinion" value="Neutral">
-        <label>Neutral</label>
+        <label>No</label>
       </div>
-      <div>
-        <input type="radio" name="initialOpinion" value="Negative">
-        <label>Negative</label>
-      </div>
-      <div>
-        <input type="radio" name="initialOpinion" value="I don't know">
-        <label>I don't know</label>
-      </div>
+      <p>
+          <label>What do you understand by the term ‘emotion recognition systems’? Please explain</label>
+          <textarea :data-index=index form="survey" rows="5" placeholder="Add my perspective..."></textarea>
+        </p>
     </form>
     <div class="button-group">
       <button @click="close">Skip</button>
@@ -53,6 +50,10 @@ export default {
   border: 2px solid black;
   z-index: 1;
 
+  h2 {
+    line-height: 1.5em;
+  }
+
   h3 {
     text-align: left;
     font-size: 12px;
@@ -62,9 +63,10 @@ export default {
   form {
     text-align: left;
 
-    div {
+    .yn {
+      display: inline-block;
       margin: 2rem auto;
-      max-width: 55%;
+      width: 40%;
 
       input {
         margin-right: 1em;
@@ -72,6 +74,20 @@ export default {
         &:hover {
           cursor: pointer;
         }
+      }
+    }
+
+    p {
+      textarea {
+        display: block;
+        width: 100%;
+        border: 2px solid black;
+        background: $yellow;
+        margin-top: 1em;
+        padding: 0.75em 1em;
+        box-sizing: border-box;
+        font-family: inherit;
+        color: $gray-1;
       }
     }
   }

@@ -34,11 +34,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .about {
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 900px;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   background: $yellow;
   padding: 1em 2em 2em;
