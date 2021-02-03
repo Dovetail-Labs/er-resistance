@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Modal title="Now that you have played our activity, how do you feel about Emotional recognition technology?" v-if="showModal" @close="closeModal" />
+    <!-- <Modal title="Now that you have played our activity, how do you feel about Emotional recognition technology?" v-if="showModal" @close="closeModal" /> -->
     <main>
       <form action="" v-if="!submitted" id="survey">
         <p class="intro"> {{ survey.intro }} </p>

@@ -20,8 +20,10 @@
             <p> {{ quiz.intro[0].p3 }} <a href="#">here</a>.</p>
           </div>
           <div class="definitions">
-            <p> Wink <br> {{ quiz.defWink }} </p>
-            <p> Blink <br> {{ quiz.defBlink }} </p>
+            <h4>Wink</h4>
+            <p>{{ quiz.defWink }}</p>
+            <h4>Blink</h4>
+            <p>{{ quiz.defBlink }}</p>
           </div>
         </div>
         <div>
@@ -164,10 +166,17 @@ export default {
         grid-template-columns: 75% 25%;
         gap: 3em;
 
+        a {
+          text-decoration: underline;
+        }
+
         .definitions {
-          p {
+          h4, p {
             font-size: 0.5em;
             color: $gray-2;
+          }
+          h4 {
+            text-decoration: underline;
           }
         }
       }

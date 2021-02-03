@@ -19,14 +19,20 @@
       </section>
       <nav>
         <ul>
+          <!-- <li>
+            Games
+          </li> -->
           <li class="btn">
-            <router-link to="activity-1">Wink or Blink Game <RightArrow class="arrow" /></router-link>
+            <router-link to="activity-1">Wink/Blink Game</router-link>
+            <RightArrow class="arrow" />
           </li>
           <li class="btn">
-            <router-link to="activity-2">Fake Smile Game <RightArrow class="arrow" /></router-link>
+            <router-link to="activity-2">Beat the Machine Game</router-link>
+            <RightArrow class="arrow" />
           </li>
           <li class="btn">
-            <router-link to="research">Share you perspectives on emotion recognition systems <RightArrow class="arrow" /></router-link>
+            <router-link to="research">Share you perspectives</router-link>
+            <RightArrow class="arrow" />
           </li>
         </ul>
       </nav>
@@ -70,14 +76,18 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  h2,
+  h2 {
+    max-width: 60%;
+    line-height: 1.6em;
+  }
+
   p {
     max-width: 60%;
   }
   main {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: grid;
-    gap: 5%;
+    gap: 1%;
     grid-template-columns: 3fr 1fr;
 
     nav {
@@ -85,18 +95,24 @@ export default {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        
+        li.btn {
+          border: 3px solid black;
+        }
 
         li {
           margin-bottom: 0.75rem;
-          border: 3px solid black;
+          font-size: 0.8em;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
           a {
-            display: block;
             padding: 1rem;
-            svg {
-              float: right;
-              height: 1.25em;
-            }
+          }
+          svg {
+            padding: 1rem;
+            height: 1.25em;
           }
         }
       }

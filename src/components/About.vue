@@ -3,6 +3,7 @@
     <h3>{{ copy.title }}</h3>
     <p> {{ copy.p1 }} </p>
     <p> {{ copy.p2 }} <a href="#">here</a>. </p>
+    <h3> {{ copy.subhead }} </h3>
     <p> {{ copy.p3 }} <a href="#">here</a>. </p>
     <div>
       <button>Read more</button>
@@ -46,13 +47,14 @@ export default {
   border: 2px solid black;
   z-index: 1;
 
+
   a {
     text-decoration: underline;
   }
 
   h3 {
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.7em;
   }
 
