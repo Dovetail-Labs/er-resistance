@@ -31,7 +31,7 @@
             <RightArrow class="arrow" />
           </li>
           <li class="btn">
-            <router-link to="research">Share you perspectives</router-link>
+            <router-link to="research">Share you thoughts</router-link>
             <RightArrow class="arrow" />
           </li>
         </ul>

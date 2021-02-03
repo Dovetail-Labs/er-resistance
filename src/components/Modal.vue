@@ -14,7 +14,7 @@
         <label>No</label>
       </div>
       <p>
-          <label>What do you understand by the term ‘emotion recognition systems’? Please explain</label>
+          <label>What do you understand by the term ‘emotion recognition systems’? Please explain.</label>
           <textarea :data-index=index form="survey" rows="5" placeholder="Add my perspective..."></textarea>
         </p>
     </form>
