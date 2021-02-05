@@ -54,6 +54,22 @@ body {
   color: black;
   background: $yellow-lite;
 
+    /* Firefox */
+  * {
+    scrollbar-color:black rgba(0,0,0,0);
+    scrollbar-color: black;
+  }
+  /* Chrome, Safari */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 100px;
+  }
+
   h1 {
     font-size: 20px;
     line-height: 36px;

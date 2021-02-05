@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <Header title="Wink or Blink?"
-            description="Guess if the shown image is a wink or a blink."
+    <Header title="Wink/Blink Game"
+            description="Can you tell if someone is winking or blinking?"
             v-if="step !== 0"
             @end-game="moveToStep(2)"
             />

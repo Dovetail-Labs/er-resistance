@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header title="Fake Smile"
+    <Header title="Fake Smile Game"
             description="Display each of the six basic emotions shown below."
             v-if="step !== 0"
             @end-game="moveToStep(2)"
@@ -56,7 +56,7 @@
               Back to main screen
             </router-link>
             <router-link to="research" class="button">
-              Post-game survey
+              Share your thoughts
             </router-link>
           </div>
         </div>  
