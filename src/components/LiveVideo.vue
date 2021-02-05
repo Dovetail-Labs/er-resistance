@@ -3,6 +3,7 @@
    <div class="cam">
       <video id="webcam" autoplay muted playsinline />
       <canvas id="overlay"></canvas>
+      <img id="placeholder" src="@/assets/images/smiley.png">
    </div>
     <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
   </div>
@@ -54,7 +55,11 @@ export default {
           width: width,
           height: height
         }
-      });
+      }).catch(error => {
+          console.log(error);
+          document.querySelector(".cam").style.backgroundColor = "black";
+          document.getElementById("placeholder").style.opacity = 1;
+        });
 
       video.srcObject = stream;
       return new Promise(resolve => {
@@ -192,6 +197,14 @@ div {
     height: auto; 
     z-index: -100;
     background-size: cover;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
 
   #overlay,
