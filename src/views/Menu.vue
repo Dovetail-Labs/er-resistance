@@ -9,11 +9,8 @@
     <main>
       <section>
         <div class="video-container">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/lDC90ObdMEs?rel=1&amp;controls=0&amp;autoplay=0&amp;mute=1&amp;start=0"
-            frameborder="0"
-          ></iframe>
-          <button>Watch the video</button>
+          <video class="nesta-animation" src="@/assets/videos/Dovetails_Animation_Draft_02.mp4"/>
+          <button @click="playVideo">Watch the video</button>
         </div>
         <LiveVideo class="er-container" :buttonVisible="true" /> 
       </section>
@@ -69,6 +66,13 @@ export default {
     },
     closeModal: function() {
       this.showModal = false;
+    },
+    playVideo: function() {
+      if (document.querySelector(".nesta-animation")) {
+        let vid = document.querySelector(".nesta-animation");
+        vid.play();
+        vid.setAttribute("controls","controls");
+      }
     }
   }
 };
@@ -86,6 +90,7 @@ export default {
   }
   main {
     margin-top: 2rem;
+    width: 100%;
     display: grid;
     gap: 1%;
     grid-template-columns: 3fr 1fr;
@@ -119,15 +124,14 @@ export default {
     }
 
     section {
-      display: flex;
-      justify-content: space-evenly;
-      height: 40vw;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      height: 40vh;
       max-height: 50vh;
 
       .video-container,
       .er-container {
         max-height: 50vh;
-        width: 50%;
 
         button {
           position: relative;
@@ -138,9 +142,11 @@ export default {
       }
 
       .video-container {
-        iframe {
+        video { 
+          display: block;
           width: 100%;
           height: 100%;
+          object-fit: cover;
         }
       }
     }
