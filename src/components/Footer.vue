@@ -11,7 +11,7 @@
     </span>
     <ul class="social">
       <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info"><IconFB /></a></li>
-      <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}?url=https://emojify.info`"><IconTW /></a></li>
+      <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`"><IconTW /></a></li>
       <li><a :href="`mailto:?subject=&body=${message}`"><IconEM /></a></li>
     </ul>
     </div>
@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       title: "ER Resistance",
-      message: "I know more about emotions than emotion recognition technology. I #BeatTheMachine and you can too. Learn how to #ResistEmojification at Emojify.info"
+      message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     };
   },
   methods: {
