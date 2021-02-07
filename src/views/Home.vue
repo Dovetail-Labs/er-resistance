@@ -39,18 +39,5 @@ export default {
       width: 20vw;
       height: auto;
     }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
-      background: $yellow;
-      opacity: 0.75;
-      z-index: -1;
-    }
   }
 </style>

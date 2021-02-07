@@ -61,6 +61,7 @@
 
       <!-- FINISHED GAME MODAL -->
       <section class="step2" v-if="step === 2">
+        <div class="modal-overlay"></div>
         <div class="finished-game">
           <h3>{{ quiz.prizePage[0].title }}</h3>
           <p>{{ quiz.prizePage[0].p }}</p>
@@ -251,13 +252,26 @@ export default {
 
     section.step2 {
 
+      .modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #171717;
+        opacity: 0.75;
+        z-index: 4;
+      }
+
       .finished-game {
+        position: relative;
         background: $yellow;
         text-align: center;
         padding: 1em 3em 3em;
         border-radius: $br-m;
         border: 2px solid black;
-        z-index: 1;
+        z-index: 99;
 
         h3 {
           text-align: left;
@@ -297,19 +311,6 @@ export default {
             margin-left: 1em;
             margin-right: 1em;
           }
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          width: 100vw;
-          height: 100vh;
-          background: #171717;
-          opacity: 0.75;
-          z-index: -1;
         }
       }
 

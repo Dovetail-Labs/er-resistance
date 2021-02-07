@@ -47,7 +47,7 @@ export default {
   padding: 4em 6em;
   border-radius: $br-m;
   border: 2px solid black;
-  z-index: 1;
+  z-index: 99;
   max-height: 50vh;
   display: flex;
   flex-direction: column;

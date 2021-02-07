@@ -59,7 +59,7 @@ footer {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  z-index: 9999;
+  z-index: 1;
 
   button.about {
     border: none;

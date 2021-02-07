@@ -53,7 +53,7 @@ header {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
-  z-index: 3;
+  z-index: 1;
 
   button {
     text-transform: uppercase;

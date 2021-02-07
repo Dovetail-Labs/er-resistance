@@ -116,6 +116,7 @@ body {
     bottom: 0;
     background: #171717;
     opacity: 0.75;
+    z-index: 80;
   }
 
 }

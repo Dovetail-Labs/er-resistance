@@ -37,6 +37,7 @@
         </div> 
       </section>
       <section class="step2" v-if="step === 2">
+        <div class="modal-overlay"></div>
         <div class="finished-game">
           <h3>{{ er.prizePage[0].title }}</h3>
           <p>{{ er.prizePage[0].p }}</p>
@@ -52,8 +53,8 @@
             <li>{{ er.prizePage[0].hashtag2 }}</li>
           </ul>
           <div class="button-group">
-            <router-link to="menu" class="button">
-              Back to main screen
+            <router-link to="activity-1" class="button">
+              Back to Wink/Blink
             </router-link>
             <router-link to="research" class="button">
               Share your thoughts
@@ -187,13 +188,27 @@ export default {
   }
 
   section.step2 {
+
+    .modal-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #171717;
+      opacity: 0.75;
+      z-index: 4;
+    }
+
     .finished-game {
         background: $yellow;
+        position:relative;
         text-align: center;
         padding: 1em 3em 3em;
         border-radius: $br-m;
         border: 2px solid black;
-        z-index: 1;
+        z-index: 99;
 
         h3 {
           text-align: left;
@@ -233,19 +248,6 @@ export default {
             margin-left: 1em;
             margin-right: 1em;
           }
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          width: 100vw;
-          height: 100vh;
-          background: #171717;
-          opacity: 0.75;
-          z-index: -1;
         }
       }
   }
