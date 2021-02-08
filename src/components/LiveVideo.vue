@@ -3,7 +3,8 @@
    <div class="cam">
       <video id="webcam" autoplay muted playsinline />
       <canvas id="overlay"></canvas>
-      <img id="placeholder" src="@/assets/images/smiley.png">
+      <img v-if="denied" id="placeholder" src="@/assets/images/smiley.png">
+      <router-link v-if="denied" class="help-link" to="help">Grant webcam access</router-link>
    </div>
     <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
   </div>
@@ -28,7 +29,8 @@ export default {
   data() {
     return {
       cam: null,
-      displaySize: null
+      displaySize: null,
+      denied: false
     }
   },
   mounted() {
@@ -58,7 +60,7 @@ export default {
       }).catch(error => {
           console.log(error);
           document.querySelector(".cam").style.backgroundColor = "black";
-          document.getElementById("placeholder").style.opacity = 1;
+          this.denied = true;
         });
 
       video.srcObject = stream;
@@ -195,7 +197,7 @@ div {
     min-height: 100%;
     width: auto; 
     height: auto; 
-    z-index: -100;
+
     background-size: cover;
   }
 
@@ -204,7 +206,6 @@ div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
   }
 
   #overlay,
@@ -219,6 +220,16 @@ div {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     border-radius: $br-m;
+  }
+
+  .help-link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    bottom: 20%;
   }
 }
 

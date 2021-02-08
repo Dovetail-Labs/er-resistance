@@ -11,9 +11,9 @@
       <aside>
         <h4>Share:</h4>
         <ul>
-          <li><a href="#"> Twitter </a></li>
-          <li><a href="#"> Email </a></li>
-          <li><a href="#"> Facebook </a></li>
+          <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`">Twitter</a></li>
+          <li><a :href="`mailto:?subject=${title}&body=${message}`">Email</a></li>
+          <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info">Facebook</a></li>
         </ul>
       </aside>
     </main>
@@ -49,7 +49,9 @@ export default {
       step: 0,
       answer: "",
       showAnswer: false,
-      correct: false
+      correct: false,
+      subject: "Learn how to #ResistEmojification at Emojify.info",
+      message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     }
   },
   components: {

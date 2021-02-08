@@ -71,8 +71,18 @@ body {
   }
 
   h1 {
+    font-size: 24px;
+    line-height: 1.8em;
+  }
+
+  h2 {
     font-size: 20px;
-    line-height: 36px;
+    line-height: 1.7em;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.6em;
   }
 
   p {

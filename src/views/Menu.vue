@@ -24,7 +24,7 @@
             <RightArrow class="arrow" />
           </li>
           <li class="btn">
-            <router-link to="activity-2">Beat the Machine Game</router-link>
+            <router-link to="activity-2">Fake Smile Game</router-link>
             <RightArrow class="arrow" />
           </li>
           <li class="btn">
