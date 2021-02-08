@@ -4,7 +4,7 @@
     <h1>Welcome to the Emotional Recognition Sandbox.</h1>
     <p>
       Watch the video to learn about emotional recognition technology, or turn
-      on your camera to activate our very own ER machine...will it flatten you?
+      on your camera to activate our very own ER machine...will it 'emojify' you?
     </p>
     <main>
       <section>
