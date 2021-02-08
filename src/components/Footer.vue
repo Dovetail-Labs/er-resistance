@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       title: "ER Resistance",
-      subject: "Learn how to #ResistEmojification at Emojify.info",
+      subject: "Is emotional recognition technology ‘emojifying’ you?",
       message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     };
   },
