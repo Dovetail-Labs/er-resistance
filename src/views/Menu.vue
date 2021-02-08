@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Modal title="Share your perspectives on emotion recognition systems" v-if="showModal" @close="closeModal" />
-    <h2>Welcome to the Emotional Recognition Sandbox.</h2>
+    <h1>Welcome to the Emotional Recognition Sandbox.</h1>
     <p>
       Watch the video to learn about emotional recognition technology, or turn
       on your camera to activate our very own ER machine...will it flatten you?
@@ -80,7 +80,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  h2 {
+  h1 {
     max-width: 60%;
     line-height: 1.6em;
   }
@@ -127,11 +127,10 @@ export default {
       display: grid;
       grid-template-columns: 50% 50%;
       height: 40vh;
-      max-height: 50vh;
 
       .video-container,
       .er-container {
-        max-height: 50vh;
+        height: 50vh;
 
         button {
           position: relative;
@@ -141,7 +140,12 @@ export default {
         }
       }
 
+      .er-container {
+        grid-column: 2;
+      }
+
       .video-container {
+        grid-column: 1;
         video { 
           display: block;
           width: 100%;
@@ -149,6 +153,14 @@ export default {
           object-fit: cover;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    h1, p {
+      max-width: 80%;
     }
   }
 }

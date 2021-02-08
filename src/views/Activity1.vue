@@ -69,30 +69,12 @@
 
       <!-- FINISHED GAME MODAL -->
       <section class="step2" v-if="step === 2">
-        <div class="modal-overlay"></div>
-        <div class="finished-game">
-          <h3>{{ quiz.prizePage[0].title }}</h3>
-          <p>{{ quiz.prizePage[0].p }}</p>
-          <img src="../assets/images/thumbs-up.gif">
-          <h4>SHARE!</h4>
-          <ul>
-            <li><a href="#"> <IconFB /> </a></li>
-            <li><a href="#"> <IconTW /> </a></li>
-            <li><a href="#"> <IconEM /> </a></li>
-          </ul>
-          <ul>
-            <li>{{ quiz.prizePage[0].hashtag1 }}</li>
-            <li>{{ quiz.prizePage[0].hashtag2 }}</li>
-          </ul>
-          <div class="button-group">
-            <router-link to="menu" class="button">
-              Back to main screen
-            </router-link>
-            <router-link to="activity-2" class="button">
-              Fake Smile Game
-            </router-link>
-          </div>
-        </div>
+        <FinishedGame :title="quiz.prizePage[0].title"
+                      :p="quiz.prizePage[0].p"
+                      prevStep="Back to main menu"
+                      nextStep="Fake Smile game" 
+                      prevLink="menu"
+                      nextLink="activity-2"/>
       </section>
     </main> 
   </div>
@@ -102,6 +84,7 @@
 <script>
 import Header from "../components/Header.vue";
 import Modal from "../components/Modal.vue";
+import FinishedGame from "../components/FinishedGame.vue";
 import json from "../copy/quiz.json";
 import copy from "../copy/global.json";
 import RightArrow from "@/assets/images/right-arrow.svg";
@@ -131,6 +114,7 @@ export default {
   components: {
     Header,
     Modal,
+    FinishedGame,
     RightArrow,
     IconFB,
     IconTW,
@@ -157,6 +141,11 @@ export default {
     moveToStep(step) {
       this.step = step;
     },
+
+    getCopy() {
+      return
+    }
+
   }
 
 };
@@ -253,72 +242,6 @@ export default {
         transform: translateX(-50%);
       }
     }
-
-    section.step2 {
-
-      .modal-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #171717;
-        opacity: 0.75;
-        z-index: 4;
-      }
-
-      .finished-game {
-        position: relative;
-        background: $yellow;
-        text-align: center;
-        padding: 1em 3em 3em;
-        border-radius: $br-m;
-        border: 2px solid black;
-        z-index: 99;
-
-        h3 {
-          text-align: left;
-          font-size: 12px;
-          line-height: 1.7em;
-        }
-
-        p {
-          text-align: left;
-        }
-
-        img {
-          max-height: 10vh;
-          padding: 2em;
-          border-bottom: 3px solid black;
-        }
-
-        ul {
-          margin-top: 0;
-          padding: 0;
-          font-size: 0.8em;
-
-          li {
-            display: inline-block;
-            padding: 1rem;
-
-            a {
-              svg {
-                height: 2rem;
-              }
-            }
-          }
-        }
-
-        .button-group {
-          a {
-            margin-left: 1em;
-            margin-right: 1em;
-          }
-        }
-      }
-
-    }
   }
 
   .button-group {
@@ -338,6 +261,12 @@ export default {
     }
     h4 {
       text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      max-width: 80%;
     }
   }
 </style>

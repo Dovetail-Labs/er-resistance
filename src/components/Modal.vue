@@ -48,7 +48,7 @@ export default {
   padding: 1em 2em 2em;
   border-radius: $br-m;
   border: 2px solid black;
-  z-index: 1;
+  z-index: 2;
 
   h2 {
     line-height: 1.5em;
@@ -113,6 +113,6 @@ export default {
     bottom: 0;
     background: #171717;
     opacity: 0.75;
-    z-index: 1;
+    z-index: 2;
 }
 </style>

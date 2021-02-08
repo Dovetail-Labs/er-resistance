@@ -27,9 +27,9 @@
           <aside>
             Share:
             <ul>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Email</a></li>
-              <li><a href="">Facebook</a></li>
+              <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info">Facebook</a></li>
+              <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`">Twitter</a></li>
+              <li><a :href="`mailto:?subject=${title}&body=${message}`">Email</a></li>
             </ul>
           </aside>
         </div>
@@ -60,6 +60,8 @@ export default {
       survey: CS,
       submitted: false,
       showModal: true,
+      title: "ER Resistance",
+      message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     }
   },
   components: {

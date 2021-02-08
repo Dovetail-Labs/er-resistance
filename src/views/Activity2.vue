@@ -36,31 +36,14 @@
           <LiveVideo class="live-video" :detectOnLoad="true"/>    
         </div> 
       </section>
+
       <section class="step2" v-if="step === 2">
-        <div class="modal-overlay"></div>
-        <div class="finished-game">
-          <h3>{{ er.prizePage[0].title }}</h3>
-          <p>{{ er.prizePage[0].p }}</p>
-          <img src="../assets/images/thumbs-up.gif">
-          <h4>SHARE!</h4>
-          <ul>
-            <li><a href="#"> <IconFB /> </a></li>
-            <li><a href="#"> <IconTW /> </a></li>
-            <li><a href="#"> <IconEM /> </a></li>
-          </ul>
-          <ul>
-            <li>{{ er.prizePage[0].hashtag1 }}</li>
-            <li>{{ er.prizePage[0].hashtag2 }}</li>
-          </ul>
-          <div class="button-group">
-            <router-link to="activity-1" class="button">
-              Back to Wink/Blink
-            </router-link>
-            <router-link to="research" class="button">
-              Share your thoughts
-            </router-link>
-          </div>
-        </div>  
+        <FinishedGame :title="er.prizePage[0].title"
+                      :p="er.prizePage[0].p"
+                      prevStep="Wink/Blink game"
+                      nextStep="Share your thoughts" 
+                      prevLink="activity-1"
+                      nextLink="research"/>
       </section>           
     </main>
     <Footer />
@@ -71,6 +54,7 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import LiveVideo from "../components/LiveVideo.vue";
+import FinishedGame from "../components/FinishedGame.vue";
 import json from "../copy/er.json";
 import copy from "../copy/global.json";
 
@@ -96,6 +80,7 @@ export default {
     Header,
     Footer,
     LiveVideo,
+    FinishedGame,
     IconEM,
     IconFB,
     IconTW,
@@ -115,8 +100,10 @@ export default {
 
 <style scoped lang="scss">
 
-.container {
-  padding-top: 8rem;
+main {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
 
   section {
     max-width: 90%;
@@ -187,69 +174,14 @@ export default {
     }
   }
 
-  section.step2 {
+  .step2 {
+    width: 60%;
+  }
+}
 
-    .modal-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #171717;
-      opacity: 0.75;
-      z-index: 4;
-    }
-
-    .finished-game {
-        background: $yellow;
-        position:relative;
-        text-align: center;
-        padding: 1em 3em 3em;
-        border-radius: $br-m;
-        border: 2px solid black;
-        z-index: 99;
-
-        h3 {
-          text-align: left;
-          font-size: 12px;
-          line-height: 1.7em;
-        }
-
-        p {
-          text-align: left;
-        }
-
-        img {
-          max-height: 10vh;
-          padding: 2em;
-          border-bottom: 3px solid black;
-        }
-
-        ul {
-          margin-top: 0;
-          padding: 0;
-          font-size: 0.8em;
-
-          li {
-            display: inline-block;
-            padding: 1rem;
-
-            a {
-              svg {
-                height: 2rem;
-              }
-            }
-          }
-        }
-
-        .button-group {
-          a {
-            margin-left: 1em;
-            margin-right: 1em;
-          }
-        }
-      }
+@media screen and (max-width: 1200px) {
+  main {
+    max-width: 80%;
   }
 }
 
