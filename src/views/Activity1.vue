@@ -38,25 +38,33 @@
 
       <!-- QUIZ -->
       <section class="step1" v-if="step === 1">
-        <div v-for="(question, index) in quiz.questions" v-bind:key="index" class="question">
-          <div v-show="index === questionIndex" class="questionImage" v-bind:style="{ backgroundImage: 'url(img/' + question.image + ')' }"></div>
-          <p v-show="index === questionIndex">
-            <span>{{ question.p1 }}</span>
-            <span class="blank"></span>
-            <span>{{ question.p2 }}</span>
-          </p>
+        <div class="game">
+          <div v-for="(question, index) in quiz.questions" v-bind:key="index" class="question">
+            <div v-show="index === questionIndex" class="questionImage" v-bind:style="{ backgroundImage: 'url(img/' + question.image + ')' }"></div>
+            <p v-show="index === questionIndex">
+              <span>{{ question.p1 }}</span>
+              <span class="blank"></span>
+              <span>{{ question.p2 }}</span>
+            </p>
+          </div>
+          <div v-if="questionIndex < quiz.questions.length" class="button-group">
+            <button @click="next('wink')">Wink</button>
+            <button @click="next('blink')">Blink</button>
+          </div>   
+          <div v-else class="button-group" id="finish-game">
+            <button @click="moveToStep(2)">Finish game</button>
+          </div>
+          <div v-if="showAnswer" class="answerNotification">
+            <span v-if="correct"> {{ quiz.correct }} </span>
+            <span v-else> {{ quiz.incorrect }} </span>
+          </div>
         </div>
-        <div v-if="questionIndex < quiz.questions.length" class="button-group">
-          <button @click="next('wink')">Wink</button>
-          <button @click="next('blink')">Blink</button>
-        </div>   
-        <div v-else class="button-group" id="finish-game">
-          <button @click="moveToStep(2)">Finish game</button>
-        </div>
-        <div v-if="showAnswer" class="answerNotification">
-          <span v-if="correct"> {{ quiz.correct }} </span>
-          <span v-else> {{ quiz.incorrect }} </span>
-        </div>
+        <aside v-if="questionIndex < quiz.questions.length" class="definitions">
+          <h4>Wink</h4>
+          <p>{{ quiz.defWink }}</p>
+          <h4>Blink</h4>
+          <p>{{ quiz.defBlink }}</p>
+        </aside>
       </section>
 
       <!-- FINISHED GAME MODAL -->
@@ -170,16 +178,6 @@ export default {
         a {
           text-decoration: underline;
         }
-
-        .definitions {
-          h4, p {
-            font-size: 0.5em;
-            color: $gray-2;
-          }
-          h4 {
-            text-decoration: underline;
-          }
-        }
       }
 
       div {
@@ -193,45 +191,51 @@ export default {
     }
 
     section.step1 {
-      .question {
-        text-align: center;
+      display: grid;
+      grid-template-columns: 75% 25%;
+      gap: 3em;
 
-        img {
-          height: 15em;
-          width: auto;
-          border: 2px solid black;
-        }
+      .game {
+        .question {
+          text-align: center;
 
-        .questionImage {
-          height: 15em;
-          width: 20em;
-          position: relative;
-          border: 2px solid black;
-          margin: 0 auto;
-          margin-bottom: 2em;
-          background-size: cover;
-
-          &::after {
-            content: '';
-            position: absolute;
-            top: 0.5rem;
-            left: 0.5rem;
-            width: calc(100%);
-            height: calc(100%);
-            background: $yellow;
+          img {
+            height: 15em;
+            width: auto;
             border: 2px solid black;
-            z-index: -1;
           }
-        }
 
-        p {
-          font-size: 1rem;
-
-          span.blank {
+          .questionImage {
+            height: 15em;
+            width: 20em;
+            position: relative;
             border: 2px solid black;
-            box-sizing: border-box;
-            margin: 1em;
-            padding: 0.25em 2.5em;
+            margin: 0 auto;
+            margin-bottom: 2em;
+            background-size: cover;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0.5rem;
+              left: 0.5rem;
+              width: calc(100%);
+              height: calc(100%);
+              background: $yellow;
+              border: 2px solid black;
+              z-index: -1;
+            }
+          }
+
+          p {
+            font-size: 1rem;
+
+            span.blank {
+              border: 2px solid black;
+              box-sizing: border-box;
+              margin: 1em;
+              padding: 0.25em 2.5em;
+            }
           }
         }
       }
@@ -323,6 +327,17 @@ export default {
 
     button {
       margin-left: 2em;
+    }
+  }
+
+
+  .definitions {
+    h4, p {
+      font-size: 0.5em;
+      color: $gray-2;
+    }
+    h4 {
+      text-decoration: underline;
     }
   }
 </style>

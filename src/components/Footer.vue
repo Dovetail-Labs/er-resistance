@@ -79,6 +79,10 @@ footer {
 
   .share {
     right: 0;
+    span {
+      display: inline-block;
+      transform: translateY(-0.25em);
+    }
 
     ul.social { 
       margin: 0;

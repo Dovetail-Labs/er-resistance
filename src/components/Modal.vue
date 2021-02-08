@@ -65,7 +65,7 @@ export default {
 
     .yn {
       display: inline-block;
-      margin: 2rem auto;
+      margin-bottom: 2rem;
       width: 40%;
 
       input {

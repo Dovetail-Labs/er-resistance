@@ -78,6 +78,8 @@ body {
   p {
     font-size: 13px;
     line-height: 2em;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 
   a {

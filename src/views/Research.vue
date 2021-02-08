@@ -13,19 +13,26 @@
       </form>
 
       <div v-if="submitted" class="finished-game">
-        <h3>{{ survey.thankYou }}</h3>
-        <p>{{ survey.p }}</p>
-        <h4>Together we can</h4>
-        <ul>
-          <li> {{survey.hashtag1}} </li>
-          <li> {{survey.hashtag2}} </li>
-        </ul>
-        <!-- <img src="../assets/images/thumbs-up.gif"> -->
-        <p>If you want to continue the conversation with us, please get in touch <a target="_blank" href="#">here</a>. You can also join our mailing list <a target="_blank" href="#">here</a>.</p>
-        <p>To learn more about the project and to discover more resources on emotion recognition technologies, their social impacts, and the social science behind them, click <a target="_blank" href="#">here</a>.</p>
-        <router-link to="menu" class="button">
-          Back to main menu
-        </router-link>
+        <h1>{{ survey.thankYou }}</h1>
+        <div class="wrap">
+          <article>
+            <p>{{ survey.p }}</p>
+            <p>If you want to continue the conversation with us, please get in touch <a target="_blank" href="#">here</a>. You can also join our mailing list <a target="_blank" href="#">here</a>.</p>
+            <p>To learn more about the project and to discover more resources on emotion recognition technologies, their social impacts, and the social science behind them, click <a target="_blank" href="#">here</a>.</p>
+            <p>Together, we can {{survey.hashtag1}} and {{survey.hashtag2}} </p>
+            <router-link to="menu" class="button">
+              Back to main menu
+            </router-link>
+          </article>
+          <aside>
+            Share:
+            <ul>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Email</a></li>
+              <li><a href="">Facebook</a></li>
+            </ul>
+          </aside>
+        </div>
       </div>
     </main> 
   </div>
@@ -131,29 +138,53 @@ export default {
       border-radius: $br-m;
       z-index: 1;
 
-      h3 {
-        text-align: left;
-        font-size: 1rem;
-        line-height: 1.7em;
+      h1 {
+        width: 75%;
       }
+      
+      .wrap {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        gap: 3em;
 
-      img {
-        max-height: 20vh;
-        padding: 2em;
-        border-bottom: 3px solid black;
-      }
+        article {
+          img {
+            max-height: 20vh;
+            padding: 2em;
+            border-bottom: 3px solid black;
+          }
 
-      .button {
-        display: inline-block;
-      }
+          .button {
+            display: inline;
+          }
 
-      ul {
-        margin-top: 0;
-        padding: 0;
+          ul {
+            margin-top: 0;
+            padding: 0;
 
-        li {
-          margin-right: 2em;
-          display: inline-block;
+            li {
+              margin-right: 2em;
+              display: inline-block;
+            }
+          }
+        }
+        
+        aside {
+          color: $gray-2;
+          ul {
+            padding: 0;
+            li {
+              display: inline-block;
+              list-style: none;
+              padding: 0.75em;
+              border: 2px solid $gray-2;
+              margin-bottom: 0.5em;
+
+              a {
+                color: $gray-2;
+              }
+            }
+          }
         }
       }
     }
