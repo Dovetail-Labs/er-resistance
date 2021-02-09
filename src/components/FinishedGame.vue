@@ -12,7 +12,7 @@
         <h4>Share:</h4>
         <ul>
           <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`">Twitter</a></li>
-          <li><a :href="`mailto:?subject=${title}&body=${message}`">Email</a></li>
+          <li><a :href="`mailto:?subject=${subject}&body=${message}`">Email</a></li>
           <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info">Facebook</a></li>
         </ul>
       </aside>

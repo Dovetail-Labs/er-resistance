@@ -12,7 +12,7 @@
     <ul class="social">
       <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info"><IconFB /></a></li>
       <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`"><IconTW /></a></li>
-      <li><a :href="`mailto:?subject=${title}&body=${message}`"><IconEM /></a></li>
+      <li><a :href="`mailto:?subject=${subject}&body=${message}`"><IconEM /></a></li>
     </ul>
     </div>
   </footer>
