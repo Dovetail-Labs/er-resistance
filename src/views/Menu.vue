@@ -9,7 +9,7 @@
     <main>
       <section>
         <div class="video-container">
-          <video class="nesta-animation" src="@/assets/videos/Dovetails_Animation_Draft_02.mp4"/>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9K4aty0IH34?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <button @click="playVideo">Watch the video</button>
         </div>
         <LiveVideo class="er-container" :buttonVisible="true" /> 
