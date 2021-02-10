@@ -2,7 +2,7 @@
 <div class="container">
   <div class="modal-overlay"></div>
   <div class="finished-game">
-    <img src="../assets/images/smiley_face.gif">
+    <img src="../assets/images/smiley_face_yellow.gif">
     <main>
       <section>
         <h1>{{ title }}</h1>
@@ -78,7 +78,7 @@ export default {
 
 .finished-game {
   position: relative;
-  background: $yellow;
+  background: $yellow-lite;
   padding: 1em 3em 3em;
   box-sizing: border-box;
   border-radius: $br-m;
@@ -117,6 +117,7 @@ export default {
       padding: 0.75em;
       border: 2px solid black;
       margin-bottom: 0.5em;
+      background: $yellow;
     }
   }
 
