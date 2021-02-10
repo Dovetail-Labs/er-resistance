@@ -14,13 +14,13 @@
         <label>No</label>
       </div>
       <p>
-          <label>What do you understand by the term ‘emotion recognition systems’? Please explain.</label>
-          <textarea rows="5" placeholder="Add my perspective..."></textarea>
+          <label>What do you understand by the term ‘emotion recognition systems’?</label>
+          <textarea rows="5" placeholder="Please explain."></textarea>
         </p>
     </form>
     <div class="button-group">
       <button @click="close">Skip</button>
-      <button @click="close">Go</button>
+      <button @click="close">Add my perspective</button>
     </div>
   </div>
 </div>
@@ -112,7 +112,7 @@ export default {
     right: 0;
     bottom: 0;
     background: #171717;
-    opacity: 0.75;
+    opacity: 0.95;
     z-index: 2;
 }
 </style>

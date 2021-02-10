@@ -166,7 +166,7 @@ export default {
     section.step0 {
       .intro {
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 3fr 1fr;
         gap: 3em;
 
         a {
@@ -186,7 +186,7 @@ export default {
 
     section.step1 {
       display: grid;
-      grid-template-columns: 75% 25%;
+      grid-template-columns: 3fr 1fr;
       gap: 3em;
 
       .game {
@@ -271,8 +271,25 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  main {
-    max-width: 80%;
+  .container {
+    main {
+      max-width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    height: 90vh;
+    main {
+      max-width: 100%;
+
+      section.step0 {
+        .intro {
+          gap: 1rem;
+        }
+      }
+    }
   }
 }
 

@@ -72,7 +72,7 @@ export default {
   width: 100vw;
   height: 100vh;
   background: #171717;
-  opacity: 0.75;
+  opacity: 0.95;
   z-index: 4;
 }
 

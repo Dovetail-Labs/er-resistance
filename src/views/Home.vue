@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Is emotion recognition technology "emojifying" you?</h1>
-    <img src="../assets/images/smiley_face.gif">
+    <img src="../assets/images/smiley_face_yellow.gif">
     <p>Artificial Intelligence designed to read your inner feelings is already in use.</p>
     <p>What’s the social science behind it? Is it fair? Who gets a say in how it is used?</p>
     <p>

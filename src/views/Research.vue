@@ -7,9 +7,9 @@
         <hr>
         <p v-for="(question, index) in survey.questions" v-bind:key="index">
           <label> {{ question.text }}</label>
-          <textarea :data-index=index form="survey" rows="10" placeholder="Add my perspective..."></textarea>
+          <textarea :data-index=index form="survey" rows="10" placeholder="Please explain"></textarea>
         </p>
-        <input type="submit" value="Submit" class="button" @click="submitSurvey">
+        <input type="submit" value="Add my perspective" class="button" @click="submitSurvey">
       </form>
 
       <div v-if="submitted" class="finished-game">
@@ -125,6 +125,7 @@ export default {
         border: 2px solid black;
         background: $yellow;
         padding: 0.75em 1em;
+        box-sizing: border-box;
         font-family: inherit;
         color: $gray-1;
       }
@@ -191,4 +192,16 @@ export default {
       }
     }
   } 
+
+  @media screen and (max-width: 640px) {
+  main {
+    max-width: 100%;
+
+    section.step0 {
+      .intro {
+        gap: 1rem;
+      }
+    }
+  }
+  }
 </style>

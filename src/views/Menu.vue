@@ -225,9 +225,9 @@ export default {
           gap: 1em;
           
           li {
-            background: $yellow;
+            background: $yellow-lite;
             a {
-              background: $yellow;
+              background: $yellow-lite;
             }
           }
         }
