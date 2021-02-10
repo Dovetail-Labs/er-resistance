@@ -6,14 +6,14 @@
       About this Project
     </button>
     <div class="share">
-    <span>
-      Share
-    </span>
-    <ul class="social">
-      <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info"><IconFB /></a></li>
-      <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`"><IconTW /></a></li>
-      <li><a :href="`mailto:?subject=${subject}&body=${message}`"><IconEM /></a></li>
-    </ul>
+      <span>
+        Share
+      </span>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info"><IconFB /></a></li>
+        <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`"><IconTW /></a></li>
+        <li><a :href="`mailto:?subject=${subject}&body=${message}`"><IconEM /></a></li>
+      </ul>
     </div>
   </footer>
 </template>
@@ -99,6 +99,18 @@ footer {
             height: 2em;
           }
         }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 640px) {
+  footer {
+    font-size: 0.6rem;
+    .share {
+      span {
+        display: none;
       }
     }
   }

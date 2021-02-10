@@ -50,7 +50,8 @@ export default {
 
 body {
   font-family: 'Press Start 2P', Courier, monospace;
-  padding: 2em;
+  margin: 0;
+  box-sizing: border-box;
   color: black;
   background: $yellow-lite;
 
@@ -130,6 +131,31 @@ body {
     opacity: 0.75;
     z-index: 80;
   }
+}
 
+// Mobile
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 12px;
+    padding: 1rem;
+
+    h1 {
+      font-size: 18px;
+
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    h4, p {
+      font-size: 12px;
+      margin-bottom: 1em;
+    }
+  }
 }
 </style>

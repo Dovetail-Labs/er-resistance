@@ -30,14 +30,26 @@ export default {
 
 <style scoped lang="scss">
 
+.container {
+  text-align: center;
+  max-width: 50%;
+  margin: 3rem auto;
+
+  img {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 640px) {
   .container {
-    text-align: center;
-    max-width: 50%;
-    margin: 3rem auto;
+    max-width: 100%;
+    margin: 0;
 
     img {
-      width: 20vw;
-      height: auto;
+      width: 20vh;
     }
   }
+}
 </style>

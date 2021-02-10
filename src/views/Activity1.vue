@@ -152,8 +152,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
   main {
-    margin-top: 8rem;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -263,10 +268,12 @@ export default {
       text-decoration: underline;
     }
   }
+}
 
-  @media screen and (max-width: 1200px) {
-    main {
-      max-width: 80%;
-    }
+@media screen and (max-width: 1200px) {
+  main {
+    max-width: 80%;
   }
+}
+
 </style>

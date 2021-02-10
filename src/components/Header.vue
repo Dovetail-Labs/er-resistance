@@ -2,7 +2,7 @@
   <header>
     <div>
       <h1>{{ title }}</h1>
-      <span>{{ description }}</span>
+      <small>{{ description }}</small>
     </div>
     <button @click="endGame()">
       Finish Game
@@ -67,6 +67,17 @@ header {
 
     svg {
       height: 1.25em;
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 640px) {
+  header {
+    font-size: 0.6rem;
+
+    h1 {
+      font-size: 1.5em; 
     }
   }
 }
