@@ -128,7 +128,7 @@ body {
     right: 0;
     bottom: 0;
     background: #171717;
-    opacity: 0.75;
+    opacity: 0.95;
     z-index: 80;
   }
 }
