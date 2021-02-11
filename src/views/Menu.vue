@@ -10,7 +10,7 @@
       <main>
         <section>
           <div class="video-container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9K4aty0IH34?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/785eNqM3X8E" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button @click="playVideo">Watch the video</button>
           </div>
           <LiveVideo class="er-container" :buttonVisible="true" /> 

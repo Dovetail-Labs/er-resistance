@@ -3,6 +3,7 @@
   <div class="overlay"></div>
   <div class="modal">
     <h2> {{ title }}</h2>
+    <p>Read our privacy policy <a href="#">here</a></p>
     <form>
       <p>Have you heard of ‘emotion recognition systems’?</p>
       <div class="yn">
@@ -52,6 +53,10 @@ export default {
 
   h2 {
     line-height: 1.5em;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   h3 {
