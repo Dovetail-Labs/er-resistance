@@ -5,7 +5,7 @@ import Menu from '../views/Menu.vue'
 import Activity1 from '../views/Activity1.vue'
 import Activity2 from '../views/Activity2.vue'
 import Research from '../views/Research.vue'
-import Help from '../views/Help.vue'
+import Resources from '../views/Resources.vue'
 
 
 Vue.use(VueRouter)
@@ -37,9 +37,9 @@ const routes = [
     component: Research
   },
   {
-    path: '/help',
-    name: 'Help',
-    component: Help
+    path: '/resources',
+    name: 'Resources',
+    component: Resources
   }
 ]
 

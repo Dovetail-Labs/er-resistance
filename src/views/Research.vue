@@ -173,18 +173,18 @@ export default {
         }
         
         aside {
-          color: $gray-2;
           ul {
             padding: 0;
             li {
               display: inline-block;
               list-style: none;
               padding: 0.75em;
-              border: 2px solid $gray-2;
+              background: $yellow;
+              border: 2px solid black;
               margin-bottom: 0.5em;
 
               a {
-                color: $gray-2;
+                
               }
             }
           }
