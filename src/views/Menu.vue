@@ -13,7 +13,7 @@
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/785eNqM3X8E" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button @click="playVideo">Watch the video</button>
           </div>
-          <LiveVideo class="er-container" :buttonVisible="true" /> 
+          <LiveVideo class="er-container" :buttonVisible="true" />
         </section>
         <nav>
           <ul>
@@ -29,7 +29,7 @@
               <RightArrow class="arrow" />
             </li>
             <li class="btn">
-              <router-link to="research">Share you thoughts</router-link>
+              <router-link to="research">Share your thoughts</router-link>
               <RightArrow class="arrow" />
             </li>
           </ul>
@@ -101,9 +101,13 @@ export default {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        
+
         li.btn {
           border: 3px solid black;
+
+          a {
+            text-decoration: none;
+          }
         }
 
         li {
@@ -146,7 +150,7 @@ export default {
 
       .video-container {
         grid-column: 1;
-        video { 
+        video {
           display: block;
           width: 100%;
           height: 100%;
@@ -223,7 +227,7 @@ export default {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 1em;
-          
+
           li {
             background: $yellow-lite;
             a {

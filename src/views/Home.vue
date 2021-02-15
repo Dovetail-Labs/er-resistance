@@ -9,6 +9,7 @@
         Enter
       </router-link>
     </p>
+    <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected.Read our full privacy policy <router-link to="resources">here</router-link>. </p>
     <Footer />
   </div>
 </template>
@@ -38,6 +39,16 @@ export default {
   img {
     width: 20vw;
     height: auto;
+  }
+
+  .notice {
+    font-size: 0.6em;
+    color: $gray-2;
+    width: 80%;
+    margin: 0 auto;
+    a {
+      color: inherit;
+    }
   }
 }
 

@@ -34,7 +34,7 @@
           </aside>
         </div>
       </div>
-    </main> 
+    </main>
   </div>
 </template>
 
@@ -43,12 +43,11 @@ import Modal from "@/components/Modal.vue";
 import CS from "../copy/survey.json";
 import Airtable from "airtable";
 
-
 const base = new Airtable(
   {
     apiKey: process.env.VUE_APP_AIRTABLE_API_KEY
   }
- ).base('apptKTJoVmiX71eT5');
+ ).base(process.env.VUE_APP_AIRTABLE_BASE);
 
 export default {
   name: "Research",
@@ -73,9 +72,18 @@ export default {
     },
     submitSurvey() {
       this.submitted = true;
+      let popUp1, popUp2;
+      if (localStorage.popUp1 ) {
+        popUp1 = localStorage.popUp1;
+      }
+      if (localStorage.popUp2) {
+        popUp2 = localStorage.popUp2;
+      }
       base('Survey Results').create([
         {
           "fields": {
+            ...popUp1  && { 'PopUp1': popUp1 },
+            ...popUp2 && { 'PopUp2': popUp2 },
             "Submission ID": Date.now(),
             "Question1": document.querySelector('textarea[data-index="0"]').value,
             "Question2": document.querySelector('textarea[data-index="1"]').value,
@@ -90,6 +98,10 @@ export default {
           console.error(err);
           return;
         }
+        // Clear the storage of saved items
+        localStorage.removeItem('popUp1');
+        localStorage.removeItem('popUp2');
+
         records.forEach(function (record) {
           console.log(record.getId());
         });
@@ -144,7 +156,7 @@ export default {
       h1 {
         width: 75%;
       }
-      
+
       .wrap {
         display: grid;
         grid-template-columns: 75% 25%;
@@ -171,7 +183,7 @@ export default {
             }
           }
         }
-        
+
         aside {
           ul {
             padding: 0;
@@ -184,14 +196,14 @@ export default {
               margin-bottom: 0.5em;
 
               a {
-                
+
               }
             }
           }
         }
       }
     }
-  } 
+  }
 
   @media screen and (max-width: 640px) {
   main {

@@ -94,7 +94,6 @@ body {
   }
 
   a {
-    text-decoration: none;
     color: black;
     
     &:visited {
@@ -103,6 +102,7 @@ body {
   }
 
   button, .button {
+    text-decoration: none;
     border: 3px solid black;
     padding: 9px 15px; 
     font-size: 1em;

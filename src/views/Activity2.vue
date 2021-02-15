@@ -14,10 +14,16 @@
               {{ p }} 
             </p>
           </div>
-          <div></div>
+          <aside>
+            <p> {{ er.intro[1].aside }} </p>
+            <p>To discover more resources about bias and discrimination in emotion recognition systems click <router-link to="resources">here</router-link>. </p>
+          </aside>
         </div>
         <div>
-          <button v-on:click="moveToStep(1)">Play game</button>
+          <button class="play-game" v-on:click="moveToStep(1)">
+            <span>Play game</span>
+            <RightArrow />
+          </button>
         </div>
       </section>
       <section class="step1" v-if="step === 1">
@@ -57,6 +63,7 @@ import LiveVideo from "../components/LiveVideo.vue";
 import FinishedGame from "../components/FinishedGame.vue";
 import json from "../copy/er.json";
 import copy from "../copy/global.json";
+import RightArrow from "@/assets/images/right-arrow.svg";
 
 import IconFB from "@/assets/images/icon-fb.svg";
 import IconTW from "@/assets/images/icon-tw.svg";
@@ -81,6 +88,7 @@ export default {
     Footer,
     LiveVideo,
     FinishedGame,
+    RightArrow,
     IconEM,
     IconFB,
     IconTW,
@@ -100,82 +108,99 @@ export default {
 
 <style scoped lang="scss">
 
-main {
-  margin-top: 8rem;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-  section {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
+  main {
+    margin-left: auto;
+    margin-right: auto;
 
-  section.step0 {
-
-    .intro {
-      display: grid;
-      grid-template-columns: 75% 25%;
-      gap: 3em;
+    section {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 1rem;
     }
 
-    div {
-      button.play-game {
-        svg {
-          height: 1.25em;
-          display: inline;
-        }
-      }
-    }
-  }
+    section.step0 {
+      max-width: 60%;
 
-  .step1 {
-    display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 10%;
-
-    .text-content {
-      ul.emotions {
-        list-style-type: none;
-        margin: 2em 0;
-        padding: 0;
+      .intro {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1rem;
+        grid-template-columns: 75% 25%;
+        gap: 3em;
 
-        li.emo-box {
-          border: 3px solid black;
-          padding: 1rem;
-          text-align: center;
+        aside {
+          color: $gray-2;
+          p {
+            font-size: 0.5em;
+            a {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      div {
+        button.play-game {
+          svg {
+            height: 1.25em;
+            display: inline;
+          }
         }
       }
     }
 
-    .video {
+    .step1 {
+      display: grid;
+      grid-template-columns: 30% 60%;
+      gap: 10%;
 
-      .live-video {
-        max-height: 50vh;
-        width: 90%;
-        border: 2px solid black;
+      .text-content {
+        ul.emotions {
+          list-style-type: none;
+          margin: 2em 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 1rem;
 
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0.75rem;
-          left: 0.75rem;
-          width: calc(100%);
-          height: calc(100%);
-          background: $yellow;
+          li.emo-box {
+            border: 3px solid black;
+            padding: 1rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .video {
+
+        .live-video {
+          max-height: 50vh;
+          width: 90%;
           border: 2px solid black;
-          z-index: -1;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            width: calc(100%);
+            height: calc(100%);
+            background: $yellow;
+            border: 2px solid black;
+            z-index: -1;
+          }
         }
       }
     }
-  }
 
-  .step2 {
-    width: 60%;
+    .step2 {
+      width: 60%;
+    }
   }
 }
 
