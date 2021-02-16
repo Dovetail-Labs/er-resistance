@@ -175,37 +175,37 @@ export default {
   }
 }
 
+// @media screen and (max-width: 768px) {
+//   .container {
+//     margin-bottom: 4rem;
+
+//     h1, p {
+//       max-width: 100%;
+//     }
+//     main {
+//       grid-template-columns: 1fr;
+//       gap: 4em;
+
+//       nav {
+//         grid-row: 2;
+
+//         ul {
+//           display: grid;
+//           grid-template-columns: 1fr 1fr 1fr;
+//           gap: 1em;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media screen and (max-width: 768px) {
-  .container {
-    margin-bottom: 4rem;
-
-    h1, p {
-      max-width: 100%;
-    }
-    main {
-      grid-template-columns: 1fr;
-      gap: 4em;
-
-      nav {
-        grid-row: 2;
-
-        ul {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 1em;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 640px) {
   .container {
     display: block;
 
     main {
       display: block;
-      margin-bottom: 6em;
+      margin-bottom: 8em;
 
       section {
         display: block;
