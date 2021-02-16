@@ -21,7 +21,7 @@
 		{
       "image": "wb2.png",
       "p1": "She gave me a conspiratorial",
-      "p2": "and pulled the bag closer",
+      "p2": "and pulled the bag closer.",
       "answer": "wink"
     },
 		{
@@ -33,13 +33,13 @@
 		{
       "image": "wb4.png",
       "p1": "“Yeah right,” she said, with a",
-      "p2": ". “I know what you are up to”",
+      "p2": ". “I know what you are up to.”",
       "answer": "wink"
     },
 		{
       "image": "wb5.png",
-      "p1": "In the morning, he crawled out of the tent and",
-      "p2": "in the bright sunlight.",
+      "p1": "In the morning, the campers crawled out of the tent. The sun was bright and they",
+      "p2": ".",
       "answer": "blink"
     }
   ],

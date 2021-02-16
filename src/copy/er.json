@@ -1,22 +1,22 @@
 {
   "title": "Fake Smile",
-  "intro": [ 
+  "instructions": [ 
     {
-      "p0": "Emotion recognitions systems claim to read your emotions from your facial expressions. But the relationship between our faces and our feelings is complicated. Our outsides and insides don’t always match.",
-      "p1": "Can you make the emotion recognition system read you as happy, sad and angry? See if you can beat the machine!",
-      "p2": "In this game you will move your face to simulate emotions. When the emotion recognition system reads your face as reflecting an inner feeling, the box will clear. ",
-      "p3": "Win the game by making facial expressions for all six emotions.",
-      "p4": "Can you beat the machine?"
-    },
-    {
-      "aside": "Note: emotion recognition systems are a form of facial recognition technology, which has been shown to be less accurate for people with darker skin, especially darker-skinned women, and for non-binary people. This may affect your game today. In the real world, emotion recognition systems aren’t just games. They are applied in high stakes situations with potentially serious consequences."
+      "p0": "Emotion recognition systems claim to read your emotions from your expressions. But the relationship between our faces and our feelings is complicated. Our outsides and insides don’t always match.",
+      "p1": "Note: emotion recognition systems are a form of facial recognition technology, which has been shown to be most accurate for white men and less accurate for everyone else. This bias may affect your game. In the real world, ER systems aren’t just games. They can have serious consequences."
     }
   ],
-  "instructions": "Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion.",
+  "intro": [
+    {
+      "p0": "Move your face to fake emotions.",
+      "p1": "Can you make the emotion recognition system read you as happy, sad and angry?",
+      "p2": "Can you beat the machine?"
+    }
+  ],
   "prizePage": [
     {
       "title": "Congratulations! You have a great fake smile!",
-      "p": "By moving your face in many ways, you fooled an emotion recognition system into registering you as feeling many things. You beat the machine!",
+      "p": "You made the emotion recognition system register you as feeling happy just by moving your face. You beat the machine!",
       "hashtag1": "#ResistEmojification",
       "hashtag2": "#BeatTheMachine"
     }

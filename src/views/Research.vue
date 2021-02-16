@@ -117,6 +117,7 @@ export default {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
 
     form {
       padding-bottom: 5rem;

@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "about": [
+    {
+      "p1": "This project was created by a group of social scientists, citizen scientists, and designers. We want to open up conversations about emotion recognition systems: from the science behind the technology to their social impacts--and everything else in between. Our aim is to promote public understanding of these technologies and citizen involvement in their development and use. ",
+      "p2": "We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centred learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns.",
+      "p3": "Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us via this form."
+    }
+  ],
+  "team": [
+    {
+      "person": "wb1.png",
+      "title": "“I have an idea” Bee said with a",
+      "bio": "unable to resist the urge to tease them."
+    }
+  ],
+  "prizePage": [
+    {
+      "title": "Congratulations!",
+      "p": "You can read facial expressions in context, something that emotion recognition systems cannot do. You are part of the emojification resistance!  ",
+      "hashtag1": "#ResistEmojification",
+      "hashtag2": "#BeatTheMachine"
+    }
+  ]
+}

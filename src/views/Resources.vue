@@ -2,10 +2,49 @@
   <div class="container">
     <section>
       <aside>
-        <router-link to="menu" class="btn">Back to Emojify Lab</router-link>
+        <router-link to="menu" class="button">Back to Emojify Lab</router-link>
       </aside>
       <div></div>
       <main>
+        <h1>About this project</h1>
+        <p>This project was created by a group of social scientists, citizen scientists, and designers. We want to open up conversations about emotion recognition systems: from the science behind the technology to their social impacts--and everything else in between. Our aim is to promote public understanding of these technologies and citizen involvement in their development and use. </p>
+        <p>We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centred learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns. </p>
+        <p>Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us via this form. </p>
+        <p>If you want to keep in touch about the project, join our mailing list <a href="#">here</a>.</p>
+
+        <h1>Team</h1>
+        <h4>Veda Sutedjo Tay, Story Artist and Character Animator</h4>
+        <p>Based in Singapore, Veda is a <a target="_blank" href="https://vedasutedjo.wixsite.com/adeveda">freelance animator</a> with strong storytelling abilities. She graduated from Nanyang Technological University in 2020 with a Bachelor's Degree in Character Animation with Honours and Minor in Creative Writing. On top of creative storytelling and writing, her skills include illustrations, character animation and video editing. She is currently a Producer in a local animation company, and is aiming to pursue her ambitions of becoming a Narrative Director or Head of Story in the Animation Industry. </p>
+
+        <h4>Nethra Samarawickrema, PhD, Voiceover</h4>
+        <p>Nethra is an anthropologist, mediator, and writer. She is the Director of Ethnography and Design at Dovetail Labs and a lecturer at Stanford University's Hasso Plattner Institute of Design (d.School). Her work combines ethnography, design thinking and empathetic listening to support individuals and organizations to build collaborative relationships. She teaches empathetic listening at a range of workplaces, including the tech sector, non-profit and activist organizations. She provides coaching and consulting through <a target="_blank" href="https://www.listenuplab.com/">Listen Up</a>, a lab that brings empathy and creativity to train people to have difficult conversations by listening for what matters. </p>
+
+        <h4>John Lee, scriptwriter </h4>
+        <p>John is an author, user experience writer, and teacher. He received his MFA from the University of Michigan and subsequently taught narrative design, podcast scripting, and the art of oral presentation at Stanford University. As a UX storyteller, he is particularly interested in helping broader audiences engage with complex, research-based ideas. He has also been a writing consultant at SRI International and the Stanford Storytelling Project. He received the Carol Houck Smith Fiction Fellowship at the University of Wisconsin, a John Steinbeck creative writing fellowship at San Jose State University, and writing residency awards from Yaddo, the Djerassi Resident Artists Program, and the Headlands Center for the Arts.</p>
+
+        <h4>Igor (Gary) Rubinov, PhD, Project Director</h4>
+        <p>Gary is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and Senior Project Manager at <a target="_blank" href="https://www.publicequitygroup.org/irubinov">Public Equity Group</a>. He has published on development, environment and migration, always training attention on the ingenuity and perseverance of people facing adversity. He holds a PhD in Anthropology from Princeton University, an MA in International Development & Social Change from Clark University, and a BA in Anthropology from Cornell University. </p>
+
+        <h4>Alexa Hagerty, PhD, project PI</h4>
+        <p>Alexa is an anthropologist researching the societal impacts of technology at the University of Cambridge, Leverhulme Centre for the Future of Intelligence and Centre for the Study of Existential Risk, and co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a>. She holds a PhD in anthropology from Stanford University and is interested in how participatory, collaborative, arts-based and ethnographic methods can be used to make society and technology more just and equitable. </p>
+
+        <h4>Joe McCraw, Technical Consultant</h4>
+        <p>Joe is a Software Developer currently working for Mobile Programming LLC on the CBS apps for iOS/AppleTV.  He provides Technical Consulting for Dovetail Labs on projects related to technological ethics in AI/ML technologies.  Developed AIBias.com to explore projects related to bias in AI.  He also founded ShowBlender LLC and created the Augmented Reality Wifi Diagnostic app for iOS.  Joe holds a BA in Cultural Anthropology from UC Santa Cruz.</p>
+
+        <h4>Livia Garofalo, visual anthropology consultant</h4>
+        <p>Livia is a medical and psychological anthropologist currently completing her doctorate at Northwestern University, where she is also earning a master’s in public health from the Feinberg School of Medicine. Her research focuses on trauma, public health and AI in medicine. She draws on visual anthropology, multimodal methods, and visual arts. Her design work can be found at <a href="https://www.tugboatdesigns.com" target="_blank">Tugboat</a></p>
+        
+        <h4>Alexandra Albert, PhD (citizen science lead); (GMT) </h4>
+        <p>Alex is a social researcher based in the Extreme Citizen Science (ExCiteS) research group in the Geography Department at University College London (UCL). She is currently a postdoctoral researcher on the Medical Research Council-funded ActEarly UK Preventative Research Partnership, examining citizen science and co-production in health. She has a PhD from University of Manchester in citizen social science. Her research interests include citizen science, participatory inventive methods, public sociology, and inclusive development.</p>
+         
+        <h4>Juweek Adolphe (UX/UI design) </h4>
+        <p><a target="_blank" href="https://www.juweek.online/">juweek.online</a></p>
+
+        <h4>Sean Catangui (Web Development)</h4>
+        <p><a target="_blank" href="https://catangui.com">catangui.com</a></p>
+
+        <hr>
+
         <h1>System Requirements & Help</h1>
         <h2>Camera Permissions</h2>
         <p>On Chrome(Desktop)</p>
@@ -160,19 +199,32 @@ section {
     p,li {
       width: 80%;
       line-height: 1.6em;
+      font-family: sans-serif;
     }
 
     p {
       font-size: 1em;
+    }
+
+    hr {
+      border: 1px solid black;
     }
   }
 
   aside {
     padding-top: 2em;
     position: fixed;
-    a {
-      text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    display: block;
+
+    main {
+      padding-top: 6rem;
     }
   }
 }
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Modal title="Share your perspectives on emotion recognition systems" v-if="showModal" @close="closeModal" />
+      <Modal title="Share your perspectives on emotion recognition systems" v-if="!firstSurveySubmitted" @close="closeModal" />
       <h1>Welcome to the Emotion Recognition Sandbox.</h1>
       <p>
         Watch the video to learn about emotion recognition technology, or turn
@@ -52,7 +52,13 @@ export default {
   },
   data() {
     return {
-      showModal: true
+      showModal: true,
+      get firstSurveySubmitted() {
+        return window.sessionStorage.getItem('firstSurveySubmitted') == "true";
+      },
+      set firstSurveySubmitted(value) {
+        window.sessionStorage.setItem('firstSurveySubmitted', value);
+      }
     }
   },
   components: {
@@ -66,7 +72,7 @@ export default {
       this.$emit("start-er", true);
     },
     closeModal: function() {
-      this.showModal = false;
+      this.firstSurveySubmitted = true;
     },
     playVideo: function() {
       if (document.querySelector(".nesta-animation")) {

@@ -10,14 +10,17 @@
         <h1> {{ er.title }} </h1>
         <div class="intro">
           <div class="description">
+            <p v-for="(p, index) in er.instructions[0]" v-bind:key="index"> 
+              {{ p }} 
+            </p>
             <p v-for="(p, index) in er.intro[0]" v-bind:key="index"> 
               {{ p }} 
             </p>
           </div>
-          <aside>
+          <!-- <aside>
             <p> {{ er.intro[1].aside }} </p>
             <p>To discover more resources about bias and discrimination in emotion recognition systems click <router-link to="resources">here</router-link>. </p>
-          </aside>
+          </aside> -->
         </div>
         <div>
           <button class="play-game" v-on:click="moveToStep(1)">
@@ -112,7 +115,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 
   main {
     margin-left: auto;
@@ -120,28 +123,14 @@ export default {
 
     section {
       max-width: 90%;
-      margin: 0 auto;
       padding: 1rem;
     }
 
     section.step0 {
-      max-width: 60%;
-
-      .intro {
-        display: grid;
-        grid-template-columns: 75% 25%;
-        gap: 3em;
-
-        aside {
-          color: $gray-2;
-          p {
-            font-size: 0.5em;
-            a {
-              color: inherit;
-            }
-          }
-        }
-      }
+      margin: 4rem auto;
+      padding: 0;
+      padding-bottom: 4rem;
+      max-width: 80%;
 
       div {
         button.play-game {
@@ -199,14 +188,30 @@ export default {
     }
 
     .step2 {
-      width: 60%;
+      max-width: 60%;
+      margin: 0 auto;
     }
+
+
   }
 }
 
 @media screen and (max-width: 1200px) {
   main {
     max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    height: 90vh;
+    main {
+      max-width: 100%;
+
+      section.step0 {
+        max-width: 100%;
+      }
+    }
   }
 }
 

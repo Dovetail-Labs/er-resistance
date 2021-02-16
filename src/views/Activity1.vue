@@ -17,7 +17,7 @@
             </p> -->
             <p> {{ quiz.intro[0].p1 }} </p>
             <p> {{ quiz.intro[0].p2 }} </p>
-            <p> {{ quiz.intro[0].p3 }} <a href="#">here</a>.</p>
+            <p> {{ quiz.intro[0].p3 }} <a href="./resources">here</a>.</p>
           </div>
           <div class="definitions">
             <h4>Wink</h4>
@@ -156,7 +156,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 
   main {
     max-width: 60%;
@@ -164,10 +164,12 @@ export default {
     margin-right: auto;
 
     section.step0 {
+      margin-bottom: 5rem;
+
       .intro {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        gap: 3em;
+        gap: 3em; 
 
         a {
           text-decoration: underline;

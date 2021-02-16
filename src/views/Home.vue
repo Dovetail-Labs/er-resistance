@@ -34,7 +34,8 @@ export default {
 .container {
   text-align: center;
   max-width: 50%;
-  margin: 3rem auto;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 
   img {
     width: 20vw;
@@ -45,10 +46,16 @@ export default {
     font-size: 0.6em;
     color: $gray-2;
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto;
     a {
       color: inherit;
     }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .container {
+    max-width: 80%;
   }
 }
 

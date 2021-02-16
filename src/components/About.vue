@@ -8,7 +8,7 @@
       <p> {{ copy.p3 }} <a href="#">here</a>. </p>
     </div>
     <div class="button-group">
-      <button>Read more</button>
+      <a class="button" href="./resources">Read more</a>
       <button @click="close">Close</button>
     </div>
   </div>
@@ -45,6 +45,7 @@ export default {
   transform: translate(-50%, -50%);
   background: $yellow;
   padding: 4em 6em;
+  box-sizing: border-box;
   border-radius: $br-m;
   border: 2px solid black;
   z-index: 99;
@@ -83,6 +84,21 @@ export default {
     button {
       margin-left: 1em;
     }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .about {
+    padding: 2em;
+    max-height: 70vh;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 640px) {
+  .about {
+    padding: 1em;
+    max-height: 80vh;
   }
 }
 </style>
