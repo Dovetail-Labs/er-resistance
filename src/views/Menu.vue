@@ -202,6 +202,11 @@ export default {
 @media screen and (max-width: 768px) {
   .container {
     display: block;
+    div {
+      h1, p {
+        max-width: 100%;
+      }
+    }
 
     main {
       display: block;
@@ -232,12 +237,19 @@ export default {
         ul {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          gap: 1em;
 
           li {
             background: $yellow-lite;
+            margin-right: 2%;
+            padding: 0.75em;
+
             a {
+              font-size: 0.5rem;
+              padding: 0;
               background: $yellow-lite;
+            }
+            svg {
+              display: none;
             }
           }
         }

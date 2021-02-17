@@ -197,7 +197,7 @@ export default {
               margin-bottom: 0.5em;
 
               a {
-
+                text-decoration: none;
               }
             }
           }
@@ -206,15 +206,37 @@ export default {
     }
   }
 
-  @media screen and (max-width: 640px) {
-  main {
-    max-width: 100%;
+  @media screen and (max-width: 768px) {
+    main {
+      margin-top: 2em;
+      max-width: 100%;
 
-    section.step0 {
-      .intro {
-        gap: 1rem;
+      .finished-game {
+        padding: 1em;
+
+        h1 {
+          width: 100%;
+        }
+
+        .wrap {
+          display: block;
+
+          article {
+            .button {
+              display: inline-block;
+            }
+          }
+
+          aside {
+            margin-top: 2em;
+            ul {
+              li {
+                margin-right: 0.25em;
+              }
+            }
+          }
+        }
       }
     }
-  }
   }
 </style>
