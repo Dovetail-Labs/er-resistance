@@ -227,4 +227,20 @@ section {
   }
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    display: block;
+
+    main {
+      h4 {
+        line-height: 1.6em;
+      }
+
+      p, li {
+        width: 100%;
+      }
+    }
+  }
+}
+
 </style>

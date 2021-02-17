@@ -13,9 +13,7 @@
             <p v-for="(p, index) in er.instructions[0]" v-bind:key="index"> 
               {{ p }} 
             </p>
-            <p v-for="(p, index) in er.intro[0]" v-bind:key="index"> 
-              {{ p }} 
-            </p>
+            <p>For more resources about bias and discrimination in emotion recognition systems click <router-link to="resources">here</router-link>.</p>
           </div>
           <!-- <aside>
             <p> {{ er.intro[1].aside }} </p>
@@ -31,7 +29,11 @@
       </section>
       <section class="step1" v-if="step === 1">
         <div class="text-content">
-          <p>Try to exhibit each of the following emotions. The boxes will clear when the system detects an emotion</p>
+          <div>
+            <p v-for="(p, index) in er.intro[0]" v-bind:key="index"> 
+                {{ p }} 
+            </p>
+          </div>
           <ul class="emotions">
             <li class="emo-box" id="happiness">Happiness</li>
             <li class="emo-box" id="sadness">Sadness</li>
@@ -121,11 +123,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
 
-    section {
-      max-width: 90%;
-      padding: 1rem;
-    }
-
     section.step0 {
       margin: 4rem auto;
       padding: 0;
@@ -142,13 +139,16 @@ export default {
       }
     }
 
-    .step1 {
+    section.step1 {
       display: grid;
-      grid-template-columns: 30% 60%;
-      gap: 10%;
+      gap: 1em;
+      grid-template-columns: 1fr 2fr;
+      max-width: 90%;
       margin: 0 auto;
 
       .text-content {
+        box-sizing: border-box;
+
         ul.emotions {
           list-style-type: none;
           margin: 2em 0;
@@ -167,9 +167,11 @@ export default {
       }
 
       .video {
+        // padding: 1em;
+        box-sizing: border-box;
 
         .live-video {
-          max-height: 50vh;
+          max-height:60vh;
           width: 90%;
           border: 2px solid black;
 

@@ -16,7 +16,6 @@
               {{ p }} 
             </p> -->
             <p> {{ quiz.intro[0].p1 }} </p>
-            <p> {{ quiz.intro[0].p2 }} </p>
             <p> {{ quiz.intro[0].p3 }} <a href="./resources">here</a>.</p>
           </div>
           <div class="definitions">
