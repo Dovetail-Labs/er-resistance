@@ -82,6 +82,12 @@ export default {
         }
       });
   },
+  destroyed () {
+    const mediaStream = this.cam.srcObject;
+    const tracks = mediaStream.getTracks();
+
+    tracks.forEach(track => track.stop())
+  },
   methods: {
     async detectExpressions() {
 
