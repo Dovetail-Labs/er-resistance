@@ -146,6 +146,7 @@ export default {
       display: grid;
       grid-template-columns: 30% 60%;
       gap: 10%;
+      margin: 0 auto;
 
       .text-content {
         ul.emotions {
@@ -196,9 +197,58 @@ export default {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  main {
-    max-width: 80%;
+// @media screen and (max-width: 1200px) {
+//   .container {
+//     main {
+//       max-width: 80%;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 768px) {
+  .container {
+    main {
+      max-width: 80%;
+
+      section.step1 {
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        .text-content {
+          margin-top: 1rem;
+
+          ul.emotions {
+            gap: 0.5em;
+
+            li.emo-box {
+              padding: 0.5em;
+            }
+          }
+        }
+
+        .video {
+          .live-video {
+            width: 100%;
+            overflow: hidden;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0.75rem;
+              left: 0.75rem;
+              width: calc(100%);
+              height: calc(100%);
+              background: $yellow;
+              border: 2px solid black;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
