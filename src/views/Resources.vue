@@ -2,15 +2,15 @@
   <div class="container">
     <section>
       <aside>
-        <router-link to="menu" class="button">Back to Emojify Lab</router-link>
+        <router-link to="menu" class="button">Back to emotion recognition system</router-link>
       </aside>
       <div></div>
       <main>
         <h1>About this project</h1>
         <p>This project was created by a group of social scientists, citizen scientists, and designers. We want to open up conversations about emotion recognition systems: from the science behind the technology to their social impacts--and everything else in between. Our aim is to promote public understanding of these technologies and citizen involvement in their development and use. </p>
         <p>We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centred learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns. </p>
-        <p>Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us via this form. </p>
-        <p>If you want to keep in touch about the project, join our mailing list <a href="#">here</a>.</p>
+        <p>Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us at <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a>. </p>
+        <p>If you want to keep in touch about the project, join our mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m3o3TeVAjQ9QgbP0wzn_BFmzNUe4jS9npQU4rDMtQkFjNw/viewform?usp=sf_link">here</a>.</p>
 
         <h1>Team</h1>
         <h4>Veda Sutedjo Tay, Story Artist and Character Animator</h4>
@@ -212,8 +212,14 @@ section {
   }
 
   aside {
-    padding-top: 2em;
+    padding-top: 2rem;
     position: fixed;
+    a {
+      display: block;
+      width: 50%;
+      font-size: 0.8rem;
+      line-height: 1.6em;
+    }
   }
 }
 
@@ -223,6 +229,13 @@ section {
 
     main {
       padding-top: 6rem;
+    }
+
+    aside {
+      a {
+        width: calc(100% - 1em);
+        box-sizing: border-box;
+      }
     }
   }
 }
