@@ -7,6 +7,8 @@
         Watch the video to learn about emotion recognition technology, or turn
         on your camera to activate our very own emotion recognition machine...will it 'emojify' you?
       </p>
+      <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Once activated, you can turn off the camera in your browser settings (instructions and more on privacy <a href="/resources">here</a>).</p>
+
       <main>
         <section>
           <div class="video-container">
@@ -17,9 +19,7 @@
         </section>
         <nav>
           <ul>
-            <!-- <li>
-              Games
-            </li> -->
+
             <li class="btn">
               <router-link to="activity-1">Wink/Blink Game</router-link>
               <RightArrow class="arrow" />
@@ -94,6 +94,10 @@ export default {
 
   h1, p {
     max-width: 60%;
+  }
+
+  p {
+    font-size: 0.5em;
   }
 
   main {
@@ -205,6 +209,9 @@ export default {
     div {
       h1, p {
         max-width: 100%;
+      }
+      p {
+        font-size: 0.75em;
       }
     }
 
