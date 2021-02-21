@@ -3,11 +3,13 @@
     <div>
       <Modal title="Share your perspectives on emotion recognition systems" v-if="!firstSurveySubmitted" @close="closeModal" />
       <h1>Welcome to the Emotion Recognition Sandbox.</h1>
-      <p>
-        Watch the video to learn about emotion recognition technology, or turn
-        on your camera to activate our very own emotion recognition machine...will it 'emojify' you?
-      </p>
-      <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Once activated, you can turn off the camera in your browser settings (instructions and more on privacy <a href="/resources">here</a>).</p>
+      <div class="p-wrap">
+        <p>
+          Watch the video to learn about emotion recognition technology, or turn
+          on your camera to activate our very own emotion recognition machine...will it 'emojify' you?
+        </p>
+        <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Once activated, you can turn off the camera in your browser settings (instructions and more on privacy <a href="/resources#privacy">here</a>).</p>
+      </div>
 
       <main>
         <section>
@@ -91,13 +93,16 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 1em;
+  margin-bottom: 6rem;
+  
+  div.p-wrap {
+    display: flex;
+    width: 80%;
 
-  h1, p {
-    max-width: 60%;
-  }
-
-  p {
-    font-size: 0.5em;
+    p {
+      width: 50%;
+      padding-right: 4em;
+    }
   }
 
   main {
@@ -116,6 +121,7 @@ export default {
           border: 3px solid black;
 
           a {
+            font-family: 'Press Start 2P', Courier, monospace;
             text-decoration: none;
           }
         }
@@ -171,47 +177,18 @@ export default {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    h1, p {
-      max-width: 80%;
-    }
-  }
-}
-
-// @media screen and (max-width: 768px) {
-//   .container {
-//     margin-bottom: 4rem;
-
-//     h1, p {
-//       max-width: 100%;
-//     }
-//     main {
-//       grid-template-columns: 1fr;
-//       gap: 4em;
-
-//       nav {
-//         grid-row: 2;
-
-//         ul {
-//           display: grid;
-//           grid-template-columns: 1fr 1fr 1fr;
-//           gap: 1em;
-//         }
-//       }
-//     }
-//   }
-// }
-
 @media screen and (max-width: 768px) {
   .container {
     display: block;
-    div {
-      h1, p {
-        max-width: 100%;
-      }
+    margin-bottom: 0;
+
+    div.p-wrap {
+      display: block;
+      width: 100%;
+
       p {
-        font-size: 0.75em;
+        padding: 0;
+        width: 100%;
       }
     }
 

@@ -3,9 +3,9 @@
     <div class="wrap">
       <h2>{{ copy.title }}</h2>
       <p> {{ copy.p1 }} </p>
-      <p> {{ copy.p2 }} <router-link to="resources" >here</router-link>. </p>
+      <p> {{ copy.p2 }} <a href="/resources#resources">here</a>. </p>
       <h3> {{ copy.subhead }} </h3>
-      <p> {{ copy.p3 }} <router-link to="resources">here</router-link>. </p>
+      <p> {{ copy.p3 }} <a href="/resources#privacy">here</a>.  </p>
     </div>
     <div class="button-group">
       <a class="button" href="./resources">Read more</a>

@@ -17,8 +17,8 @@
         <div class="wrap">
           <article>
             <p>{{ survey.p }}</p>
-            <p>If you want to continue the conversation with us, please get in touch <a target="_blank" href="#">here</a>. You can also join our mailing list <a target="_blank" href="#">here</a>.</p>
-            <p>To learn more about the project and to discover more resources on emotion recognition technologies, their social impacts, and the social science behind them, click <a target="_blank" href="#">here</a>.</p>
+            <p>If you want to continue the conversation with us, please get in touch at <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a>. You can also join our mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m3o3TeVAjQ9QgbP0wzn_BFmzNUe4jS9npQU4rDMtQkFjNw/viewform?usp=sf_link">here</a>.</p>
+            <p>To learn more about the project and to discover more resources on emotion recognition technologies, their social impacts, and the social science behind them, click <a href="/resources#resources">here</a>.</p>
             <p>Together, we can {{survey.hashtag1}} and {{survey.hashtag2}} </p>
             <router-link to="menu" class="button">
               Back to main menu

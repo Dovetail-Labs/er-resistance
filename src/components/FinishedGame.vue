@@ -11,9 +11,9 @@
       <aside>
         <h4>Share:</h4>
         <ul>
-          <li><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`">Twitter</a></li>
-          <li><a :href="`mailto:?subject=${subject}&body=${message}`">Email</a></li>
-          <li><a href="https://www.facebook.com/sharer.php?u=https://emojify.info">Facebook</a></li>
+          <li class="button"><a target="_blank" :href="`https://twitter.com/intent/tweet?text=${message}`">Twitter</a></li>
+          <li class="button"><a :href="`mailto:?subject=${subject}&body=${message}`">Email</a></li>
+          <li class="button"><a href="https://www.facebook.com/sharer.php?u=https://emojify.info">Facebook</a></li>
         </ul>
       </aside>
     </main>
@@ -31,10 +31,6 @@
 
 <script>
 import json from "../copy/quiz.json";
-import IconFB from "@/assets/images/icon-fb.svg";
-import IconTW from "@/assets/images/icon-tw.svg";
-import IconIG from "@/assets/images/icon-ig.svg";
-import IconEM from "@/assets/images/icon-em.svg";
 
 export default {
   name: "FinishedGame",
@@ -53,13 +49,7 @@ export default {
       subject: "Is emotional recognition technology ‘emojifying’ you?",
       message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     }
-  },
-  components: {
-    IconFB,
-    IconTW,
-    IconIG,
-    IconEM
-  },
+  }
 }
 </script>
 
