@@ -16,7 +16,7 @@
 
         <h1 id="help">System Requirements & Help</h1>
         <h2>Camera Permissions</h2>
-        <p>If you've already blocked the camera or microphone permissions you need to enable them again via settings:</p>
+        <p>If you've already blocked the camera or microphone permissions you need to enable them again via settings</p>
         <p><strong>On Chrome(Desktop)</strong></p>
         <ol>
           <li>At the top right, click three vertical dots, then settings(or file menu, Chrome -> preferences)</li>
@@ -86,7 +86,7 @@
 
         <h1 id="resources">Resources</h1>
         <h2>Media</h2>
-        <h3>News Articles &amp; Opinion Pieces:</h3>
+        <h3>News Articles &amp; Opinion Pieces</h3>
         <p>Chan, Milly (16 February 2021) "This AI reads children's emotions as they learn" <em>CNN Business</em>.</p>
         <p><a href="https://www.cnn.com/2021/02/16/tech/emotion-recognition-ai-education-spc-intl-hnk/index.html" target="_blank" rel="noopener">In Hong Kong, this AI reads children's emotions as they learn - CNN</a></p>
         <p>Pasquale, Frank. (19 October 2020) &ldquo;More Than a Feeling - Emotion detection doesn&rsquo;t work, but it will try to change your behavior anyway&rdquo;. <em>Real Life Magazine</em><a href="https://reallifemag.com/more-than-a-feeling/" target="_blank" rel="noopener"><span>https://reallifemag.com/more-than-a-feeling/</span></a></p>
@@ -99,7 +99,7 @@
         <p>Telford, Taylor (21 July 2019) "&lsquo;Emotion Detection&rsquo; AI is a $20 billion dollar industry. New research says it can&rsquo;t do what it claims&rdquo;.<a href="https://www.washingtonpost.com/business/2019/07/31/emotion-detection-ai-is-billion-industry-new-research-says-it-cant-do-what-it-claims/" target="_blank" rel="noopener"><span>https://www.washingtonpost.com/business/2019/07/31/emotion-detection-ai-is-billion-industry-new-research-says-it-cant-do-what-it-claims/</span></a></p>
         <p>Schwartz, Oscar. (6 March 2019) "Don't look now: why you should be worried about machines reading your emotions." The Guardian. <a href="https://www.theguardian.com/technology/2019/mar/06/facial-recognition-software-emotional-science" target="_blank" rel="noopener"><span>Don&rsquo;t look now: why you should be worried about machines reading your emotions | Facial recognition | The Guardian</span></a></p>
         <p>Rhue, Lauren (3 January 2019) "Emotion-reading tech fails the racial bias test" <em>The Conversation</em>.<a href="https://theconversation.com/emotion-reading-tech-fails-the-racial-bias-test-108404" target="_blank" rel="noopener"><span>https://theconversation.com/emotion-reading-tech-fails-the-racial-bias-test-108404</span></a></p>
-        <h3>Podcasts and Video:</h3>
+        <h3>Podcasts and Video</h3>
         <p>Cox, Graeme &amp; Charles Nduka. (11 January 2021) &ldquo;Measuring subjective emotional experiences with Professor Karen Quigley&rdquo; on <em>Emotion Lab by Emteq Labs</em></p>
         <p><a href="https://www.emteqlabs.com/emotion-lab/" target="_blank" rel="noopener">Emotion Lab - emteq labs | Measure what matters during immersive experiences</a></p>
         <p>Strong, Jennifer (14 October 2020) &ldquo;AI Reads Human Emotions. Should it?&rdquo; on In Machines We Trust-&nbsp; <em>MIT Technology Review</em></p>
@@ -112,7 +112,7 @@
         <p>Klein, Ezra (16 October 2019)&ldquo;We don&rsquo;t just feel emotions. We make them‪&rdquo; on The Ezra Klein Show -<em> Vox Conversations</em></p>
         <p><a href="https://podcasts.apple.com/ca/podcast/we-dont-just-feel-emotions-we-make-them/id1081584611?i=1000453839760" target="_blank" rel="noopener">&lrm;Vox Conversations: We don&rsquo;t just feel emotions. We make them. on Apple Podcasts</a></p>
 
-        <h3>Interactive and arts-based projects</h3>
+        <h2>Interactive and arts-based projects</h2>
         <p>Stealing Ur Feelings - by Noah Levenson, with support from Mozilla</p>
         <p><a href="https://stealingurfeelin.gs/" target="_blank" rel="noopener">https://stealingurfeelin.gs/</a></p>
         <p>How Normal Am I? &ndash; by Tijmen Schep, with support from the European Union</p>
@@ -120,13 +120,13 @@
         <p>ImageNet Roulette, by Trevor Paglan, part of the &lsquo;Training Humans&rsquo; exhibition in collaboration with Kate Crawford</p>
         <p><a href="https://www.theverge.com/tldr/2019/9/16/20869538/imagenet-roulette-ai-classifier-web-tool-object-image-recognition" target="_blank" rel="noopener">https://www.theverge.com/tldr/2019/9/16/20869538/imagenet-roulette-ai-classifier-web-tool-object-image-recognition</a></p>
 
-        <h3>Reports</h3>
+        <h2>Reports</h2>
         <p><em>Article 19</em> (January 2021) &ldquo;Emotional Entanglement: China&rsquo;s emotion recognition market and its implications for human rights&rdquo;<a href="https://www.article19.org/wp-content/uploads/2021/01/ER-Tech-China-Report.pdf" target="_blank" rel="noopener"><span>https://www.article19.org/wp-content/uploads/2021/01/ER-Tech-China-Report.pdf</span></a></p>
         <p>Greene, Gretchen. (30 July 2020) &ldquo;The Ethics of AI and Emotional Intelligence&rdquo;. <em>Partnership on AI.</em><a href="https://www.partnershiponai.org/the-ethics-of-ai-and-emotional-intelligence/" target="_blank" rel="noopener"><span>The Ethics of AI and Emotional Intelligence - The Partnership on AI</span></a></p>
         <p>Crawford, Kate, Roel Dobbe, Theodora Dryer, Genevieve Fried, Ben Green, Elizabeth Kaziunas, Amba Kak, Varoon Mathur, Erin McElroy, Andrea Nill S&aacute;nchez, Deborah Raji, Joy Lisi Rankin, Rashida Richardson, Jason Schultz, Sarah Myers West, and Meredith Whittaker. (4 December 2019) &ldquo;AI Now 2019 Report&rdquo;&nbsp; <em>AI Now Institute</em><a href="https://ainowinstitute.org/AI_Now_2019_Report.html" target="_blank" rel="noopener"><span>https://ainowinstitute.org/AI_Now_2019_Report.html</span></a>.</p>
         <p>Snow, Jacob (28 July 2018) &ldquo;Amazon&rsquo;s Face Recognition Falsely Matched 28 Members of Congress With Mugshots&rdquo; <em>American Civil Liberties Union</em><a href="https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28" target="_blank" rel="noopener"><span>https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28</span></a></p>
         
-        <h3>Research and Advocacy Organizations</h3>
+        <h2>Research and Advocacy Organizations</h2>
         <p><a href="https://www.adalovelaceinstitute.org/" target="_blank" rel="noopener"><span>Ada Lovelace</span></a></p>
         <p><a href="https://ainowinstitute.org/" target="_blank" rel="noopener">AI Now</a></p>
         <p><a href="https://www.turing.ac.uk/" target="_blank" rel="noopener">The Alan Turing Institute</a></p>
@@ -138,7 +138,7 @@
         <p>Leverhulme Centre for the Future of Intelligence</p>
         <p><a href="https://www.cser.ac.uk/" target="_blank" rel="noopener">Centre for the Study of Existential Risk</a></p>
 
-        <h3>Facial Recognition Technology Activism</h3>
+        <h2>Facial Recognition Technology Activism</h2>
         <p>American Civil Liberties Union&nbsp; -<a href="https://www.aclu.org/letter/coalition-letter-calling-federal-moratorium-face-recognition" target="_blank" rel="noopener"><span>Coalition Letter Calling for a Federal Moratorium on Facial Recognition</span></a></p>
         <p>Amnesty International -<a href="https://www.amnesty.org/en/latest/news/2021/01/ban-dangerous-facial-recognition-technology-that-amplifies-racist-policing/" target="_blank" rel="noopener"><span>Ban dangerous facial recognition technology that amplifies racist policing | Amnesty International</span></a></p>
         <p>Big Brother Watch &ndash;<a href="https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/" target="_blank" rel="noopener"><span>Stop Facial Recognition</span></a></p>
@@ -149,7 +149,7 @@
         <p>Reclaim Your Face - <a href="https://reclaimyourface.eu/" target="_blank" rel="noopener">A European Citizens' Initiative (ECI) to ban biometric mass surveillance</a></p>
         <p>US Congress &ndash;<a href="https://drive.google.com/file/d/1gkTcjFtieMQdsQ01dmDa49B6HY9ZyKr8/view" target="_blank" rel="noopener"><span>Bill Text- Facial Recognition and Biometric Technology Moratorium Act of 2020</span></a></p>
 
-        <h3>Academic articles</h3>
+        <h2>Academic articles</h2>
         <p>Perspectives on Human Emotions from the Humanities, Social Sciences and Psychology</p>
         <p><span>Beatty, Andrew. (2013) "Current emotion research in anthropology: Reporting the field." </span><em>Emotion Review</em><span> 5, no. 4: 414-422.</span><a href="https://doi.org/10.1177%2F1754073913490045" target="_blank" rel="noopener"><span>https://doi.org/10.1177/1754073913490045</span></a></p>
         <p><span>Beatty, Andrew. (2019). </span><em>Emotional Worlds</em><span>. Cambridge University Press</span><a href="https://doi.org/10.1017/9781139108096" target="_blank" rel="noopener"><span>https://doi.org/10.1017/9781139108096</span></a></p>
@@ -176,35 +176,35 @@
         <p><span>Stark, L., &amp; Hoey, J. (8 October 2020). The Ethics of Emotion in AI Systems.</span><a href="https://doi.org/10.31219/osf.io/9ad4u" target="_blank" rel="noopener"><span>https://doi.org/10.31219/osf.io/9ad4u</span></a></p>
         <p><span>Wright, James (1 September 2020) &ldquo;Suspect AI: Vibraimage, Emotion Recognition Technology and Algorithmic Opacity&rdquo;</span><a href="https://arxiv.org/abs/2009.00502" target="_blank" rel="noopener"><span>[2009.00502] Suspect AI (arxiv.org)</span></a></p>
 
-        <h3>Current Uses of Emotional AI in</h3>
-        <p><strong>Hiring</strong></p>
+        <h2>Current Uses of Emotional AI in</h2>
+        <h3>Hiring</h3>
         <p><span>Raghavan, Manish, Solon Barocas, Jon Kleinberg, and Karen Levy. "Mitigating bias in algorithmic hiring: Evaluating claims and practices." In </span><em>Proceedings of the 2020 conference on fairness, accountability, and transparency</em><span>, pp. 469-481. 2020.</span><a href="https://arxiv.org/abs/1906.09208" target="_blank" rel="noopener"><span>[1906.09208] Mitigating Bias in Algorithmic Hiring: Evaluating Claims and Practices (arxiv.org)</span></a></p>
         <p>van den Broek, E., Sergeeva, A., &amp; Huysman, M. (2020). Hiring algorithms: An ethnography of fairness in practice. In <em>ICIS 2019 Proceedings: 40th International Conference on Information Systems, ICIS 2019 </em>(pp. 1-9). (40th International Conference on Information Systems, ICIS 2019). Association for Information Systems. <a href="https://aisel.aisnet.org/icis2019/future_of_work/future_work/6/" target="_blank" rel="noopener"><span>https://aisel.aisnet.org/icis2019/future_of_work/future_work/6/</span></a></p>
-        <p><strong>Education</strong></p>
+        <h3>Education</h3>
         <p>Kwet, Michael, and Paul Prinsloo. "The &lsquo;smart&rsquo; classroom: a new frontier in the age of the smart university." <em>Teaching in Higher Education</em> 25, no. 4 (2020): 510-526.DOI: <a href="https://doi.org/10.1080/13562517.2020.1734922" target="_blank" rel="noopener"><span>10.1080/13562517.2020.1734922</span></a></p>
         <p>McStay, Andrew (2020) Emotional AI and EdTech: serving the public good?, Learning, Media and Technology, 45:3, 270-283, DOI: <a href="https://doi.org/10.1080/17439884.2020.1686016" target="_blank" rel="noopener"><span>10.1080/17439884.2020.1686016</span></a></p>
-        <p><strong>Law Enforcement, Security, Immigration</strong></p>
+        <h3>Law Enforcement, Security, Immigration</h3>
         <p><span>Hayward, Keith J., and Matthijs M. Maas. "Artificial intelligence and crime: A primer for criminologists." </span><em>Crime, Media, Culture</em><span> (2020): 1741659020917434. </span>doi:<a href="https://doi.org/10.1177/1741659020917434" target="_blank" rel="noopener"><span>10.1177/1741659020917434</span></a></p>
         <p>Gillbert, Ben (21 February 2020) &ldquo;Amazon sells facial recognition software to police all over the US, but has no idea how many departments are using it&rdquo; <em>Business Insider</em></p>
         <p><a href="https://www.businessinsider.fr/us/amazon-rekognition-police-use-unknown-2020-2" target="_blank" rel="noopener">https://www.businessinsider.fr/us/amazon-rekognition-police-use-unknown-2020-2</a></p>
         <p><span>Valentino-DeVries, Jennifer (12 January 2020) &ldquo;How the Police Use Facial Recognition, and Where It Falls Short&rdquo; </span><em>The New York Times</em><span>&nbsp; </span><a href="https://www.nytimes.com/2020/01/12/technology/facial-recognition-police.html" target="_blank" rel="noopener">https://www.nytimes.com/2020/01/12/technology/facial-recognition-police.html</a></p>
         <p>Lomas, Natasha. (5 February 2021) &ldquo;Orwellian AI lie detector project challenged in EU court&rdquo; <em>TechCrunch</em> https://techcrunch.com/2021/02/05/orwellian-ai-lie-detector-project-challenged-in-eu-court/</p>
 
-        <h3>Examining Bias in Databases</h3>
+        <h2>Examining Bias in Databases</h2>
         <p><span>Dulhanty, Chris. "Issues in Computer Vision Data Collection: Bias, Consent, and Label Taxonomy." Master's thesis, University of Waterloo, 2020.</span><a href="https://uwspace.uwaterloo.ca/handle/10012/16414" target="_blank" rel="noopener"><span>Issues in Computer Vision Data Collection: Bias, Consent, and Label Taxonomy (uwaterloo.ca)</span></a></p>
         <p><span>Krithika, L. B., and Lakshmi Priya GG. "Student emotion recognition system (SERS) for e-learning improvement based on learner concentration metric." </span><em>Procedia Computer Science</em><span> 85 (2016): 767-776.</span><a href="https://doi.org/10.1016/j.procs.2016.05.264" target="_blank" rel="noopener"><span>https://doi.org/10.1016/j.procs.2016.05.264</span></a></p>
         <p><span>Kyriakou, Kyriakos, Styliani Kleanthous, Jahna Otterbacher, and George A. Papadopoulos.&nbsp; (2020) "Emotion-based Stereotypes in Image Analysis Services." In </span><em>Adjunct Publication of the 28th ACM Conference on User Modeling, Adaptation and Personalization</em><span>, pp. 252-259.</span><a href="https://doi.org/10.1145/3386392.3399567" target="_blank" rel="noopener"><span>https://doi.org/10.1145/3386392.3399567</span></a></p>
         <p>Rhue, Lauren, (9 November, 2018).Racial Influence on Automated Perceptions of Emotions<a href="https://ssrn.com/abstract=3281765" target="_blank" rel="noopener"><span>https://ssrn.com/abstract=3281765</span></a> or<a href="https://dx.doi.org/10.2139/ssrn.3281765" target="_blank" rel="noopener"><span>http://dx.doi.org/10.2139/ssrn.3281765</span></a></p>
         <p>Xu T., White J., Kalkan S., Gunes H. (2020) Investigating Bias and Fairness in Facial Expression Recognition. In: Bartoli A., Fusiello A. (eds) Computer Vision &ndash; ECCV 2020 Workshops. ECCV 2020. Lecture Notes in Computer Science, vol 12540. Springer, Cham<span>.</span><a href="https://doi.org/10.1007/978-3-030-65414-6_35" target="_blank" rel="noopener"><span>https://doi.org/10.1007/978-3-030-65414-6_35</span></a></p>
 
-        <h3>Facial Recognition Technology (not necessarily specific to emotion recognition):</h3>
+        <h2>Facial Recognition Technology (not necessarily specific to emotion recognition)</h2>
         <p>Buolamwini, Joy, Timnit Gebru, Dr. Helen Raynham, Deborah Raji, and Ethan Zuckerman &ldquo;How well do IBM, Microsoft, and Face++ AI services guess the gender of a face?&rdquo; &ndash; MIT Media Lab<a href="http://gendershades.org/" target="_blank" rel="noopener"><span>http://gendershades.org/</span></a></p>
         <p>Garvie, Claire, Alavro Bedoya &amp; Jonathan Frankle. (18 October 2016) &ldquo;The Perpetual Line-Up: Unregulated Police Face Recognition in America&rdquo;<a href="https://www.perpetuallineup.org/" target="_blank" rel="noopener"><span>https://www.perpetuallineup.org/</span></a></p>
         <p>Hao, Karen (5 February 2021) &ldquo;This is how we lost control of our faces&rdquo; MIT Technology Review<a href="https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history/" target="_blank" rel="noopener"><span>https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history/</span></a></p>
         <p><span>Raji, Inioluwa Deborah, and Genevieve Fried. "About Face: A Survey of Facial Recognition Evaluation." </span><em>arXiv preprint arXiv:2102.00813</em><span> (2021).</span><a href="https://arxiv.org/pdf/2102.00813.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/2102.00813.pdf</a></p>
         <p>Roussi, Antoaneta (18 November 2020) &ldquo;Resisting the rise of facial recognition&rdquo; <em>Nature</em><a href="https://www.nature.com/articles/d41586-020-03188-2" target="_blank" rel="noopener"><span>https://www.nature.com/articles/d41586-020-03188-2</span></a></p>
         
-        <h3>Citizen Science and Advancing Social Change</h3>
+        <h2>Citizen Science and Advancing Social Change</h2>
         <p>ECSA (2020) ECSA&rsquo;s characteristics of citizen science. European Citizen Science Association.​<a href="https://ecsa.citizen-science.net/blog/characteristics-citizen-science" target="_blank" rel="noopener"><span>https://ecsa.citizen-science.net/blog/characteristics-citizen-science</span></a></p>
         <p>Haklay, M. (2013) &ldquo;Citizen science and volunteered geographic information&rdquo;.&nbsp; <em>Crowdsourcing geographic knowledge</em>. Springer, Dordrecht 2013; 105&ndash;122.<a href="https://doi.org/10.1007/978-94-007-4587-2_7" target="_blank" rel="noopener"><span>https://doi.org/10.1007/978-94-007-4587-2_7</span></a></p>
         <p>Mueller, M., Tippins, D., and Bryan, L. (2012). &ldquo;The future of citizen science&rdquo;. ​<em>Democracy and Education</em>​. Vol. 20: 1, pp.1-12.<a href="https://democracyeducationjournal.org/home/vol20/iss1/2/" target="_blank" rel="noopener"><span>"The Future of Citizen Science" by Michael P. Mueller, Deborah Tippins et al. (democracyeducationjournal.org)</span></a></p>

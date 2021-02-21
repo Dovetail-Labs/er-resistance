@@ -2,14 +2,16 @@
   <div class="container">
     <h1>Is emotion recognition technology "emojifying" you?</h1>
     <img src="../assets/images/smiley_face_yellow.gif">
-    <p>Artificial Intelligence designed to read your inner feelings is already in use.</p>
-    <p>What’s the social science behind it? Is it fair? Who gets a say in how it is used?</p>
+    <div class="intro">
+      <p>Artificial Intelligence designed to read your inner feelings is already in use.</p>
+      <p>What’s the social science behind it? Is it fair? Who gets a say in how it is used?</p>
+    </div>
     <p>
       <router-link to="menu" class="button">
-        Enter
+        Enter<sup>*</sup>
       </router-link>
     </p>
-    <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Read our full privacy policy <router-link to="resources">here</router-link>. </p>
+    <p class="notice"><sup>*</sup>To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Read our full privacy policy <router-link to="resources">here</router-link>. </p>
     <p class="notice mobile-only">This site is best viewed on desktop.</p>
     <Footer />
   </div>
@@ -36,18 +38,25 @@ export default {
   text-align: center;
   max-width: 50%;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 
   img {
     width: 20vw;
     height: auto;
   }
 
+  .intro {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
   .notice {
-    font-size: 0.6em;
-    color: $gray-2;
-    width: 80%;
+    font-family: 'Press Start 2P', Courier, monospace;
+    color: $gray-1;
     margin: 3rem auto;
+
     a {
       color: inherit;
     }

@@ -72,7 +72,7 @@ body {
     border-radius: 100px;
   }
 
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, small {
     font-family: 'Press Start 2P', Courier, monospace;
   }
 
@@ -156,7 +156,7 @@ body {
     }
 
     h4, p {
-      font-size: 12px;
+      font-size: 16px;
       margin-bottom: 1em;
     }
   }

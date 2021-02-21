@@ -81,6 +81,7 @@ footer {
   .share {
     right: 0;
     span {
+      font-family: 'Press Start 2P', Courier, monospace;
       display: inline-block;
       transform: translateY(-0.25em);
     }

@@ -3,7 +3,7 @@
     <!-- <Modal title="Now that you have played our activity, how do you feel about Emotional recognition technology?" v-if="showModal" @close="closeModal" /> -->
     <main>
       <form action="" v-if="!submitted" id="survey">
-        <p class="intro"> {{ survey.intro }} </p>
+        <h1 class="intro"> {{ survey.intro }} </h1>
         <hr>
         <p v-for="(question, index) in survey.questions" v-bind:key="index">
           <label> {{ question.text }}</label>
@@ -124,12 +124,13 @@ export default {
       position: relative;
 
       hr {
-        border: 1px solid black;
+        border: 1px solid $gray-1;
         margin: 2rem auto;
       }
+      
       label {
         display: block;
-        margin-bottom: 2em;
+        margin-bottom: 0.75em;
       }
       textarea {
         display: block;

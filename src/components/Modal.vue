@@ -3,7 +3,7 @@
   <div class="overlay"></div>
   <div class="modal">
     <h2> {{ title }}</h2>
-    <p>Read our privacy policy <a href="#">here</a></p>
+    <h3>Read our privacy policy <a href="#">here</a></h3>
     <form action="">
       <p>Have you heard of ‘emotion recognition systems’?</p>
       <div class="yn">
@@ -104,18 +104,8 @@ export default {
   border: 2px solid black;
   z-index: 2;
 
-  h2 {
-    line-height: 1.5em;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
   h3 {
-    text-align: left;
-    font-size: 12px;
-    line-height: 1.7em;
+    font-size: 0.9em;
   }
 
   form {
@@ -123,8 +113,8 @@ export default {
 
     .yn {
       display: inline-block;
-      margin-bottom: 2rem;
-      width: 40%;
+      margin-right: 2em;
+      margin-bottom: 1em;
 
       input {
         margin-right: 1em;

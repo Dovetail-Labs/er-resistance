@@ -225,6 +225,10 @@ export default {
           p {
             font-size: 1rem;
 
+            span {
+              line-height: 2em;
+            }
+
             span.blank {
               border: 2px solid black;
               box-sizing: border-box;
@@ -262,6 +266,7 @@ export default {
 
   .definitions {
     h4, p {
+      font-family: 'Press Start 2P', Courier, monospace;
       font-size: 0.5em;
       color: $gray-2;
     }

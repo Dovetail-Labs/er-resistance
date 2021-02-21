@@ -13,12 +13,8 @@
             <p v-for="(p, index) in er.instructions[0]" v-bind:key="index"> 
               {{ p }} 
             </p>
-            <p>For more resources about bias and discrimination in emotion recognition systems click <router-link to="resources">here</router-link>.</p>
+            <p>For more resources about bias and discrimination in emotion recognition systems click <a href="/resources#resources">here</a>.</p>
           </div>
-          <!-- <aside>
-            <p> {{ er.intro[1].aside }} </p>
-            <p>To discover more resources about bias and discrimination in emotion recognition systems click <router-link to="resources">here</router-link>. </p>
-          </aside> -->
         </div>
         <div>
           <button class="play-game" v-on:click="moveToStep(1)">
@@ -70,11 +66,6 @@ import json from "../copy/er.json";
 import copy from "../copy/global.json";
 import RightArrow from "@/assets/images/right-arrow.svg";
 
-import IconFB from "@/assets/images/icon-fb.svg";
-import IconTW from "@/assets/images/icon-tw.svg";
-import IconIG from "@/assets/images/icon-ig.svg";
-import IconEM from "@/assets/images/icon-em.svg";
-
 export default {
   name: "Activity2",
   metaInfo: {
@@ -93,11 +84,7 @@ export default {
     Footer,
     LiveVideo,
     FinishedGame,
-    RightArrow,
-    IconEM,
-    IconFB,
-    IconTW,
-    IconIG
+    RightArrow
   },
   methods: {
     moveToStep(step) {
@@ -128,6 +115,10 @@ export default {
       padding: 0;
       padding-bottom: 4rem;
       max-width: 80%;
+
+      .description {
+        width: 60%;
+      }
 
       div {
         button.play-game {
@@ -162,6 +153,7 @@ export default {
             border: 3px solid black;
             padding: 1rem;
             text-align: center;
+            font-family: 'Press Start 2P', Courier, monospace;
           }
         }
       }
@@ -211,6 +203,12 @@ export default {
   .container {
     main {
       max-width: 80%;
+
+      section.step0 {
+        .description {
+          width: 100%;
+        }
+      }
 
       section.step1 {
         margin-top: 7rem;
