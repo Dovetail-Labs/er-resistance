@@ -240,6 +240,7 @@ export default {
       }
 
       .answerNotification {
+        font-family: 'Press Start 2P', Courier, monospace;
         color: $gray-2;
         text-align: center;
         margin-top: 2em;

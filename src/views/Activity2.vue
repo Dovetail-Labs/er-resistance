@@ -89,9 +89,6 @@ export default {
   methods: {
     moveToStep(step) {
       this.step = step;
-    },
-    headerListener() {
-
     }
   }
 

@@ -49,7 +49,7 @@ export default {
   border-radius: $br-m;
   border: 2px solid black;
   z-index: 99;
-  max-height: 50vh;
+  max-height: 65vh;
   display: flex;
   flex-direction: column;
 
