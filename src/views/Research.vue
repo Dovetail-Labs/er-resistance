@@ -172,7 +172,7 @@ export default {
           }
 
           .button {
-            display: inline;
+            display: inline-block;
           }
 
           ul {
@@ -190,6 +190,7 @@ export default {
           ul {
             padding: 0;
             li {
+              font-family: 'Press Start 2P', Courier, monospace;
               display: inline-block;
               list-style: none;
               padding: 0.75em;
