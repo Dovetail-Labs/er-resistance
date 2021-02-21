@@ -4,6 +4,7 @@
       <video id="webcam" autoplay muted playsinline />
       <canvas id="overlay"></canvas>
       <img id="placeholder" src="@/assets/images/smiley.png">
+      <span class="spinner"></span>
       <router-link v-if="denied" class="help-link" to="help">Grant webcam access</router-link>
    </div>
     <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
@@ -213,10 +214,32 @@ div {
 
   img {
     position: absolute;
+    width: 30%;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-top-color: black;
+    animation: spinner .6s linear 10;
+    z-index: 1;
   }
 
   #overlay,
