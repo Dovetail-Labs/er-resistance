@@ -150,7 +150,7 @@
         <p>US Congress &ndash;<a href="https://drive.google.com/file/d/1gkTcjFtieMQdsQ01dmDa49B6HY9ZyKr8/view" target="_blank" rel="noopener"><span>Bill Text- Facial Recognition and Biometric Technology Moratorium Act of 2020</span></a></p>
 
         <h2>Academic articles</h2>
-        <p>Perspectives on Human Emotions from the Humanities, Social Sciences and Psychology</p>
+        <h3>Perspectives on Human Emotions from the Humanities, Social Sciences and Psychology</h3>
         <p><span>Beatty, Andrew. (2013) "Current emotion research in anthropology: Reporting the field." </span><em>Emotion Review</em><span> 5, no. 4: 414-422.</span><a href="https://doi.org/10.1177%2F1754073913490045" target="_blank" rel="noopener"><span>https://doi.org/10.1177/1754073913490045</span></a></p>
         <p><span>Beatty, Andrew. (2019). </span><em>Emotional Worlds</em><span>. Cambridge University Press</span><a href="https://doi.org/10.1017/9781139108096" target="_blank" rel="noopener"><span>https://doi.org/10.1017/9781139108096</span></a></p>
         <p>De Leersnyder, Jozefien, Boiger, Michael, &amp; Mesquita, Batja. (2013). Cultural regulation of emotion: Individual, relational, and structural sources. <em>Frontiers in Psychology</em>, 4, 55.<a href="https://doi.org/10.3389/fpsyg.2013.00055" target="_blank" rel="noopener"><span>https://doi.org/10.3389/fpsyg.2013.00055</span></a></p>
@@ -162,7 +162,8 @@
         <p>Nussbaum, M. (2001). <em>Upheavals of thought: The intelligence of emotions</em>. Cambridge, UK: Cambridge University Press.<a href="https://books.google.ca/books?hl=fr&amp;lr=&amp;id=Mji-Ah10AesC&amp;oi=fnd&amp;pg=PA1&amp;dq=Nussbaum,+M.+(2001).+Upheavals+of+thought:+The+intelligence+of+emotions&amp;ots=MwtkxzWvD1&amp;sig=fv_mw9n_H71rmOD_H4Zk0xiPZK8#v=onepage&amp;q=Nussbaum%2C%20M.%20(2001).%20Upheavals%20of%20thought%3A%20The%20intelligence%20of%20emotions&amp;f=false" target="_blank" rel="noopener"><span>Upheavals of Thought - Google Livres</span></a></p>
         <p><span>White, Daniel (2019) &ldquo;Japan&rsquo;s Emerging Emotional Tech.&rdquo; With Patrick W. Galbraith. </span><em>Anthropology News</em><span>. Vol. 60, Issue 1 (January/February).</span><a href="http://www.anthropology-news.org/index.php/2019/01/25/japans-emerging-emotional-tech/" target="_blank" rel="noopener"><span>Japan&rsquo;s Emerging Emotional Tech | Anthropology News (anthropology-news.org)</span></a></p>
         <p>Widen, Sherri C., Anita M. Christy, Kristen Hewett, and James A. Russell. (2011) "Do proposed facial expressions of contempt, shame, embarrassment, and compassion communicate the predicted emotion?." <em>Cognition &amp; Emotion </em>25, no. 5: 898-906. <span>DOI: </span><a href="https://doi.org/10.1080/02699931.2010.508270" target="_blank" rel="noopener"><span>10.1080/02699931.2010.508270</span></a></p>
-        <p>Scholarly Surveys of Emotional Recognition Systems and Scientific Assessments</p>
+
+        <h3>Scholarly Surveys of Emotional Recognition Systems and Scientific Assessments</h3>
         <p>Barrett, Lisa Feldman, Ralph Adolphs, Stacy Marsella, Aleix M. Martinez, and Seth D. Pollak. "Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements." Psychological science in the public interest 20, no. 1 (2019): 1-68.<a href="https://journals.sagepub.com/doi/10.1177/1529100619832930" target="_blank" rel="noopener"><span>https://journals.sagepub.com/doi/10.1177/1529100619832930</span></a></p>
         <p><span>Drozdowski, Pawel &amp; Rathgeb, Christian &amp; Dantcheva, Antitza &amp; Damer, Naser &amp; Busch, Christoph. (2020). &ldquo;Demographic Bias in Biometrics: A Survey on an Emerging Challenge&rdquo;. </span><em>IEEE Transactions on Technology and Society</em><span>.</span><a href="https://arxiv.org/pdf/2003.02488.pdf" target="_blank" rel="noopener"><span>https://arxiv.org/pdf/2003.02488.pdf</span></a></p>
         <p><span>Dupr&eacute; D, Krumhuber EG, K&uuml;ster D, McKeown GJ (2020) A performance comparison of eight commercially available automatic classifiers for facial affect recognition. PLOS ONE 15(4): e0231968. </span><a href="https://doi.org/10.1371/journal.pone.0231968" target="_blank" rel="noopener"><span>https://doi.org/10.1371/journal.pone.0231968</span></a></p>
@@ -170,7 +171,8 @@
         <p>Sharma, G., &amp; Dhall, A. (2021). A survey on automatic multimodal emotion recognition in the wild. In G. Phillips-Wren, A. Esposito, &amp; L. C. Jain (Eds.), <em>Advances in Data Science: Methodologies and Applications</em> (pp. 35-64). (Intelligent Systems Reference Library; Vol. 189). Springer.<a href="https://doi.org/10.1007/978-3-030-51870-7_3" target="_blank" rel="noopener"><span>https://doi.org/10.1007/978-3-030-51870-7_3</span></a></p>
         <p><span>Shu, L., Xie, J., Yang, M., Li, Z., Li, Z., Liao, D., Xu, X., et al. (2018). A Review of Emotion Recognition Using Physiological Signals. </span><em>Sensors</em><span>, </span><em>18</em><span>(7), 2074. MDPI AG.</span><a href="http://dx.doi.org/10.3390/s18072074" target="_blank" rel="noopener"><span>http://dx.doi.org/10.3390/s18072074</span></a></p>
         <p>Stark, Luke <em>Ordering Emotion: Histories of Computing and Human Feelings from Cybernetics to AI</em>. MIT Press,<a href="https://starkcontrast.co/book" target="_blank" rel="noopener"> https://starkcontrast.co/book</a>(forthcoming)</p>
-        <p>Expert Views on Emotion-Detection AI</p>
+        
+        <h3>Expert Views on Emotion-Detection AI</h3>
         <p>McStay, Andrew. "Emotional AI, soft biometrics and the surveillance of emotional life: An unusual consensus on privacy." <em>Big Data &amp; Society</em> 7, no. 1 (2020): 2053951720904386.</p>
         <p><a href="https://journals.sagepub.com/doi/full/10.1177/2053951720904386" target="_blank" rel="noopener">https://journals.sagepub.com/doi/full/10.1177/2053951720904386</a></p>
         <p><span>Stark, L., &amp; Hoey, J. (8 October 2020). The Ethics of Emotion in AI Systems.</span><a href="https://doi.org/10.31219/osf.io/9ad4u" target="_blank" rel="noopener"><span>https://doi.org/10.31219/osf.io/9ad4u</span></a></p>
@@ -214,6 +216,8 @@
         <p>Vicens J, Perelló J, Duch J (2018) Citizen Social Lab: A digital platform for human behavior and experimentation within a citizen science framework. PLoS ONE 13(12)<a href="https://doi.org/10.1371/journal.pone.0207219" target="_blank" rel="noopener"><span>https://doi.org/10.1371/journal.pone.0207219</span></a></p>
         <p>Ceccaroni, L., Bibby, J., Roger, E., Flemons, P., Michael, K., Fagan, L. and Oliver, J.L., 2019. Opportunities and Risks for Citizen Science in the Age of Artificial Intelligence. <em>Citizen Science: Theory and Practice</em>, 4(1), p.29.&nbsp;</p>
         <p><a href="https://theoryandpractice.citizenscienceassociation.org/articles/10.5334/cstp.241/" target="_blank" rel="noopener">https://theoryandpractice.citizenscienceassociation.org/articles/10.5334/cstp.241/</a></p>
+
+        <hr>
 
         <h1 id="team">Team</h1>
         <h4>Alexa Hagerty, PhD, Principle Investigator, Project social science lead </h4>
@@ -321,7 +325,8 @@ section {
 
   main {
     padding-bottom: 10em;
-    h1, h4, p,li {
+    
+    h1, h2, h3, h4, p,li {
       width: 80%;
       line-height: 1.6em;
     }
@@ -333,7 +338,7 @@ section {
 
     hr {
       border: 1px solid black;
-      margin: 0;
+      margin: 3rem 0;
       max-width: 80%;
     }
   }

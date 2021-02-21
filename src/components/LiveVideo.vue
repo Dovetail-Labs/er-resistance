@@ -3,7 +3,7 @@
    <div class="cam">
       <video id="webcam" autoplay muted playsinline />
       <canvas id="overlay"></canvas>
-      <img v-if="denied" id="placeholder" src="@/assets/images/smiley.png">
+      <img id="placeholder" src="@/assets/images/smiley.png">
       <router-link v-if="denied" class="help-link" to="help">Grant webcam access</router-link>
    </div>
     <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
@@ -192,11 +192,14 @@ div {
   box-sizing: border-box;
 
   .cam {
+    position: relative;
     overflow: hidden;
+    background: black;
+    z-index: 0;
   }
 
   video {
-    // position: absolute; 
+    position: relative; 
     right: 0; 
     bottom: 0;
     min-width: 100%; 
@@ -205,10 +208,12 @@ div {
     height: auto; 
 
     background-size: cover;
+    z-index: 2;
   }
 
   img {
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -3,7 +3,6 @@
   <div class="overlay"></div>
   <div class="modal">
     <h2> {{ title }}</h2>
-    <h3>Read our privacy policy <a href="#">here</a></h3>
     <form action="">
       <p>Have you heard of ‘emotion recognition systems’?</p>
       <div class="yn">
@@ -23,6 +22,7 @@
       <button @click="close">Skip</button>
       <button @click="addPerspective">Add my perspective</button>
     </div>
+    <p class="privacy">Read our privacy policy <a href="#">here</a></p>
   </div>
 </div>
 </template>
@@ -148,6 +148,11 @@ export default {
     button {
       margin-left: 1em;
     }
+  }
+
+  p.privacy {
+    margin-top: 1.5em;
+    text-align: center;
   }
 }
 

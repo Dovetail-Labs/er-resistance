@@ -65,8 +65,9 @@ body {
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background: transparent;
+    background: black;
   }
+
   ::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 100px;
@@ -87,7 +88,7 @@ body {
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6em;
   }
 
