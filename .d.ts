@@ -1,0 +1,1 @@
+delclare module 'vue-collapsible-component';
