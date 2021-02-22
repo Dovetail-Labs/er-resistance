@@ -370,7 +370,7 @@
         <hr>
 
         <h1 id="team">Team</h1>
-        <h4>Alexa Hagerty, PhD, Principle Investigator, Project social science lead </h4>
+        <h4>Alexa Hagerty, PhD, Principal Investigator, Project social science lead </h4>
         <p>Alexa is an anthropologist researching the societal impacts of technology at the University of Cambridge, Leverhulme Centre for the Future of Intelligence and Centre for the Study of Existential Risk. She is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and holds a PhD in anthropology from Stanford University. Her work focuses on how participatory, collaborative, arts-based and ethnographic methods can be used to make societies and technologies more just and equitable. `</p>
 
         <h4>Igor (Gary) Rubinov, PhD, Project Director</h4>
