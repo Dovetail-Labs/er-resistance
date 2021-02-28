@@ -6,32 +6,30 @@
       </aside>
       <div></div>
       <main>
-        <h1 id="about">About this project</h1>
+        <h1 id="about">About This Project</h1>
         <p>This project was created by a group of social scientists, citizen scientists, and designers. We want to open up conversations about emotion recognition systems: from the science behind the technology to their social impacts--and everything else in between. Our aim is to promote public understanding of these technologies and citizen involvement in their development and use. </p>
-        <p>We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centred learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns. </p>
+        <p>We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centered learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns. </p>
         <p>Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us at <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a>. </p>
         <p>If you want to keep in touch about the project, join our mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m3o3TeVAjQ9QgbP0wzn_BFmzNUe4jS9npQU4rDMtQkFjNw/viewform?usp=sf_link">here</a>.</p>
 
         <hr>
 
-        <h1 id="help">System Requirements & Help</h1>
-        <h2>Camera Permissions</h2>
-        <p>If you've already blocked the camera or microphone permissions you need to enable them again via settings</p>
-        <p><strong>On Chrome(Desktop)</strong></p>
+        <h1 id="help">Camera Permissions</h1>
+        <p>If you've already blocked the camera or microphone permissions you need to enable them again by changing your browser settings.</p>
+        <p><strong>On Chrome (desktop):</strong></p>
         <ol>
-          <li>At the top right, click three vertical dots, then settings(or file menu, Chrome -> preferences)</li>
-          <li>Under Privacy and security, click Site settings</li>
-          <li>Click Camera and then Microphone: “Ask before accessing” can be on or off</li>
-          <li>Review your blocked and allowed sites</li>
-          <li>To allow a site that you already blocked: Under Block select the site's name to expand the Permissions and change the camera and/or microphone permission to "Allow"</li>
-        </ol>
-        <p><strong>On Safari(Desktop)</strong></p>
+          <li>At the top right of the browser, click on the three vertical dots, then “Settings” (or go to the Chrome top bar, click on “Chrome,” then “Preferences”).</li>
+          <li>Under “Privacy and security,” click “Site Settings.”</li>
+          <li>Click on “Camera” and then “Microphone.” “Ask before accessing” can be on or off.</li>
+          <li>Review your blocked and allowed sites.</li>
+          <li>To allow a site that you’ve blocked: under “Block,” select the site's name to expand the permissions and change the camera and/or microphone permission to "Allow."</li>        </ol>
+        <p><strong>On Safari (desktop):</strong></p>
         <ol>
           <li>Open Safari Preferences</li>
-          <li>Navigate to Websites</li>
-          <li>Go to Camera and Microphone tabs</li>
-          <li>Change access to Allow</li>
-          <li>Restart Safari</li>
+          <li>Navigate to "Websites."</li>
+          <li>Go to "Camera" and "Microphone" tabs.</li>
+          <li>Change access to "Allow."</li>
+          <li>Restart Safari.</li>
         </ol>
 
         <hr>
@@ -42,10 +40,9 @@
         <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Emojify. This policy is not applicable to any information collected offline or via channels other than this website.  
         <h2>Consent</h2>
         <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-        <h2>Information we collect</h2>
+        <h2>Information We Collect</h2>
         <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-        <p> you may choose to provide.</p>
-        <h2>How we use your information</h2>
+        <h2>How We Use Your Information</h2>
         <p>We use the information we collect in various ways, including to:</p>
         <ul>
           <li>Provide, operate, and maintain our website</li>
@@ -130,13 +127,13 @@
         <Collapsible :isOpen="false" class="art">
           <div slot="trigger">
             <div class="customTrigger">
-              <h2>Interactive and arts-based projects<Triangle class="toggleOpen" /></h2>
+              <h2>Interactive and Arts-Based Projects<Triangle class="toggleOpen" /></h2>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2>Interactive and arts-based projects <Triangle class="toggleClosed" /></h2>
+              <h2>Interactive and Arts-Based Projects <Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
@@ -227,13 +224,13 @@
         <Collapsible :isOpen="false" class="academic">
           <div slot="trigger">
             <div class="customTrigger">
-              <h2>Academic articles<Triangle class="toggleOpen" /></h2>
+              <h2>Academic Articles<Triangle class="toggleOpen" /></h2>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2>Academic articles<Triangle class="toggleClosed" /></h2>
+              <h2>Academic Articles<Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
@@ -370,13 +367,13 @@
         <hr>
 
         <h1 id="team">Team</h1>
-        <h4>Alexa Hagerty, PhD, Principal Investigator, Project social science lead </h4>
+        <h4>Alexa Hagerty, PhD, Principal Investigator, Project Social Science Lead </h4>
         <p>Alexa is an anthropologist researching the societal impacts of technology at the University of Cambridge, Leverhulme Centre for the Future of Intelligence and Centre for the Study of Existential Risk. She is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and holds a PhD in anthropology from Stanford University. Her work focuses on how participatory, collaborative, arts-based and ethnographic methods can be used to make societies and technologies more just and equitable. `</p>
 
         <h4>Igor (Gary) Rubinov, PhD, Project Director</h4>
         <p>Gary is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and Senior Project Manager at <a target="_blank" href="https://www.publicequitygroup.org/irubinov">Public Equity Group</a>. He has published on development, environment and migration, always training attention on the ingenuity and perseverance of people facing adversity. He holds a PhD in Anthropology from Princeton University, an MA in International Development & Social Change from Clark University, and a BA in Anthropology from Cornell University. </p>
 
-        <h4>Alexandra Albert, PhD Project citizen science lead</h4>
+        <h4>Alexandra Albert, PhD Project Citizen Science Lead</h4>
         <p>Alex is a social researcher based in the Extreme Citizen Science (ExCiteS) research group in the Geography Department at University College London (UCL). She is currently a postdoctoral researcher on the Medical Research Council-funded ActEarly UK Preventative Research Partnership, examining citizen science and co-production in health. She has a PhD from University of Manchester in citizen social science. Her research interests include citizen science, participatory inventive methods, public sociology, and inclusive development.</p>
 
         <h4>Veda Sutedjo Tay, Story Artist and Character Animator</h4>
@@ -385,13 +382,13 @@
         <h4>Nethra Samarawickrema, PhD, Voiceover</h4>
         <p>Nethra is an anthropologist, mediator, and writer. She is the Director of Ethnography and Design at Dovetail Labs and a lecturer at Stanford University's Hasso Plattner Institute of Design (d.School). Her work combines ethnography, design thinking and empathetic listening to support individuals and organizations to build collaborative relationships. She teaches empathetic listening at a range of workplaces, including the tech sector, non-profit and activist organizations. She provides coaching and consulting through <a target="_blank" href="https://www.listenuplab.com/">Listen Up</a>, a lab that brings empathy and creativity to train people to have difficult conversations by listening for what matters. </p>
 
-        <h4>John Lee, scriptwriter </h4>
+        <h4>John Lee, Scriptwriter </h4>
         <p>John is an author, user experience writer, and teacher. He received his MFA from the University of Michigan and subsequently taught narrative design, podcast scripting, and the art of oral presentation at Stanford University. As a UX storyteller, he is particularly interested in helping broader audiences engage with complex, research-based ideas. He has also been a writing consultant at SRI International and the Stanford Storytelling Project. He received the Carol Houck Smith Fiction Fellowship at the University of Wisconsin, a John Steinbeck creative writing fellowship at San Jose State University, and writing residency awards from Yaddo, the Djerassi Resident Artists Program, and the Headlands Center for the Arts.</p>
         
         <h4>Joe McCraw, Technical Consultant</h4>
         <p>Joe is a Software Developer currently working for Mobile Programming LLC on the CBS apps for iOS/AppleTV.  He provides Technical Consulting for Dovetail Labs on projects related to technological ethics in AI/ML technologies.  Developed AIBias.com to explore projects related to bias in AI.  He also founded ShowBlender LLC and created the Augmented Reality Wifi Diagnostic app for iOS.  Joe holds a BA in Cultural Anthropology from UC Santa Cruz.</p>
 
-        <h4>Livia Garofalo, visual anthropology consultant</h4>
+        <h4>Livia Garofalo, Visual Anthropology Consultant</h4>
         <p>Livia is a medical and psychological anthropologist currently completing her doctorate at Northwestern University, where she is also earning a master’s in public health from the Feinberg School of Medicine. Her research focuses on trauma, public health and AI in medicine. She draws on visual anthropology, multimodal methods, and visual arts. Her design work can be found at <a href="https://www.tugboatdesigns.com" target="_blank">Tugboat</a></p>
         
                  
