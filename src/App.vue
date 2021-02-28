@@ -49,14 +49,8 @@ export default {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body {
-  font-family: 'Cousine', monospace;
-  margin: 0;
-  box-sizing: border-box;
-  color: black;
-  background: $yellow-lite;
 
-    /* Firefox */
+  /* Firefox */
   * {
     scrollbar-color:black rgba(0,0,0,0);
     scrollbar-color: black;
@@ -65,13 +59,20 @@ body {
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background: black;
+    // background: black;
   }
 
   ::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 100px;
   }
+
+body {
+  font-family: 'Cousine', monospace;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  background: $yellow-lite;
 
   h1, h2, h3, h4, small {
     font-family: 'Press Start 2P', Courier, monospace;

@@ -7,7 +7,7 @@
         <hr>
         <p v-for="(question, index) in survey.questions" v-bind:key="index">
           <label> {{ question.text }}</label>
-          <textarea :data-index=index form="survey" rows="10" placeholder="Please explain"></textarea>
+          <textarea :data-index=index form="survey" rows="5" placeholder="Please explain"></textarea>
         </p>
         <input type="submit" value="Add my perspective" class="button" @click="submitSurvey">
       </form>
