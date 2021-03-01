@@ -5,8 +5,7 @@
       <h1>Welcome to the Emotion Recognition Sandbox.</h1>
       <div class="p-wrap">
         <p>
-          Watch the video to learn about emotion recognition technology, or turn
-          on your camera to activate our very own emotion recognition machine...will it 'emojify' you?
+          We want to start a conversation about emotion recognition technology. Explore the site, watch the video, play a game and add your thoughts to our research. Or turn on your camera to activate our very own emotion recognition machine...will it ‘emojify’ you?
         </p>
         <p class="notice">To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Once activated, you can turn off the camera in your browser settings (instructions and more on privacy <a href="/resources#privacy">here</a>).</p>
       </div>
@@ -31,7 +30,7 @@
               <RightArrow class="arrow" />
             </li>
             <li class="btn">
-              <router-link to="research">Share your thoughts</router-link>
+              <router-link to="research">Add your thoughts</router-link>
               <RightArrow class="arrow" />
             </li>
           </ul>

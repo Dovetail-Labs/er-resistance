@@ -22,7 +22,8 @@
       <button @click="close">Skip</button>
       <button @click="addPerspective">Add my perspective</button>
     </div>
-    <p class="privacy">Read our privacy policy <a href="#">here</a></p>
+    <p class="credits">Created by <img class="logo dt" src="@/assets/images/logo-dovetail.png"> with support from <img class="logo nesta" src="@/assets/images/logo-nesta.png"></p>
+    <p class="privacy">Read our privacy policy <a href="/resources#privacy">here</a></p>
   </div>
 </div>
 </template>
@@ -153,6 +154,19 @@ export default {
   p.privacy {
     margin-top: 1.5em;
     text-align: center;
+  }
+
+  p.credits {
+    font-size: 0.8rem;
+    text-align: center;
+
+    .dt {
+      max-height: 1em;
+    }
+
+    .nesta {
+      max-height: 1.25em;
+    }
   }
 }
 

@@ -5,7 +5,7 @@
       <canvas id="overlay"></canvas>
       <img id="placeholder" src="@/assets/images/smiley.png">
       <span class="spinner"></span>
-      <router-link v-if="denied" class="help-link" to="help">Grant webcam access</router-link>
+      <a v-if="denied" class="help-link" href="/resources#help">Grant webcam access</a>
    </div>
     <button v-if="buttonVisible" v-on:click="detectExpressions">Turn on ER camera</button>
   </div>
@@ -238,7 +238,7 @@ div {
     border-radius: 50%;
     border: 2px solid white;
     border-top-color: black;
-    animation: spinner .6s linear 10;
+    animation: spinner .6s linear infinite;
     z-index: 1;
   }
 
@@ -265,6 +265,7 @@ div {
     text-decoration: underline;
     color: white;
     bottom: 20%;
+    z-index: 3;
   }
 }
 
