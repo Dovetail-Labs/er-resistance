@@ -152,11 +152,12 @@ export default {
   }
 
   p.privacy {
-    margin-top: 1.5em;
+    
     text-align: center;
   }
 
   p.credits {
+    margin-top: 1.5em;
     font-size: 0.8rem;
     text-align: center;
 
@@ -165,7 +166,7 @@ export default {
     }
 
     .nesta {
-      max-height: 1.25em;
+      max-height: 1.5em;
     }
   }
 }
