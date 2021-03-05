@@ -9,8 +9,8 @@
   ],
 	"defWink": "to open and close the eye quickly as a hint or signal",
   "defBlink": "to open and close the eye involuntarily",
-  "correct": "Congrats, you got it correct!",
-  "incorrect": "Sorry, you got that incorrect!",
+  "correct": "Congrats, you got that one right!",
+  "incorrect": "Sorry, you got that one wrong.",
   "questions": [
     {
       "image": "wb1.png",

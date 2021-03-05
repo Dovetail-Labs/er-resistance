@@ -59,7 +59,7 @@ export default {
       survey: CS,
       submitted: false,
       showModal: true,
-      title: "ER Resistance",
+      title: "Is emotional recognition technology ‘emojifying’ you?",
       message: "I know more about emotions than emotion recognition technology. I %23BeatTheMachine and you can too. Learn how to %23ResistEmojification at Emojify.info"
     }
   },

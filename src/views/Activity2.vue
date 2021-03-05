@@ -48,7 +48,7 @@
         <FinishedGame :title="er.prizePage[0].title"
                       :p="er.prizePage[0].p"
                       prevStep="Wink/Blink game"
-                      nextStep="Share your thoughts" 
+                      nextStep="Add your thoughts" 
                       prevLink="activity-1"
                       nextLink="research"/>
       </section>           

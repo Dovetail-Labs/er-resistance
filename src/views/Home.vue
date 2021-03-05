@@ -11,7 +11,7 @@
         Enter<sup>*</sup>
       </router-link>
     </p>
-    <p class="notice"><sup>*</sup>To interact with the emotion recognition system, you must allow access to your camera but no personal data is collected. Read our full privacy policy <router-link to="resources">here</router-link>. </p>
+    <p class="notice"><sup>*</sup>To interact with the emotion recognition system, you must allow access to your camera. No personal data is collected and all images are stored on your device. Read our full privacy policy <a href="/resources#privacy">here</a>. </p>
     <p class="notice mobile-only">This site is best viewed on desktop.</p>
     <Footer />
   </div>
@@ -46,14 +46,14 @@ export default {
   }
 
   .intro {
-    text-align: left;
+    font-family: 'Press Start 2P', Courier, monospace;
+    text-align: center;
     width: 70%;
     margin: 0 auto;
     padding: 1rem;
   }
 
   .notice {
-    font-family: 'Press Start 2P', Courier, monospace;
     color: $gray-1;
     margin: 3rem auto;
 

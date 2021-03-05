@@ -16,7 +16,7 @@
               {{ p }} 
             </p> -->
             <p> {{ quiz.intro[0].p1 }} </p>
-            <p> {{ quiz.intro[0].p3 }} <a href="./resources">here</a>.</p>
+            <p> {{ quiz.intro[0].p3 }} <a href="./resources#resources">here</a>.</p>
           </div>
           <div class="definitions">
             <h4>Wink</h4>

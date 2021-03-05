@@ -268,13 +268,13 @@
         <Collapsible :isOpen="false" class="uses">
           <div slot="trigger">
             <div class="customTrigger">
-              <h2>Current Uses of Emotional AI in<Triangle class="toggleOpen" /></h2>
+              <h2>Current Uses of Emotion Recognition Technology<Triangle class="toggleOpen" /></h2>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2>Current Uses of Emotional AI in<Triangle class="toggleClosed" /></h2>
+              <h2>Current Uses of Emotion Recognition Technology<Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
@@ -319,13 +319,13 @@
         <Collapsible :isOpen="false" class="facial">
           <div slot="trigger">
             <div class="customTrigger">
-              <h2>Facial Recognition Technology (not necessarily specific to emotion recognition)<Triangle class="toggleOpen" /></h2>
+              <h2>Facial Recognition Technology<Triangle class="toggleOpen" /></h2>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2>Facial Recognition Technology (not necessarily specific to emotion recognition)<Triangle class="toggleClosed" /></h2>
+              <h2>Facial Recognition Technology<Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
