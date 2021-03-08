@@ -4,6 +4,7 @@
       <h2>{{ copy.title }}</h2>
       <p> {{ copy.p1 }} </p>
       <p> {{ copy.p2 }} <a href="/resources#resources">here</a>. </p>
+      <p class="credits">Created by <img class="logo dt" src="@/assets/images/logo-dovetail.png"> with support from <img class="logo nesta" src="@/assets/images/logo-nesta.png"></p>
       <h3> {{ copy.subhead }} </h3>
       <p> {{ copy.p3 }} <a href="/resources#privacy">here</a>.  </p>
     </div>
@@ -66,6 +67,21 @@ export default {
       text-align: left;
       font-size: 16px;
       line-height: 1.7em;
+    }
+
+    p.credits {
+      margin-top: 3em;
+      margin-bottom: 3em;
+      font-size: 0.8rem;
+      text-align: center;
+
+      .dt {
+        max-height: 1em;
+      }
+
+      .nesta {
+        max-height: 1.5em;
+      }
     }
   }
   div.button-group {
