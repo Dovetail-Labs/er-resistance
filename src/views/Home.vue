@@ -48,7 +48,7 @@ export default {
   .intro {
     font-family: 'Press Start 2P', Courier, monospace;
     text-align: center;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     padding: 1rem;
   }
