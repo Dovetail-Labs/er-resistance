@@ -4,7 +4,7 @@
       <aside>
         <router-link to="menu" class="button">Back to emotion recognition system</router-link>
         <p class="credits">
-          <img class="logo dt" src="@/assets/images/logo-dovetail.png">
+          <a href="https://dovetaillabs.com/"><img class="logo dt" src="@/assets/images/logo-dovetail.png"></a>
           <img class="logo nesta" src="@/assets/images/logo-nesta.png">
         </p>
       </aside>
@@ -41,13 +41,13 @@
         <Collapsible :isOpen="false" class="research">
           <div slot="trigger">
             <div class="customTrigger">
-              <h1 id="privacy">Privacy Policy for Dovetail Labs <Triangle class="toggleOpen" /> </h1>
+              <h1>Privacy Policy for Dovetail Labs <Triangle class="toggleOpen" /> </h1>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h1>Privacy Policy for Dovetail Labs <Triangle class="toggleClosed" /> </h1>
+              <h1 id="privacy">Privacy Policy for Dovetail Labs <Triangle class="toggleClosed" /> </h1>
             </div>
           </div>
 
@@ -544,11 +544,12 @@ section {
       .dt {
         display: block;
         max-height: 1.5em;
+        margin-bottom: 1em;
       }
 
       .nesta {
         display: block;
-        max-height: 2em;
+        max-height: 5em;
       }
     }
   }
@@ -562,11 +563,13 @@ section {
       p.credits {
         .dt {
           display: inline-block;
+          margin: 0;
         }
 
         .nesta {
           display: inline-block;
           margin-left: 1.5em;
+          max-height: 3em;
         }
       }
     }

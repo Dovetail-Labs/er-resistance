@@ -3,8 +3,12 @@
     <button class="about" 
       aria-label="Read about the project" 
       @click="toggleAbout">
-      About this Project
+      About
     </button>
+    <ul class="credits">
+      <li>Created by <a href="https://dovetaillabs.com/"><img class="logo dt" src="@/assets/images/logo-dt.png"></a>,</li>
+      <li>supported by<img class="logo nesta" src="@/assets/images/logo-nesta.png"></li>
+    </ul>
     <div class="share">
       <span>
         Share
@@ -69,6 +73,28 @@ footer {
 
     &:hover {
       background: inherit;
+    }
+  }
+
+  ul.credits {
+    margin: 0;
+    li {
+      display: inline-block;
+      
+      .logo {
+        padding-left: 0.5em;
+        vertical-align: middle;
+      }
+
+      .logo.dt {
+        max-height: 1.5em;
+      }
+
+      .logo.nesta {
+        max-height: 2.25em;
+        transform: translateY(-0.6em);
+        margin-left: 0.5em;
+      }
     }
   }
 

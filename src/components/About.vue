@@ -4,7 +4,7 @@
       <h2>{{ copy.title }}</h2>
       <p> {{ copy.p1 }} </p>
       <p> {{ copy.p2 }} <a href="/resources#resources">here</a>. </p>
-      <p class="credits">Created by <img class="logo dt" src="@/assets/images/logo-dovetail.png"> with support from <img class="logo nesta" src="@/assets/images/logo-nesta.png"></p>
+      <p class="credits">Created by <a href="https://dovetaillabs.com/"><img class="logo dt" src="@/assets/images/logo-dovetail.png"></a> with support from <img class="logo nesta" src="@/assets/images/logo-nesta.png"></p>
       <h3> {{ copy.subhead }} </h3>
       <p> {{ copy.p3 }} <a href="/resources#privacy">here</a>.  </p>
     </div>
