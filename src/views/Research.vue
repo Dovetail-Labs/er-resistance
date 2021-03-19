@@ -88,9 +88,7 @@ export default {
             "Question1": document.querySelector('textarea[data-index="0"]').value,
             "Question2": document.querySelector('textarea[data-index="1"]').value,
             "Question3": document.querySelector('textarea[data-index="2"]').value,
-            "Question4": document.querySelector('textarea[data-index="3"]').value,
-            "Question5": document.querySelector('textarea[data-index="4"]').value,
-            "Question6": document.querySelector('textarea[data-index="5"]').value
+            "Question4": document.querySelector('textarea[data-index="3"]').value
           }
         }
       ], function(err, records) {
