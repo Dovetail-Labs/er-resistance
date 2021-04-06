@@ -388,7 +388,7 @@
 
         <h1 id="team">Team</h1>
         <h4>Alexa Hagerty, PhD, Principal Investigator, Project Social Science Lead </h4>
-        <p>Alexa is an anthropologist researching the societal impacts of technology at the University of Cambridge, Leverhulme Centre for the Future of Intelligence and Centre for the Study of Existential Risk. She is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and holds a PhD in anthropology from Stanford University. Her work focuses on how participatory, collaborative, arts-based and ethnographic methods can be used to make societies and technologies more just and equitable. `</p>
+        <p>Alexa is an anthropologist researching the societal impacts of technology at the University of Cambridge, Leverhulme Centre for the Future of Intelligence and Centre for the Study of Existential Risk. She is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and holds a PhD in anthropology from Stanford University. Her work focuses on how participatory, collaborative, arts-based and ethnographic methods can be used to make societies and technologies more just and equitable.</p>
 
         <h4>Igor (Gary) Rubinov, PhD, Project Director</h4>
         <p>Gary is co-founder of <a target="_blank" href="https://dovetaillabs.com/">Dovetail Labs</a> and Senior Project Manager at <a target="_blank" href="https://www.publicequitygroup.org/irubinov">Public Equity Group</a>. He has published on development, environment and migration, always training attention on the ingenuity and perseverance of people facing adversity. He holds a PhD in Anthropology from Princeton University, an MA in International Development & Social Change from Clark University, and a BA in Anthropology from Cornell University. </p>
@@ -410,7 +410,9 @@
 
         <h4>Livia Garofalo, Visual Anthropology Consultant</h4>
         <p>Livia is a medical and psychological anthropologist currently completing her doctorate at Northwestern University, where she is also earning a master’s in public health from the Feinberg School of Medicine. Her research focuses on trauma, public health and AI in medicine. She draws on visual anthropology, multimodal methods, and visual arts. Her design work can be found at <a href="https://www.tugboatdesigns.com" target="_blank">Tugboat</a></p>
-        
+
+        <h4>Alexandrine Royer, Project researcher</h4>
+        <p>Alexandrine is the Educational Programme Manager at the Montreal AI Ethics Institute and the author of the Short Anthropological Guide to the Study of Ethical AI. She is currently pursuing an MPhil in Social Anthropology at the University of Cambridge, and her research is centered on affective computing, augmented reality, and digital platform labour.</p>
                  
         <h4>Juweek Adolphe (UX/UI design) </h4>
         <p><a target="_blank" href="https://www.juweek.online/">juweek.online</a></p>
