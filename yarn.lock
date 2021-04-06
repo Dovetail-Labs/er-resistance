@@ -848,6 +848,16 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@fontsource/cousine@^4.2.3":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/cousine/-/cousine-4.2.3.tgz#06db3d11bb37aefebe43e9433193101dce8adf84"
+  integrity sha512-izCwEET6Y5y8SG1wOk6f6gqTG8E+FdGv/8gFnSMukCu4HOqk40rP7He7/aiagEapBo0eYUkGfTyaAV4bbjkRgA==
+
+"@fontsource/press-start-2p@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/press-start-2p/-/press-start-2p-4.2.2.tgz#5831b4c72c19432f29a587ed77ca3030d5876779"
+  integrity sha512-9kFqYj0wkYzp+vdWLeGyzGDBv0tZ/LMqCFFjAOMyJv/7JddagZFhOkrwbQaeaqQFRa/lupz4Q1zgLggMXi8KxQ==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"

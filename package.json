@@ -9,6 +9,8 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
+    "@fontsource/cousine": "^4.2.3",
+    "@fontsource/press-start-2p": "^4.2.2",
     "airtable": "^0.10.1",
     "core-js": "^3.6.5",
     "face-api.js": "^0.22.2",
