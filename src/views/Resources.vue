@@ -41,13 +41,13 @@
         <Collapsible :isOpen="false" class="research">
           <div slot="trigger">
             <div class="customTrigger">
-              <h1>Privacy Policy for Dovetail Labs <Triangle class="toggleOpen" /> </h1>
+              <h1>Privacy Policy for Dovetail Labs<Triangle class="toggleOpen" /> </h1>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h1 id="privacy">Privacy Policy for Dovetail Labs <Triangle class="toggleClosed" /> </h1>
+              <h1 id="privacy">Privacy Policy for Dovetail Labs<Triangle class="toggleClosed" /> </h1>
             </div>
           </div>
 
@@ -153,7 +153,7 @@
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2>Interactive and Arts-Based Projects <Triangle class="toggleClosed" /></h2>
+              <h2>Interactive and Arts-Based Projects<Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
