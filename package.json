@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/cousine": "^4.2.3",
     "@fontsource/press-start-2p": "^4.2.2",
+    "@vimeo/player": "^2.15.0",
     "airtable": "^0.10.1",
     "core-js": "^3.6.5",
     "face-api.js": "^0.22.2",

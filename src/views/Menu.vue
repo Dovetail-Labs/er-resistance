@@ -13,7 +13,7 @@
       <main>
         <section>
           <div class="video-container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/785eNqM3X8E" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="vimeo533753657" src="https://player.vimeo.com/video/533753657?dnt=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <button @click="playVideo">Watch the video</button>
           </div>
           <LiveVideo class="er-container" :buttonVisible="true" />
@@ -45,6 +45,7 @@ import Footer from "../components/Footer.vue";
 import Modal from "../components/Modal.vue";
 import LiveVideo from "../components/LiveVideo.vue";
 import RightArrow from "@/assets/images/right-arrow.svg";
+import Player from '@vimeo/player';
 
 export default {
   name: "Menu",
@@ -76,11 +77,10 @@ export default {
       this.firstSurveySubmitted = true;
     },
     playVideo: function() {
-      if (document.querySelector(".nesta-animation")) {
-        let vid = document.querySelector(".nesta-animation");
-        vid.play();
-        vid.setAttribute("controls","controls");
-      }
+      var iframe = document.querySelector('#vimeo533753657');
+      var player = new Player(iframe);
+
+      player.play();
     }
   }
 };
@@ -170,6 +170,9 @@ export default {
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+        iframe {
+          background-color: #000000;
         }
       }
     }
