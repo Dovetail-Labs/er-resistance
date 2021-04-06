@@ -367,7 +367,7 @@
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h2><Citizen Science and Advancing Social ChangeTriangle class="toggleClosed" /></h2>
+              <h2>Citizen Science and Advancing Social Change<Triangle class="toggleClosed" /></h2>
             </div>
           </div>
 
