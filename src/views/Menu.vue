@@ -7,7 +7,7 @@
         <p>
           We want to start a conversation about emotion recognition technology. Explore the site, watch the video, play a game and add your thoughts to our research. Or turn on your camera to activate our very own emotion recognition machine...will it ‘emojify’ you?
         </p>
-        <p class="notice">To interact with the emotion recognition system, you must allow access to your camera. No personal data is collected and all images are stored on your device. <a href="/resources#help">Instructions to activate camera</a> and our <a href="/resources#privacy">privacy policy</a>.</p>
+        <p class="notice">To interact with the emotion recognition system, you must allow access to your camera. No image data is sent to our servers, all images are stored on your device.  <a href="/resources#help">Instructions to activate camera</a> and our <a href="/resources#privacy">privacy policy</a>.</p>
       </div>
 
       <main>

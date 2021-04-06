@@ -11,7 +11,7 @@
         Enter<sup>*</sup>
       </router-link>
     </p>
-    <p class="notice"><sup>*</sup>To interact with the emotion recognition system, you must allow access to your camera. No personal data is collected and all images are stored on your device. Read our full privacy policy <a href="/resources#privacy">here</a>. </p>
+    <p class="notice"><sup>*</sup>To interact with the emotion recognition system, you must allow access to your camera. No image data is sent to our servers, all images are stored on your device.  Survey responses are used to better understand how we can start a conversation about emotion recognition systems, and their impacts on society. Read our full privacy policy <a href="/resources#privacy">here</a>. </p>
     <p class="notice mobile-only">This site is best viewed on desktop.</p>
     <Footer />
   </div>
