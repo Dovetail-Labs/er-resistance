@@ -4,6 +4,7 @@
     <main>
       <form action="" v-if="!submitted" id="survey">
         <h1 class="intro"> {{ survey.intro }} </h1>
+        <p>{{ survey.details }}</p>
         <hr>
         <p v-for="(question, index) in survey.questions" v-bind:key="index">
           <label> {{ question.text }}</label>

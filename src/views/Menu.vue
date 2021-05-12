@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <Modal title="Share your perspectives on emotion recognition systems" v-if="!firstSurveySubmitted" @close="closeModal" />
       <h1>Welcome to the Emotion Recognition Sandbox</h1>
       <div class="p-wrap">
         <p>
@@ -42,7 +41,6 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-import Modal from "../components/Modal.vue";
 import LiveVideo from "../components/LiveVideo.vue";
 import RightArrow from "@/assets/images/right-arrow.svg";
 import Player from '@vimeo/player';
@@ -54,27 +52,17 @@ export default {
   },
   data() {
     return {
-      showModal: true,
-      get firstSurveySubmitted() {
-        return window.sessionStorage.getItem('firstSurveySubmitted') == "true";
-      },
-      set firstSurveySubmitted(value) {
-        window.sessionStorage.setItem('firstSurveySubmitted', value);
-      }
+      showModal: false,
     }
   },
   components: {
     Footer,
-    Modal,
     LiveVideo,
     RightArrow
   },
   methods: {
     startER: function() {
       this.$emit("start-er", true);
-    },
-    closeModal: function() {
-      this.firstSurveySubmitted = true;
     },
     playVideo: function() {
       var iframe = document.querySelector('#vimeo533753657');

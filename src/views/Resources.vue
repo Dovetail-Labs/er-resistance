@@ -14,7 +14,6 @@
         <p>This project was created by a group of social scientists, citizen scientists, and designers. We want to open up conversations about emotion recognition systems: from the science behind the technology to their social impacts--and everything else in between. Our aim is to promote public understanding of these technologies and citizen involvement in their development and use. </p>
         <p>We are interested in gathering information about people’s experiences of emotion recognition systems and your thoughts on their practical applications in order to further people-centered learning on the topic. This is a participatory knowledge-building exercise -- your perspective matters, and we want to hear your experiences, reflections, reactions and concerns. </p>
         <p>Please don’t hesitate to get in touch if you want to discuss these topics with us in more detail. You can contact us at <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a>. </p>
-        <p>If you want to keep in touch about the project, join our mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m3o3TeVAjQ9QgbP0wzn_BFmzNUe4jS9npQU4rDMtQkFjNw/viewform?usp=sf_link">here</a>.</p>
 
         <hr>
 
@@ -41,61 +40,109 @@
         <Collapsible :isOpen="false" class="research">
           <div slot="trigger">
             <div class="customTrigger">
-              <h1>Privacy Policy for Dovetail Labs<Triangle class="toggleOpen" /> </h1>
+              <h1>Privacy Policy<Triangle class="toggleOpen" /> </h1>
             </div>
           </div>
 
           <div slot="closedTrigger">
             <div class="customTrigger">
-              <h1 id="privacy">Privacy Policy for Dovetail Labs<Triangle class="toggleClosed" /> </h1>
+              <h1 id="privacy">Privacy Policy<Triangle class="toggleClosed" /> </h1>
             </div>
           </div>
 
           <!-- content -->
           <div>
-            <p>At Emojify, accessible from emojify.info, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Emojify and how we use it.</p>
-            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-            <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Emojify. This policy is not applicable to any information collected offline or via channels other than this website.  
-            <h2>Consent</h2>
-            <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-            <h2>Information We Collect</h2>
-            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-            <h2>How We Use Your Information</h2>
-            <p>We use the information we collect in various ways, including to:</p>
+            <p>Emojify ('Emojify', 'we' or 'us') is a scientific project, which aims to bring public understanding and awareness in the development of the emotion recognition systems and their social impact, for this purpose we conduct voluntary surveys. One of our main priorities is the privacy of our visitors and we are committed to protecting it through our compliance with this Privacy Policy (also the "Policy").</p>
+
+            <p>This Policy describes the types of information that we may collect from you and about you upon your visit and use the website emojify.info (the "Website"). It also provides our practices for collecting, processing, maintaining, protecting and disclosing that information. This Policy is not applicable to any information collected offline or via channels other than the Website.</p>
+
+            <p>Please read this Policy carefully to understand our policies and practices regarding your personal information and how we will treat and protect it.</p>
+
+            <p>BY USING THIS WEBSITE, YOU REPRESENT AND WARRANT THAT YOU HAVE READ AND UNDERSTOOD, AND AGREE TO THE TERMS OF THIS POLICY. IF YOU DO NOT UNDERSTAND OR DO NOT AGREE TO BE BOUND BY THIS POLICY, YOU MAY NOT USE THE WEBSITE.</p>
+
+
+            <h3>Information that we collect.</h3>
+            <p>Generally the information that we collect from individual users is:</p>
+            <ol>
+              <li><strong><u>"Contact Data"</u></strong> - personally identifiable information about the end user, such as end user's email address or name or any other related information. We do not request and solicit this type of data from users, we would collect such information only if it has been provided by a user. Whenever possible and practicable, we will make sure that the personal information is anonymized and/or completely deleted.</li>
+              <li><strong><u>"Traffic data"</u></strong> - information that browsers automatically make available, including: IP address; domain servers; date and time of your visit; details of transactions you carry out through this Website, browser type, computer type, operation system type, etc. Traffic data is anonymous information which does not personally identify you.</li>
+            </ol>
+
+
+            <h3>How we collect your information.</h3>
+            <p>Emojify collects information about you when you interact with us and when we provide our services to you. We do not receive personal and non-personally identifiable information about you from third parties.</p>
+
+
+            <h3>Why we collect your information. </h3>
+            <p>We collect your information based on your explicit consent you have provided for the processing of your data and for the purpose of providing you with our services.</p>
+
+
+            <h3>How We Use Your Information.</h3>
+            <p>We will use the information collected from you to:</p>
             <ul>
-              <li>Provide, operate, and maintain our website</li>
-              <li>Improve, personalize, and expand our website</li>
-              <li>Understand and analyze how you use our website</li>
-              <li>Develop new products, services, features, and functionality</li>
-              <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-              <li>Send you emails</li>
-              <li>Find and prevent fraud</li>
+              <li>Provide you with our services, operate, and maintain our Website;</li>
+              <li>Improve, personalize, and expand our Website and services;</li>
+              <li>Understand and analyze how you use our Website;</li>
+              <li>Develop new products, services, features, and functionality;</li>
             </ul>
-            <h2>Log Files</h2>
-            <p>Emojify will only collect the base level of data to know how many users have engaged our site - using a standard procedure of using log files via Google Analytics. These files log visitors when they visit websites. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
-            <h2>Third Party Privacy Policies</h2>
-            <p>Emojify's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
-            <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
-            <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-            <p>Under the CCPA, among other rights, California consumers have the right to:</p>
-            <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
-            <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
-            <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
-            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
 
-            <h2>GDPR Data Protection Rights</h2>
-            <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
-            <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
-            <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
-            <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-            <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
-            <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
-            <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
-            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
 
-            <h2>Children's Information</h2>
-            <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-            <p>Emojify does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+            <h3>How long we keep your information. </h3>
+            <p>We will retain your information for as long as you use our Website and services. You have the right to request that your personal information is permanently removed from our system and database at any time. Such request will be accommodated within 45 days.</p>
+
+
+            <h3>Right to access and control your data.</h3>
+            <p>We provide you with many choices about the collection, use and sharing of your data. We will provide you with access to your personal information that we store and allow you to:</p>
+
+            <ol>
+              <li>Delete your data - you can request that we erase or delete all or some of your personal data (e.g., if it is no longer necessary to provide Services to you);</li>
+
+              <li>Change or correct your data - you have the option to edit some of your personal data through your account. You can also ask us to change, update or fix your data in certain cases, particularly if it is inaccurate;</li>
+
+              <li>Object to, or limit or restrict, use of data - you can ask us to stop using all or some of your personal data (e.g., if we have no legal right to keep using it) or to limit our use of it (e.g., if your personal data is inaccurate or unlawfully held);</li>
+
+              <li>Right to access and/or take your data - you can ask us for a copy of your personal data and can ask for a copy of personal data you provided in machine readable form.</li>
+            </ol>
+
+
+            <h3>Disclosure of personal information.</h3>
+            <p>Apart from Airtable and Plausible, whose services we use to collect and analyze the results from our survey, we will not share your information with any third parties. </p>
+            <p>However, we reserve the right to disclose your personal information to third parties if required by a court order, law or legal process, including responding to any government or regulatory request. We may also disclose your personal information if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of Emojify and/or our users or others.</p>
+
+
+            <h3>Cookies and tracking technologies. </h3>
+            <p>Emojify does not use cookies or tracking technologies to collect personal data from its users.</p> 
+
+            <h3>Security of your personal information.</h3>
+            <p>Emojify is committed to ensuring that the information you provide to us is secure from accidental loss and from unauthorized access, use, alteration and disclosure. We have implemented suitable physical, electronic and organizational measures to safeguard and secure information and protect it from misuse, interference, loss and unauthorised access, modification and disclosure. </p>
+
+            <ul>
+              <li>All information you provide to us is stored on our secure servers behind firewalls.</li>
+              <li>We restrict access to personal information to employees, contractors and agents who are bound by confidentiality obligations and may be subject to discipline, including termination and legal action, if they fail to meet the obligations for data confidentiality and integrity;</li>
+              <li>Areas of our website that collect personal data use encryption or other types of pseudonymization;</li>
+              <li>In the event of a physical or technical incident, Emojify will be able to restore the availability and access to personal data in a timely manner;</li>
+            </ul>
+
+            <p>The security and safety of your personal information is also your own responsibility. We advise you to keep your account log-in details confidential and not to share them with anyone in order to prevent unauthorized access to you account and personal information. </p>
+
+
+            <h3>Access to your personal information.</h3>
+            <p>We will provide you with access to your personal information that we store and allow you to correct, amend or delete inaccurate information. You may also send us an e-mail at <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a> to request access to, correct or delete any personal information that you have provided to us. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.</p>
+            <p>California Civil Code Section § 1798.83 permits the users of this Website that are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please send an e-mail to <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a> or write us at: [mail address].</p>
+
+
+            <h3>Users under age of 13</h3>
+            <p>Our Website is not intended for use by children under the age of 13. We do not knowingly collect personal information from person under 13. If you are under 13, you should not use or provide any information on our Website or provide any information about yourself to us. If we learn we have collected or received personal information from a user under 13, we will immediately delete that information.</p>
+
+
+            <h3>Changes to this Privacy Policy</h3>
+            <p>Please be aware that we may change this Privacy Policy from time to time in our sole discretion. We will keep you informed of any amendments that we make to this Policy. All modifications will be effective immediately upon our posting them on the Website. Please check back from time to time to review our Policy.</p>
+
+
+            <h3>Contact information</h3>
+            <p>If you have any questions, comments, complaints or concerns regarding this Policy, you can contact us anytime at the following address: <a href="mailto:emojifyproject@gmail.com">emojifyproject@gmail.com</a>. We take complaints very seriously and will respond shortly after receiving written notice of your complaint.</p>
+
+            <p>Last updated: April 30, 2021</p>
           </div>
         </Collapsible>        
 
